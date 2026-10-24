@@ -27,7 +27,7 @@ assert new.count(r"\appendix")==1 and new.index(r"\bibliography{references}")<ne
 assert r"\section{Derivation and proof crosswalk}" not in new
 assert r"\section{Computational scope and a second interacting benchmark}" in new
 assert new.index(r"\subsection{Nonzero cross-region interaction}")<new.index(r"\appendix")
-assert new.index("a distinct rational parameter example with")<0 or "A distinct rational parameter example with" in new
+assert "A distinct rational parameter example with" in new
 assert new.index(r"\section*{Declaration of generative AI and AI-assisted technologies}") < new.index(r"\bibliography{references}")
 assert r"\textbf{JEL:} H77, O32, Q16." in new
 
