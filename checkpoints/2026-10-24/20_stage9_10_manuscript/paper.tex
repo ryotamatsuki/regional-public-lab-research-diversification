@@ -24,7 +24,7 @@ This paper asks when individually rational regional public breeding decisions di
 
 The first result establishes that, conditional on research quality, competitive planting can be efficient even though the preceding regional research decisions are not. The second result derives a sign-changing regional--national research wedge. The third establishes a stronger possibility: in a transparent analytically solvable economy, positive research is the unique decentralized equilibrium, but zero research is the unique national optimum. The exact global proof includes zero, partial and complete adoption, rather than relying on interior first-order conditions.
 
-These are claims about a specified game, not a claim that excessive public R\&D, rent shifting, or beggar-thy-neighbor competition is new in itself. Closely related generic mechanisms occur in commodity-promotion and innovation literatures \citep{alston2001beggar,balagtas2007dairy,lence2007collective}. The potential contribution is the equilibrium interaction of territorial public quality provision and privately chosen varietal replacement, together with an exact global welfare counterexample. A final theorem-level nonabsorption audit against the closest literature remains outstanding.
+These are claims about a specified game, not a claim that excessive public R\&D, rent shifting, or beggar-thy-neighbor competition is new in itself. Private-profitability and welfare-divergence results already arise in the advertising literature \citep{dixit1978advertising,alston2001beggar,cardon2003market}; related markets and competitive resource reallocation have also been studied \citep{kinnucan2000distributional,balagtas2007dairy,lence2007collective}. In particular, a socially optimal zero level of a private promotion instrument is not, by itself, novel. The potential contribution is the explicitly solved interaction of territorial public quality provision, constrained competitive varietal replacement, and the full national-welfare benchmark, including global boundary cases. The existing source-level assessment does not yet rule out absorption by all relevant parent theorems.
 
 \section{Economic environment}
 \subsection{Timing, goods, and public objectives}
@@ -131,7 +131,24 @@ Subtract the two research first-order conditions in \eqref{eq:efforts} and use $
 \end{proof}
 
 \subsection{Demand curvature and the scope of the sign result}
-A restricted nonlinear extension retains anonymous symmetric regions, separable old/new own-quantity inverse-demand terms and common curvature function $\phi$. Write $H(q)=q\phi''(q)$. If the adoption Jacobian has the specified common-interaction form, the own-minus-average planting response to a local quality shock is proportional to $(N-1)/(NL)$, and the local--national curvature wedge has the sign of
+The nonlinear result concerns a separate, explicitly restricted class with $N\geq2$ identical regions, unit land per region, and a national quasilinear gross-utility function
+\begin{equation}
+V(q;x)=\sum_{i=1}^{N}\sum_{s\in\{O,N\}}\alpha_{is}(x_i)q_{is}
+-\sum_{i=1}^{N}\sum_{s\in\{O,N\}}\phi(q_{is})
+-\frac{\beta}{2}Q^2-\frac{r}{2}\sum_iQ_i^2
+-\frac{g}{2}(Q_O^2+Q_N^2).
+\label{eq:nonlinearutility}
+\end{equation}
+Here $Q_i=q_{iO}+q_{iN}=1$, $Q=\sum_iQ_i=N$, $Q_s=\sum_iq_{is}$, $\beta,r,g\geq0$, and $\phi$ is twice continuously differentiable with $\phi''>0$. Only $\alpha_{iN}$ receives the own-region quality increment $f(x_i)$, with $f'>0$; old and new varieties must share \emph{the same} $\phi$. Assume $K$ is convex and twice differentiable, all planting choices are interior and symmetric, and each regional authority receives $CS/N$. These restrictions are part of the proposition, not innocuous normalization.
+
+Write $H_\phi(q)=q\phi''(q)$ and $L_\phi=K''(a)+\phi''(1-a)+\phi''(a)>0$. The planting Jacobian is $L_\phi I_N+2g\mathbf1\mathbf1^\top$; its own-minus-average response to one region's research shock is $f'(x)(N-1)/(NL_\phi)$. The precise local--national research wedge is
+\begin{equation}
+G_{i,x_i}-W_{x_i}
+=\frac{f'(x)(N-1)}{NL_\phi}
+\bigl[H_\phi(1-a)-H_\phi(a)\bigr].
+\label{eq:nonlinearwedge}
+\end{equation}
+Under $f'(x)>0$ and $L_\phi>0$, the sign therefore equals the sign of
 \begin{equation}
  H(1-a)-H(a),
  \label{eq:curvature}
@@ -142,7 +159,7 @@ provided the remaining prefactors are positive.
 For the symmetric interior adoption equilibrium of the restricted anonymous separable-demand class, and assuming an invertible adoption Jacobian and positive response multipliers, the curvature contribution to the local--national research wedge changes sign according to \eqref{eq:curvature}. In particular, adoption share $a=1/2$ is curvature-neutral when old and new own-demand curvature functions coincide.
 \end{proposition}
 \begin{proof}
-Under the restricted Jacobian $L I+2g\mathbf 1\mathbf 1^\top$, subtracting the equation for a nonshocked region from the shocked-region equation cancels the common interaction. The own-minus-average response equals $(N-1)f'(x)/(NL)$. The old and new output components weight this difference by $(1-a)\phi''(1-a)$ and $a\phi''(a)$, respectively. Their difference yields \eqref{eq:curvature}. \texttt{Prop2N.lean} certifies the conditional Jacobian inversion for general $N$; the economic restriction on the demand class is essential.
+Differentiate the competitive farmer planting equations implied by \eqref{eq:nonlinearutility}. Their Jacobian in the adoption shares is $L_\phi I_N+2g\mathbf1\mathbf1^\top$, whose eigenvalue on the zero-sum planting subspace is $L_\phi$. Subtracting any nonshocked-region response from the shocked-region response therefore cancels the common $g$ component. Averaging across regions gives the exact own-minus-average response $f'(x)(N-1)/(NL_\phi)$. Differentiating each region's producer receipts and its $1/N$ consumer-surplus share, while applying the national welfare envelope theorem, leaves precisely the price-incidence term $H_\phi(1-a)-H_\phi(a)$ multiplied by that response. This yields \eqref{eq:nonlinearwedge} and \eqref{eq:curvature}. \texttt{Prop2N.lean} verifies the conditional response algebra in Lean; the economic utility-to-Jacobian derivation is provided here, not claimed as a separate Lean proof.
 \end{proof}
 Asymmetric old/new curvature can produce a nonzero wedge even at half adoption. Thus this proposition is not a universal theorem for arbitrary nonlinear demand.
 
