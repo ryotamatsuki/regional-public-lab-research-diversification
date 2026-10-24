@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-25 JST.
 **Project:** Regional Public Breeding and Variety Replacement: Decentralized Research Incentives and National Welfare.
-**Branch:** \`research/2026-10-24-ijio-response-audit\`. Draft PR #2.
+**Branch:** `research/2026-10-24-ijio-response-audit`. Draft PR #2.
 **Frozen scope:** existing Lemma 1, P1, adoption-gap corollary, restricted nonlinear P2, exact global P3+ and separately checked nonzero-e cases. No economic primitives, formulas, proofs, theory scope, author statements or LaTeX edited.
 
 ## 1. Canonical decision and next-stage contract
@@ -19,7 +19,7 @@ Stage 6's final bounded claim has already been recorded in checkpoint 25 and Sta
 
 ### Reconciliation with checkpoint 13's harsh editor decision
 
-Checkpoint \`13_editorial_completeness_decision/REPORT.md\` found **NO-GO AS FRAMED** for a general/full three-proposition theory article and conditional value for a *short, single-problem agricultural diagnostic note*. That finding is **retained**, not overridden. The decisive new conditions are:
+Checkpoint `13_editorial_completeness_decision/REPORT.md` found **NO-GO AS FRAMED** for a general/full three-proposition theory article and conditional value for a *short, single-problem agricultural diagnostic note*. That finding is **retained**, not overridden. The decisive new conditions are:
 1. Checkpoint 25 **explicitly abandoned general theorem novelty** and closed old parent absorption only for a modest institutional application; and
 2. Checkpoint 26 **showed** the actual nationwide P3+ welfare loss is strictly real-cost/consumer-value welfare, not accounting rent transfers, while institutional primary sources and failed portability have been recorded.
 
@@ -45,19 +45,19 @@ Standard competitive welfare KKT, marginal-envelope arithmetic, generic rent-shi
 ## 3. Minimal causal chain and assumption criticality
 
 The indispensable chain is:
-\`regional public quality x_i\` -> \`grower best-response planting a_i(x)\` -> \`four-product prices and producer incomes\` -> \`territorial public G_i with own producer income + CS/2 - real research cost\` -> \`national W=sum G_i\` -> \`conditional efficiency but research-stage wedge and possible exact welfare reversal\`.
+`regional public quality x_i` -> `grower best-response planting a_i(x)` -> `four-product prices and producer incomes` -> `territorial public G_i with own producer income + CS/2 - real research cost` -> `national W=sum G_i` -> `conditional efficiency but research-stage wedge and possible exact welfare reversal`.
 
 **Essential to exact baseline theorem:**
 - Two public quality-choice leaders with nonnegative continuous x; distinct private price-taking growers who allocate fixed single-region land between old and new outputs; national common demand and *real* convex conversion/research costs.
-- Public objective \`G_i=Pi_i+CS/2-C_i\`; national \`W=G_1+G_2\` without double counting nominal prices. CS/2 is **an assumption about regional valuation, not a fact about Japan**.
+- Public objective `G_i=Pi_i+CS/2-C_i`; national `W=G_1+G_2` without double counting nominal prices. CS/2 is **an assumption about regional valuation, not a fact about Japan**.
 - Additive own-new-variety utility increment with specified demand B; positive definiteness/unique competitive adoption; exact feasibility and globally checked effort best-response and planner constraints.
-- P1 signed crossing needs specified symmetric interior branch, \`xi>0\`, \`a_star\` in (0,1) for an admissible reversal, plus stricter conditions for actual xD vs xP ranking.
+- P1 signed crossing needs specified symmetric interior branch, `xi>0`, `a_star` in (0,1) for an admissible reversal, plus stricter conditions for actual xD vs xP ranking.
 - P2's claim holds ONLY for identical old/new separable inverse-demand curvature in the specified symmetric interior N-region class; asymmetric curvature destroys half-share neutrality.
-- P3+ interval \`zc=(-4+sqrt(13))/12 < z <=0\` and exact \`e=j=0\` family. At z=zc, FOUR Nash profiles, hence boundary excluded. The interacting e>0 exact example is separate, not an analytic all-e theorem.
+- P3+ interval `zc=(-4+sqrt(13))/12 < z <=0` and exact `e=j=0` family. At z=zc, FOUR Nash profiles, hence boundary excluded. The interacting e>0 exact example is separate, not an analytic all-e theorem.
 
 **Facilitating restrictions/nontransferable scope:** unit land normalization, linear-quadratic demand and conversion/cost shape for exact closed forms; fixed old/new total region resources; no research uncertainty; static research/adoption order; no licensing/royalties in baseline, no emissions, time-to-maturity, yield/disease resistance or private R&D decision. These assumptions prevent broad transfer to Cournot/Bertrand industries or calibrated orchard policy.
 
-**Actual preregistered falsification already completed:** quartic real R&D cost retains the qualitative harmful positive Nash (T1), unequal old/new curvature yields \`-1/16\` even at half adoption (T2), quartic conversion technology retains the specified P1 incidence sign \`7/151\` at tested point (T3); separate e=1/100 coupling example survives. These are bounded tests, not generic robustness claims.
+**Actual preregistered falsification already completed:** quartic real R&D cost retains the qualitative harmful positive Nash (T1), unequal old/new curvature yields `-1/16` even at half adoption (T2), quartic conversion technology retains the specified P1 incidence sign `7/151` at tested point (T3); separate e=1/100 coupling example survives. These are bounded tests, not generic robustness claims.
 
 ## 4. Explicit Stage 7.5 completeness checklist
 
@@ -67,7 +67,7 @@ The indispensable chain is:
 | WHY downstream efficiency does not imply efficient public research? | ANSWERED / COMPLETE | Conditional welfare/competitive KKT versus local/global research envelope |
 | WHEN is local research excessive or insufficient? | ANSWERED IN MODELED DOMAIN | P1 exact sign; actual Nash-vs-planner comparison only on certified global symmetric interior equilibria; no empirical threshold |
 | Is harm possible even with continuous convex research costs and price-taking farmers? | ANSWERED IN EXISTENCE SCOPE | Exact P3+ interval and all 3 adoption regimes, globally unique national zero |
-| Is welfare loss real rather than only geographic redistribution? | ANSWERED / COMPLETE | \`W=V-sum K-sum C\` and full feasible-space square completion |
+| Is welfare loss real rather than only geographic redistribution? | ANSWERED / COMPLETE | `W=V-sum K-sum C` and full feasible-space square completion |
 | Does sign analysis survive credible cost/demand change? | ANSWERED CONDITIONAL / NEGATIVE RESULTS PRESERVED | T1, T2, T3 and objective/finance variants; no general transfer |
 | Model itself only relabels AFJ 2001 or milk advertising? | BOUNDED PRIOR-ART CLAIM CLOSED | Stage 6 permanently downgrades general mechanism to institution-specific application; generic part declared known. No first-ever theorem claim |
 | Does current note produce material economic learning? | YES FOR COMPACT APPLICATION-FOCUSED AUDIENCE, SUBJECTIVE | Explicit separation of upstream territorial financing from efficient downstream adoption and signed threshold + global public-research counterexample |
@@ -84,7 +84,7 @@ The indispensable chain is:
 ## 5. Independent skeptical editor versus positive publishable case
 
 **Hostile desk-reject argument (material and unresolved as a publication risk):**
-Everything abstractly important is textbook producer-price incidence or old beggar-thy-neighbor public/private promotion with endogenous supply response; proof rigor does not imply a new mechanism; exact analytic P3+ slice \`e=0\` has no strategic BR reaction, so describing the result as strict "R&D rivalry" may exaggerate; half CS objective and fixed land are stylized, and zero optimum is an uncalibrated parameter case. The algebraic P2 curvature is another restricted envelope specialization, not a third independent contribution. The case for 6,000–8,000 words of general theory would be weak. A top agriculture or IO editor could rationally desk reject.
+Everything abstractly important is textbook producer-price incidence or old beggar-thy-neighbor public/private promotion with endogenous supply response; proof rigor does not imply a new mechanism; exact analytic P3+ slice `e=0` has no strategic BR reaction, so describing the result as strict "R&D rivalry" may exaggerate; half CS objective and fixed land are stylized, and zero optimum is an uncalibrated parameter case. The algebraic P2 curvature is another restricted envelope specialization, not a third independent contribution. The case for 6,000–8,000 words of general theory would be weak. A top agriculture or IO editor could rationally desk reject.
 
 **Positive case if clearly and economically presented:**
 Focusing on territorial publicly funded breeding—real decentralized agricultural research institutions—rather than a new general theory provides an interpretable welfare diagnostic with clear allocation of decisions and feasible constraints. It identifies both the source and the adoption composition of a concrete *public* research distortion and supplies a fully global (not interior-only) counterexample, with a genuine coupled Nash separately checked and negative sensitivity results disclosed. The technical apparatus is proportional to the answer and may justify publication as a concise *application-specific* economic-theory article in an established agricultural field venue. This is more than mechanically renaming advertising because decision rights and the benchmark explicitly determine the incidence of regional producer vs nationwide consumer welfare.
@@ -122,9 +122,9 @@ Intro must answer in prose by the second paragraph: *What does a regional agricu
 - Anchor this in real prefectural public lab/varietal adoption institutions from OECD/MAFF; no invented empirical cases or numerical calibrations.
 - One priority sentence: no claim to have discovered generic overpromotion or efficient competitive allocations; the contribution is a fully solved public-lab/competitive planting institutional game with adoption-threshold incidence and global welfare counterexample.
 - Put Lemma on fixed-x conditional adoption efficiency in environment; treat standard welfare KKT succinctly.
-- P1: introduce adoption-composition wedge \`xi(a_star-a)\` with exact admissibility and feasible-global-rank caveats. The observed-adoption gradient can be an interpretation, not a new theorem/policy program.
+- P1: introduce adoption-composition wedge `xi(a_star-a)` with exact admissibility and feasible-global-rank caveats. The observed-adoption gradient can be an interpretation, not a new theorem/policy program.
 - P2: restricted nonlinear characterization, failure of equal-curvature under asymmetric-old-new demand, in bounded robustness subsection; no universal demand result.
-- P3+: strong global positive-Nash versus social-zero interval; explicitly distinguish \`e=j=0\` lack of BR coupling from \`e>0\` separate interaction example; distinguish profitable unilateral positive R&D from mutually harmful positive spending.
+- P3+: strong global positive-Nash versus social-zero interval; explicitly distinguish `e=j=0` lack of BR coupling from `e>0` separate interaction example; distinguish profitable unilateral positive R&D from mutually harmful positive spending.
 - Tables/figures: zero compulsory; optional one timing diagram only if editorial benefit. No decoration or fabricated welfare plots.
 - Prove mathematical claims in paper facing chain while keeping verbose algebra, Lean, 9-branch enumeration and code mapping in appendix/supplement. AI declaration and bibliographic completeness remain separate required submission checks.
 - No new policy intervention, empirical extension, third player, old/new firms with Cournot power or public/privately mixed model to rescue high-prestige IO aspirations.
@@ -139,7 +139,7 @@ No result above is a GO for a new question. No additional theorem, mathematical 
 
 ## 9. Verification, falsifiers, handoff
 
-- **Inputs/execution:** reread actual repository checkpoints 13, 17, 20, 23, 25, 26 and current \`paper.tex\`; assessed canonical workflow v2.9 Stage 7.5 and explicit older skeptical-editor record. Queried BAE and ARER official 2026-10-25 guidelines and BAE published 2016/2021/2025 article records. No new symbolics, Lean build, compiler tests, detailed published paywalled parent-text access or outside author review was performed in this stage.
+- **Inputs/execution:** reread actual repository checkpoints 13, 17, 20, 23, 25, 26 and current `paper.tex`; assessed canonical workflow v2.9 Stage 7.5 and explicit older skeptical-editor record. Queried BAE and ARER official 2026-10-25 guidelines and BAE published 2016/2021/2025 article records. No new symbolics, Lean build, compiler tests, detailed published paywalled parent-text access or outside author review was performed in this stage.
 - **Novelty regression threshold:** If new source establishes that P1 + P3+ are a direct paper-wide public-breeding game specialization with the same objectives, stage-1 regional Nash, stage-2 grower conversion, and global W result, revert to Stage 6. Never interpret current internal GO as complete priority proof.
 - **Editorial falsifier:** If a field editor reasonably finds no explanatory difference beyond renaming standard advertising, preserve that rejection evidence; do not assume mathematical kernel PASS guarantees field relevance.
 - **Next Stage 7.5A:** Compare each precise headline sentence to theorem scope; reuse 3 independent preregistered portability attacks and Lean 4.35.0 mathlib-v4.35.0 green 107-declaration/axiom audit (Stage 8 checkpoint 19), distinguishing kernel-certified statements from full paper economic primitives and unformalized e>0 globality; require real author substantive intellectual/proof signoff before unconditional 7.5A GO. Existing prior 7.5A blocker "FORMALIZATION APPLICABLE — NOT TESTED" is stale after actual Lean build; do not simply copy it. Reassess completeness/proof fidelity, without inflating Lean scope. Then formal Stage 8 freeze and Stage 11 may follow in canonical order.
