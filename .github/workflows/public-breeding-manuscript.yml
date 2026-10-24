@@ -1,0 +1,28 @@
+name: Public Breeding Manuscript PDF
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-24/20_stage9_10_manuscript/**'
+      - '.github/workflows/public-breeding-manuscript.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra latexmk
+      - name: Compile paper and bibliography
+        working-directory: checkpoints/2026-10-24/20_stage9_10_manuscript
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error paper.tex
+          test -s paper.pdf
+          if grep -E 'Citation.*undefined|There were undefined references|undefined citations|LaTeX Error' paper.log; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-breeding-stage10-paper
+          path: checkpoints/2026-10-24/20_stage9_10_manuscript/paper.pdf
