@@ -5,7 +5,9 @@ on:
     branches:
       - research/2026-10-24-ijio-response-audit
     paths:
-      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/**'
+      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/paper.tex'
+      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/references.bib'
+      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/verify_integration.py'
       - '.github/workflows/public-breeding-stage13.yml'
   workflow_dispatch:
 
