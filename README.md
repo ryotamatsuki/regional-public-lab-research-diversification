@@ -35,3 +35,9 @@ No new theorem, model extension, literature claim, manuscript revision, or journ
 ## Current Boundary
 
 The project is **not novelty-certified**. Public-laboratory labels, local-government objectives, generic R&D duplication, generic business stealing, and generic portfolio diversification are not contribution claims by themselves.
+
+## Saved research checkpoint (2026-10-24)
+
+The owner requested preservation of the exploratory audits and model candidates developed up to 2026-10-24. See [the checkpoint index](checkpoints/2026-10-24/README.md), including the [latest public-breeding and varietal-replacement research note](checkpoints/2026-10-24/04_varietal_replacement/research_note_ja.md), verification code, and saved results.
+
+These are research candidates, not novelty-certified or submission-ready results. The checkpoint preserves earlier alternatives separately and does not replace the existing unresolved prior-art status. No third-party paper PDFs are included.
