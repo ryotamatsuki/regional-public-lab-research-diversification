@@ -62,8 +62,11 @@ theorem cutoff_global_gain_nonpositive
       have hg : regionalGain zCut x = zCut+x-1-x^2 := by
         simp [regionalGain, ha]
         ring
+      have hzc := zCut_nonpos
+      have hxmul : 0 ≤ x*(x-1) :=
+        mul_nonneg hx (by linarith)
       rw [hg]
-      nlinarith
+      nlinarith [hxmul]
     · have hhi : x < 2-zCut := lt_of_not_ge hhigh
       rw [gain_middle zCut x hlo hhi]
       have hd := middle_global_max zCut x
@@ -87,7 +90,13 @@ theorem cutoff_exact_best_response_set
         have hg : regionalGain zCut x = -x^2 := by
           simp [regionalGain, ha]
         rw [hg] at heq
-        nlinarith
+        have hsq : x^2=0 := by linarith
+        have hnpos : ¬ 0 < x := by
+          intro hp
+          have hsqpos : 0 < x^2 := sq_pos_of_pos hp
+          linarith
+        have hzero' : x = 0 := by linarith
+        exact (hzero hzero').elim
       · have hlo : -zCut < x := lt_of_not_ge hlow
         by_cases hhigh : 2-zCut ≤ x
         · have ha := plant_upper zCut x hlo hhigh
