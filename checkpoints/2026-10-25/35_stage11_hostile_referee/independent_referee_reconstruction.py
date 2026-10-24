@@ -90,7 +90,7 @@ print("PASS exact off-path KKT & global-effort candidate deviations across three
 # phiOld''=1, phiNew''=2; grower K''=1; N=2, g=0, f'=1.
 # Same incidence decomposition as original P2 primitive demand, not equal-phi hypothesis.
 share=S.Rational(1,2); curvature_old=1;curvature_new=2
-own_response=1/(curvature_old+curvature_new+1)
+own_response=S.Rational(1,curvature_old+curvature_new+1)
 wedge=(share*curvature_old-share*curvature_new)*own_response*S.Rational(1,2)
 assert wedge==-S.Rational(1,16)
 print("PASS P2 unrestricted midpoint-neutrality falsified: wedge = -1/16")
