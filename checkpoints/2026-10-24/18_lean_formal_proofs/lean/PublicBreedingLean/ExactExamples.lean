@@ -1,5 +1,4 @@
 import Mathlib
-import PublicBreedingLean.Prop3Global
 
 /-!
 # Proposition 3: exact-rational original benchmark and interacting benchmark
