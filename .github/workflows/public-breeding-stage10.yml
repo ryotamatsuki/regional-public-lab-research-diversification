@@ -1,0 +1,49 @@
+name: Public Breeding Stage 10 Manuscript QA
+
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-25/32_stage10_manuscript/**'
+      - '.github/workflows/public-breeding-stage10.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-breeding-stage10-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  manuscript-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen mathematical content, proof statements and references
+        run: python checkpoints/2026-10-25/32_stage10_manuscript/verify_manuscript.py
+      - name: Build full paper with bibliography
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper.tex
+          working_directory: checkpoints/2026-10-25/32_stage10_manuscript
+          work_in_root_file_dir: true
+          latexmk_use_xelatex: false
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Verify PDF and unresolved citations/references
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd checkpoints/2026-10-25/32_stage10_manuscript
+          test -s paper.pdf
+          ! grep -iE 'undefined citations|citation .* undefined|undefined references|reference .* undefined|LaTeX Error' paper.log
+          pdfinfo paper.pdf | grep -E '^Pages:|^Page size:|^File size:'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-breeding-stage10-revised-manuscript-pdf
+          path: checkpoints/2026-10-25/32_stage10_manuscript/paper.pdf
+          retention-days: 30
