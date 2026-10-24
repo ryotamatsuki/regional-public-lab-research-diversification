@@ -1,0 +1,100 @@
+{
+  "exact_rational_identity_checks": 12,
+  "outside_consumer_exact_checks": 6,
+  "examples": [
+    {
+      "delta": 0.8,
+      "x_local": 0.15610510046367848,
+      "x_national": 0.125,
+      "adoption_local": 0.26352395672333845,
+      "adoption_national": 0.25,
+      "W_local": 18.510985609482834,
+      "W_national": 18.5125,
+      "loss": 0.0015143905171655092,
+      "best_response": 0.1561051004636892,
+      "numerical_national_optimum": [
+        0.12499987001072888,
+        0.12500116155600294
+      ],
+      "min_demand_eigenvalue": 0.35000000000000026,
+      "threshold": 0.49999999999999994,
+      "parameters": [
+        0.5,
+        0.6,
+        0.45,
+        0.6,
+        1.0,
+        1.0,
+        0.8,
+        2.0
+      ]
+    },
+    {
+      "delta": 1.7,
+      "x_local": 0.3438948995363216,
+      "x_national": 0.37500000000000006,
+      "adoption_local": 0.7364760432766616,
+      "adoption_national": 0.7500000000000001,
+      "W_local": 19.410985609482836,
+      "W_national": 19.412499999999998,
+      "loss": 0.0015143905171619565,
+      "best_response": 0.34389489953632735,
+      "numerical_national_optimum": [
+        0.37499950627502554,
+        0.3749996914935012
+      ],
+      "min_demand_eigenvalue": 0.35000000000000026,
+      "threshold": 0.49999999999999994,
+      "parameters": [
+        0.5,
+        0.6,
+        0.45,
+        0.6,
+        1.0,
+        1.0,
+        1.7,
+        2.0
+      ]
+    }
+  ],
+  "release_game": {
+    "retention_fixed_cost_upper": 0.08556678898148462,
+    "no_program_national_W": 18.400000000000002,
+    "social_profiles": {
+      "(True, False)": {
+        "gross_W": 18.467499999999927,
+        "x": [
+          0.14999968846280942
+        ],
+        "per_program_gain_over_none": 0.0674999999999244
+      },
+      "(True, True)": {
+        "gross_W": 18.5124999999998,
+        "x": [
+          0.12500045932931347,
+          0.12499972949852411
+        ],
+        "per_program_gain_over_none": 0.0562499999998991
+      }
+    },
+    "no_program_optimal_if_F_above": 0.0674999999999244,
+    "counterexample_F": 0.075,
+    "net_nash_W": 18.360985609482835,
+    "absolute_welfare_loss": 0.039014390517168346,
+    "strict_local_retention_margin": 0.010566788981484623,
+    "net_social_single_W": 18.392499999999927,
+    "net_social_both_W": 18.3624999999998,
+    "entry_x_against_no_program": 0.15769230769231368,
+    "entry_gain_against_no_program": 0.022548076923076366,
+    "both_local_Nash": [
+      0.15610510046367848,
+      0.15610510046367848
+    ]
+  },
+  "limitations": [
+    "The marginal wedge applies to the interior conditional on both programs operating; release_game separately checks the discrete participation margin.",
+    "Quality R&D only; no endogenous research direction or R&D success risk.",
+    "Numerical examples use equal regional consumer shares; outside_consumer_audit separately verifies the symmetric cross-generation case with nonproducing consumers. Identical tastes, fixed acreage and yield are maintained.",
+    "Global optimization checks are numerical, not uniqueness proofs."
+  ]
+}
