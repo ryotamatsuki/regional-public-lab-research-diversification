@@ -24,6 +24,8 @@ SYMBOLIC_TESTS = (
     "checkpoints/2026-10-24/21_stage11_adversarial_preflight/check_nonlinear_primitive.py",
     "checkpoints/2026-10-24/17_stage4A_75A_certification/verify_portability_compact.py",
     "checkpoints/2026-10-24/17_stage4A_75A_certification/verify_p3_boundary_multiplicity.py",
+    "checkpoints/2026-10-24/14_full_paper_reopen_p3_analytic_open_set/verify_analytic_wasteful_rd.py",
+    "checkpoints/2026-10-24/14_full_paper_reopen_p3_analytic_open_set/verify_positive_e_global_nash.py",
 )
 
 
