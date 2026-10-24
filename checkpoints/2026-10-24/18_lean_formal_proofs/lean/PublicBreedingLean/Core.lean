@@ -75,9 +75,9 @@ theorem conditional_adoption_global
 theorem p1_half_share (h j e : ℝ)
     (hj : e = 2*j) (hJ : 2*h-e ≠ 0) :
     (h-j)/(2*h-e) = (1/2 : ℝ) := by
-  field_simp
-  rw [hj] at *
-  nlinarith
+  rw [hj] at hJ ⊢
+  field_simp [hJ]
+  ring
 
 /-- P1A: transform the direct regional/national welfare incidence into
 the adoption-threshold formula. The economic incidence decomposition
@@ -87,7 +87,12 @@ theorem p1_wedge_factorization
     (hJ : 2*h-e ≠ 0) (hL : k+2*h-e ≠ 0) :
     (h-j-(2*h-e)*a)/(2*(k+2*h-e)) =
       ((2*h-e)/(2*(k+2*h-e))) * ((h-j)/(2*h-e)-a) := by
-  field_simp
+  have hnum :
+      h-j-(2*h-e)*a =
+        (2*h-e)*((h-j)/(2*h-e)-a) := by
+    field_simp [hJ]
+    ring
+  rw [hnum]
   ring
 
 /-- P1B: the two symmetric research first-order conditions imply the
@@ -130,7 +135,7 @@ theorem p2_zero_sum_response (L g fp u v : ℝ)
     u-v = fp/L := by
   have h : L*(u-v) = fp := by
     linear_combination hown-hother
-  apply (div_eq_iff hL).2
+  apply (eq_div_iff hL).2
   nlinarith [h]
 
 /-- The N=2 curvature wedge is driven by the difference of the
