@@ -1,0 +1,67 @@
+# Stage 11 -> Stage 12 bounded handoff: predecessor absorption and provisional venue screen
+
+**Date:** 2026-10-24 (JST). **Repository:** `ryotamatsuki/regional-public-lab-research-diversification`. **Working branch:** `research/2026-10-24-ijio-response-audit`. **Scope:** existing unchanged four-good public-breeding model and frozen Lemma/P1/P2/P3+ only.
+
+## Canonical status and authority
+
+**STAGE 11: NO-GO for unconditional certification and advancement. STAGE 12: PREVIEW ONLY, NOT FORMALLY ENTERED, NOT PASSED.** This is a new *supplementary* decision record, not a reopening or amendment of mathematical model definitions or an assertion of authentic author signoff. It addresses the user's instruction to advance as far as the preconditions allow while respecting the v2.9 pipeline. Do not call this `Stage 12 GO`, `submission ready`, or an updated Stage 8 theory freeze.
+
+Retain the full findings of checkpoint 16 (Stage 6 source absorption), checkpoint 17 (Stage 7.5A and author record), checkpoint 19 (conditional Stage 8), checkpoint 22 (Stage 6/10 refinement) and checkpoint 23 (Stage 11 hostile re-audit). They are incorporated by reference, not silently superseded. No original proofs/equilibria or baseline payoff objectives changed.
+
+## I. Reused and source-inspected predecessor ledger (2026-10-24)
+
+**Lence, Marette, Hayes & Foster (2007), American Journal of Agricultural Economics 89:947–963, DOI 10.1111/j.1467-8276.2007.01036.x.** University-hosted 2006 author working paper FULL PDF visually rechecked:
+https://www.card.iastate.edu/files/publications/pdf/06MWP9.pdf
+
+- WP PDF p.24, printed p.23, **Proposition 1**: the ordering of maximum fixed GDAP development costs at which different cooperative producer organizational regimes and social planner would proceed. Not about Nash continuous effort of two territorial public researchers.
+- WP PDF p.27, printed p.26, **Proposition 2**: ex-post social-welfare ranking, conditional on new GDAP establishment, across competition, monopoly and land/technology-control organizational regimes. Conditional adoption is closely related, not new by itself.
+- WP PDF pp.28–29, printed pp.27–28, **Proposition 3**: nonempty fixed-cost interval in which a more market-powered producer organization induces socially beneficial product development that full competition does not. This is directionally different from candidate P3+'s positive decentralized continuous R&D with a strictly negative welfare difference to nationwide zero.
+- WP PDF pp.6–7 (printed pp.5–6): producer organizations choose whether to incur discrete fixed development/marketing cost and how to control acreage/technology. Candidate: two public agencies choose simultaneous continuous additive *quality* R&D, then competitive farmers choose old/new land proportions; objectives include one-half national consumer surplus and planner uses total surplus. Therefore **no direct proposition-to-proposition isomorphism to Lence WP P1–P3 was found**, as already recorded earlier. This is not a proof of nonabsorption by all general results or of identity between the 2006 WP and 2007 publication.
+
+**Alston, Freebairn & James (2001), AJAE 83:888–902, DOI 10.1111/0002-9092.00217.** Author postprint catalog https://digitalcommons.calpoly.edu/agb_fac/10/ and Oxford publisher record were rechecked. Their noncooperative producer-group advertising versus joint producer-profit benchmark makes overpromotion and beggar-thy-neighbor income displacement **known**. The full published theorem/appendix is still not reliably accessible here: author PDF returned HTTP 403; do not upgrade prior incomplete read-depth. The candidate's public local producer-plus-1/2-national-CS objective, national total-welfare benchmark and fixed-land farmer adoption are different whole-game primitives but not necessarily distinct generic incidence mathematics.
+
+**Balagtas & Kim (2007), AJAE 89:932–946, DOI 10.1111/j.1467-8276.2007.01037.x.** Publisher abstract https://academic.oup.com/ajae/article-abstract/89/4/932/146128 confirms competitive raw-input reallocation across related dairy downstream markets and advertising responses; this ingredient **is prior art**. Published final proof was not exhaustively accessible; prior audit examined the longer original conference draft. Neither article was established to have two independent territorial public quality-R&D Nash leaders. This difference is real institutional context, not an automatic novelty proof.
+
+**Kinnucan & Miao (2000), AJAE 82:672–678, DOI 10.1111/0002-9092.00059.** Publisher https://academic.oup.com/ajae/article-abstract/82/3/672/48595 indicates full-text subscriber restriction and no usable theorem text. **UNRESOLVED** rather than absent prior result.
+
+**Additional predecessor families:** Dixit & Norman (1978), Cardon & Pope (2003), classic incidence/envelope results and rent-shifting games are treated as absorbing generic wasteful demand-enhancement or social-zero-investment sign claims, consistent with checkpoint 16. No priority claim remains for those mechanisms.
+
+## II. Scope-preserving claim absorption / editor decision
+
+1. Conditional farmer efficiency: **ABSORBED** standard competitive welfare/KKT.
+2. P1 general price-income/envelope operator: **ABSORBED** standard calculus. Exact old/new adoption threshold `a*=(h-j)/(2h-e)` is model-specific, subject to all stated admissibility, symmetric interior and equilibrium globality restrictions.
+3. P2: **PARTIALLY ABSORBED** by price-incidence calculus; restricted equal-old/new separable-curvature `H(q)=q phi''(q)` sign result stays a bounded model-specific characterization. Unequal curvature invalidates blanket 1/2 neutrality.
+4. P3+ qualitative positive private/local effort with social optimum zero: **GENERIC PHENOMENON ABSORBED** by earlier promotion/advertising and rent dissipation literature.
+5. P3+ precise globally certified institutional family: **NO DIRECT ISOMORPHISM IN VISUALLY VERIFIED LENCE 2006 WP PROPOSITIONS 1–3**; other final parent sources and whether the added institutional configuration generates independent field-journal-level economic learning remain **UNRESOLVED**. Continuous public quality investment, competitive old/new adoption, national CS transfer and national welfare jointly generate the result; a model-specific new calculation need not be a new *general* theorem. This supports honest, compact agricultural public-finance applied theory framing but not an unrestricted novelty GO.
+6. P3+ open analytic interval has `e=j=0`: no first-stage cross-effect in effort BRs. The `e=0.01` rational candidate is a separately verified interacting example, **not a proved open neighborhood with uniqueness of all asymmetric Nash**. Do not claim otherwise.
+7. The distinction between **unilateral** abandonment of research and **mutual** nonresearch is material: at P3+ symmetric Nash, individual unilateral deviation to zero is unprofitable, although both regional objective values improve if both research efforts stop. This may be the most useful explanatory mechanism, but coordinated over-spending itself is known in AFJ.
+
+**Independent field editor challenge:** A complete mathematical example still risks desk rejection as an agricultural relabeling of rent-shifting advertising. For a modest established applied agricultural economics journal, a focused 'efficient adoption can coexist with inefficient territorially financed quality R&D' insight with a sharp adoption share/curvature test and exact global welfare counterexample is **plausible but not yet independently certified as adequate**. There is no calibration, fiscal implementation theorem or generic e>0 comparative statics. **Stage 6 remains CONDITIONAL; do not falsely mark GO.**
+
+## III. Provisional Stage 12 journal-candidate universe (NOT ranked by prestige)
+
+Pre-existing cross-field ledger: `09_provisional_journal_positioning/REPORT.md`. Carry over explicit preferences: **no submission fee and no mandatory publication/page charges**; conventional subscription publication qualifies. Present position uses only surviving theory; it does not propose ad hoc extensions to fit a venue.
+
+| Journal | Provisional fit / article type | Funding and editorial caveat | Decision at this checkpoint |
+| --- | --- | --- | --- |
+| **Agricultural and Resource Economics Review (ARER)** | Short, narrowly framed agricultural public R&D and local policy incentive result. Research Insights (3,000 words) could suit only if actual word count/essential proofs fit; otherwise Research Article | Cambridge official author page describes full OA and no-funding APC waiver; user eligibility/approval needs confirmation. Source: https://www.cambridge.org/core/journals/agricultural-and-resource-economics-review/information/author-instructions | **Most plausible conditional field-journal first look**, not guaranteed review or free until confirmed |
+| **Agricultural Economics (IAAE/Wiley)** | Stronger applied-economics relevance requested; potentially suitable audience if novel welfare implication is made compelling | Official guidelines say no page charges; hybrid conventional route without optional OA APC. Require more editorial significance than a simple theoretical incidence restatement. Source: https://onlinelibrary.wiley.com/page/journal/15740862/homepage/forauthors.html | **Conditional / editorial stretch** |
+| **Journal of Industry, Competition and Trade (JICT)** | Public innovation/adoption competition, broad industry organization methods | More general payoff insight needed; subscription OA/other charges to confirm at submission. Source: https://link.springer.com/journal/10842/aims-and-scope | **Secondary conditional, not current first target** |
+| **Journal of Agricultural and Applied Economics (JAAE)** | Agricultural adoption and policy relevance | Full OA; Cambridge APC USD 2,740 nominal absent agreements/waiver, waiver available by eligibility. Empirical and policy leverage may be expected. Source: https://www.cambridge.org/core/journals/journal-of-agricultural-and-applied-economics/information/author-instructions/fees-and-pricing | **Conditional on waiver and substantive fit** |
+| Journal of Agricultural Economics (UK JAE) | Relevant but stronger broad agricultural economics case needed | No page/submission fees but at least one Agricultural Economics Society member required, with hardship-appeal route. Source: https://www.onlinelibrary.wiley.com/page/journal/14779552/homepage/forauthors.html | **Financially conditional, not free by default** |
+| Review of Industrial Organization; AJAE; ERAE | Serious established outlets, closest literature strong | Current P1/P2 generic incidence and exact P3+ slice do not support a positive competitiveness assessment | **Not advised as present first submission** |
+| JARE; CJAE | Strong subject fit and strong predecessor representation | Mandatory page charges previously documented in checkpoint 09; current figures not independently refreshed here | **Provisional zero-cost exclusions until author-specific waiver evidence** |
+| Economic Modelling; Applied Economic Perspectives and Policy; Japan and World Economy | Checked as important sector/related-source venues, but no present stronger fit than above | Current model lacks generic innovation policy result or calibration; submission/fee constraints require validation | **Low priority / no GO** |
+
+The ranking above is qualitative, *not an acceptance probability*. No journal submission took place.
+
+## IV. Binding preconditions and scoped next action
+
+- **Stage 6:** Complete or close with disclosed limits the remaining strongest published-theorem mapping (Alston final, Balagtas-Kim final, Kinnucan-Miao) and give an independent editorial significance judgment of the explicitly application-specific whole game. Unavailable paywalled text is recorded as **UNRESOLVED**, never evidence of novelty. A limited model/application claim can remain publishable in principle, but is not automatically novel.
+- **Stage 7.5A / Stage 8:** Check current Lean build and updated formal-statement fidelity against checkpoint 17, documenting that 107 green declarations do not cover the complete economics. Do not confuse the historic 'NOT TESTED' status in checkpoint 17 with the later verified kernel build in checkpoint 19.
+- **Authentic author signoff:** Must review objective, conditional adoption and curvature, excluded P3+ endpoint and difference between unilateral and mutual nonresearch, institutional scope and limited novelty. Only the author can perform this substantive review; checkpoint 17's pending record must not be forged.
+- **Stage 11:** Repeat complete canonical gate only when earlier conditions are met. A Stage 11 GO, not this note, is prerequisite to **formal Stage 12**.
+- **Stage 12** (once unlocked): Current journal instructions/article type and fee eligibility, recent comparable articles, complete venue exclusion ledger, journal ranking by fixed contribution, and external-referee/editorial adequacy. No nominal 'B ranking' automatically guarantees publication.
+- Preserve Draft PR #2 unmerged and main untouched. No theorem, source, Lean code or LaTeX in this operation is modified.
+
+**Summary verdict:** *Stage 11 technical mathematics/exposition PASS in audited scope; Stage 6 novelty CONDITIONAL; actual author review PENDING; full Stage 11 NO-GO; Stage 12 candidate screening performed provisionally but NOT a pipeline stage transition.*
