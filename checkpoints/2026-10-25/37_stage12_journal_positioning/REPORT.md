@@ -2,8 +2,8 @@
 
 **Audit date:** 2026-10-25 JST  
 **Research:** *Regional Public Breeding and Variety Replacement: Decentralized Research Incentives and National Welfare*  
-**Current manuscript:** \`checkpoints/2026-10-25/32_stage10_manuscript/paper.tex\` (blob \`76598a904e931d34587e10deadb5598d0598ec1b\`), 11 A4 pages, 14 references, freeze unchanged.  
-**Gate inputs:** \`17_stage4A_75A_certification/CONTRIBUTION_ROBUSTNESS_CERTIFICATE.md\` (L1 portable constrained KKT; P1 conditionally portable symmetric interior; P2 conditionally portable common-curvature; P3+ model-specific global existence; T2 disproves universal midpoint neutrality), canonical Stage 7.5 \`27_canonical_stage7_5_economic_completeness/REPORT.md\` and Stage 11 \`36_stage11_final_adversarial_referee/REPORT.md\`.
+**Current manuscript:** `checkpoints/2026-10-25/32_stage10_manuscript/paper.tex` (blob `76598a904e931d34587e10deadb5598d0598ec1b`), 11 A4 pages, 14 references, freeze unchanged.  
+**Gate inputs:** `17_stage4A_75A_certification/CONTRIBUTION_ROBUSTNESS_CERTIFICATE.md` (L1 portable constrained KKT; P1 conditionally portable symmetric interior; P2 conditionally portable common-curvature; P3+ model-specific global existence; T2 disproves universal midpoint neutrality), canonical Stage 7.5 `27_canonical_stage7_5_economic_completeness/REPORT.md` and Stage 11 `36_stage11_final_adversarial_referee/REPORT.md`.
 
 **STAGE 12 VERDICT: GO — COMPLETE JOURNAL POSITIONING / SELECT BAE AS PRIMARY, RAFE AS NEXT FULL-ARTICLE FALLBACK, REA AS DIAMOND-OA SAFETY NET.** Selection is **not** a command to submit and not evidence the paper meets each journal's manuscript formatting and AI declaration policy. Stage 13+ journal-specific material, auth/declarations and submission work remain required.
 
@@ -11,11 +11,11 @@
 
 ## 1. Actual paper strength to match against demonstrated journal bar
 
-Institution-specific **diagnostic agricultural public research finance** model, not new general industrial-organization theory. Two territorial public crop breeders independently choose continuous cultivar quality effort before competitive growers allocate a fixed unit of planting land between old/new differentiated goods in a national demand market; government \`G_i=Π_i+CS/2-C_i\` and national \`W=G1+G2\`. Competitive grower decisions maximize national welfare conditional on public quality, but local/national marginal investment wedge depends on adoption composition within specific symmetric interior conditions. P2 restricted *same old/new demand curvature* nonlinear extension: nonidentical curvature defeats 1/2 neutrality. Exact P3+ special family \`e=j=0, z∈(zCut,0]\`: each local globally chooses x>0 while unique global national optimum is x=a=0; national welfare loss real, all farmer adoption corners and research deviations globally checked. Independent rational e>0 interacting example exists, NOT an all-e theorem or all-asymmetric-Nash uniqueness. Concrete funding implementation, actual regional CS geography, empirical market estimates and genetic IP not modeled. Existing generic Beggar-Thy-Neighbor promotion and producer/consumer incidence already known.
+Institution-specific **diagnostic agricultural public research finance** model, not new general industrial-organization theory. Two territorial public crop breeders independently choose continuous cultivar quality effort before competitive growers allocate a fixed unit of planting land between old/new differentiated goods in a national demand market; government `G_i=Π_i+CS/2-C_i` and national `W=G1+G2`. Competitive grower decisions maximize national welfare conditional on public quality, but local/national marginal investment wedge depends on adoption composition within specific symmetric interior conditions. P2 restricted *same old/new demand curvature* nonlinear extension: nonidentical curvature defeats 1/2 neutrality. Exact P3+ special family `e=j=0, z∈(zCut,0]`: each local globally chooses x>0 while unique global national optimum is x=a=0; national welfare loss real, all farmer adoption corners and research deviations globally checked. Independent rational e>0 interacting example exists, NOT an all-e theorem or all-asymmetric-Nash uniqueness. Concrete funding implementation, actual regional CS geography, empirical market estimates and genetic IP not modeled. Existing generic Beggar-Thy-Neighbor promotion and producer/consumer incidence already known.
 
 Stage 11 result **GO only for compact applied agriculture** with material desk-reject exposure: general mechanism familiar, half-CS valuation stylized, key P3+ analytic family lacks cross-effort best-response interaction, no policy implementation/calibration. The journal choice must not drive a new theorem or a fictitious fiscal finding.
 
-**Article scale:** 11 A4 pages with mathematically necessary appendices; quick TeX-to-prose automated count approx **4,526 word-like tokens, not the journal's actual official complete word count**. Current abstract approx **156 words**, JEL codes **4** (\`H41,H77,O32,Q16\`). Accurate journal word-count requires conversion/counted exported editorial text. This is a concise research article, not necessarily a publishable "short note" at every venue.
+**Article scale:** 11 A4 pages with mathematically necessary appendices; quick TeX-to-prose automated count approx **4,526 word-like tokens, not the journal's actual official complete word count**. Current abstract approx **156 words**, JEL codes **4** (`H41,H77,O32,Q16`). Accurate journal word-count requires conversion/counted exported editorial text. This is a concise research article, not necessarily a publishable "short note" at every venue.
 
 ## 2. Discovery route, target universe, exclusions and source-venue crosscheck
 
@@ -97,10 +97,10 @@ https://www.degruyterbrill.com/journal/key/jafio/html explicitly theoretical/emp
 | Item | Current manuscript | Requirement / needed action |
 | --- | --- | --- |
 | Economics and theorem scope | Stage11 GO bounded | **FROZEN**: no additional generalized R&D claim just to reach journal |
-| File | LaTeX \`paper.tex\` and PDF | BAE primary requires **Word/OpenOffice/RTF editable** manuscript, with TeX math accurately converted; RAFE standard Cambridge route accepts formats per refreshed rules |
+| File | LaTeX `paper.tex` and PDF | BAE primary requires **Word/OpenOffice/RTF editable** manuscript, with TeX math accurately converted; RAFE standard Cambridge route accepts formats per refreshed rules |
 | Length | 11 A4 pp, rough stripped text 4,526 words before official editorial accounting | BAE Full RA **normally 6–8k** incl references/appendices; verify word-count on actual converted source, do not pad to hit an arbitrary number; editor discretion for shorter articles; REA Short Comm ~4–5k incl references but proof-heavy |
 | Abstract | approx **156 words** | BAE **<=150**. Trim at least 6 while keeping parameter restrictions and social-zero result |
-| JEL | **4** | BAE **max 3**, drop one based on content, likely \`H41,H77,Q16\` while \`O32\` may be retained instead of \`H41\` depending classification |
+| JEL | **4** | BAE **max 3**, drop one based on content, likely `H41,H77,Q16` while `O32` may be retained instead of `H41` depending classification |
 | Highlights | None | BAE **3–5 separate editable bullets <=85 characters each** |
 | Title page | Anonymous manuscript only | separate identifiable author-title page; correct affiliation/personal institutional authorization status, no invented university |
 | AI use | substantial AI-assisted literature, text, code, theorem proofs & validation | BAE **mandatory named "Declaration of generative AI and AI-assisted technologies"** section, no AI authorship, complete scope; RAFE Cambridge disclosure similarly necessary. Must be truthful, not represent CI as human proof verification |
@@ -133,7 +133,7 @@ Publisher instructions may change; refetch at actual submission stage. No infere
 
 ## 8. Change control, status and handoff
 
-No theory/manuscript/model/references/Lean file modified in this Stage 12. Draft PR #2 remains unmerged and source \`paper.tex\` unchanged. Journal target selection and comparison are documentary only.
+No theory/manuscript/model/references/Lean file modified in this Stage 12. Draft PR #2 remains unmerged and source `paper.tex` unchanged. Journal target selection and comparison are documentary only.
 
 **Stage 12 GO** because broad candidate universe and near-parent venue crosscheck, source-based editorial-value comparison, guaranteed $0 paths and conditional waiver distinction, article type compatibility, fallback routes, exclusion logic, and concrete primary-journal format/declarations are all recorded.
 
