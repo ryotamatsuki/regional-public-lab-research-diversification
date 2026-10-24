@@ -42,5 +42,5 @@ for delta in [s.Rational(4,5),s.Rational(17,10),s.Rational(17,50)]:
 assert rows[0]['xD']=='101/647' and rows[1]['xD']=='445/1294' and rows[2]['xD']=='389/6470'
 checks.append('three exact-rational baseline symmetric equilibrium values reproduced')
 res={'all_checks_pass':True,'symbolic_checks':checks,'baseline_equilibria':rows,'literature_scope':'Math checks validate only the candidate algebra; not exact parent-theorem novelty or full-paper absorbability.'}
-open('/mnt/data/public_breeding_prior_absorption_audit.json','w').write(json.dumps(res,indent=2,ensure_ascii=False))
+open('public_breeding_prior_absorption_audit.json','w').write(json.dumps(res,indent=2,ensure_ascii=False))
 print(json.dumps(res,indent=2,ensure_ascii=False))
