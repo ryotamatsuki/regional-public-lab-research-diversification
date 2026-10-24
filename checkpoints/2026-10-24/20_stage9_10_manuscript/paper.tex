@@ -99,7 +99,7 @@ At a symmetric interior equilibrium of the planting subgame, the difference betw
  \frac{dG_i}{dx_i}-\frac{dW}{dx_i}=\xi(a^\star-a).
  \label{eq:wedge}
 \end{equation}
-When $\xi>0$, the sign reverses as adoption passes through $a^\star$. The formula is an interior, linear-demand statement; it does not assert that the global research equilibrium is interior for every parameter value.
+When $\xi>0$ and $a^\star\in(0,1)$, the wedge is positive for $a<a^\star$ and negative for $a>a^\star$. An interior threshold is essential for a sign change within the feasible adoption domain. The formula is an interior, linear-demand statement; it does not assert that the global research equilibrium is interior for every parameter value.
 \end{proposition}
 \begin{proof}
 The national envelope derivative is $dW/dx_i=a_i-Rx_i$ because the adoption allocation is conditionally efficient. For the local government, producer receipts and its half-share of consumer surplus respond to the induced adoption of both regions. Differentiate \eqref{eq:local} using \eqref{eq:adoptionmatrix}; at symmetry, the response matrix has eigenvalues $M$ and $L$. Collecting the difference from the national envelope yields
@@ -129,6 +129,14 @@ Under the preceding interior and globality conditions,
 \begin{proof}
 Subtract the two research first-order conditions in \eqref{eq:efforts} and use $a^P=(z+x^P)/M=Rx^P$. The second equality follows directly from the symmetric adoption equation. The corresponding algebra is checked in \texttt{Core.lean}.
 \end{proof}
+
+When both benchmarks are indeed global interior solutions on the same symmetric adoption branch, the national-welfare cost has the additional closed form
+\begin{equation}
+W(x^P,x^P)-W(x^D,x^D)
+=\left(R-\frac{1}{M}\right)(x^D-x^P)^2\geq0,
+\label{eq:interiorwelfarecost}
+\end{equation}
+because $W(x,x)$ is a concave quadratic with vertex $x^P$ under $RM>1$. The claim is a \emph{conditional equilibrium comparison}, not an extension to the corner planner in Proposition 3. This square-completion identity is separately checked in \texttt{Core.lean}.
 
 \subsection{Demand curvature and the scope of the sign result}
 The nonlinear result concerns a separate, explicitly restricted class with $N\geq2$ identical regions, unit land per region, and a national quasilinear gross-utility function
@@ -242,6 +250,8 @@ The pre-freeze falsification exercises show that the harmful-research phenomenon
 
 \subsection{Nonzero cross-region interaction}
 The analytic family in Section 4 has $e=0$. A distinct rational parameter example with $e=1/100$ yields positive symmetric public research $x^D=9751/130096$ and adoption $a^D=1051/32524$, with the national optimum again at zero and a negative welfare difference $-1933000423/211562115200$. Its local cross-research derivative is $-50/39999<0$. The global unilateral best response was checked by exact arithmetic across the nine adoption KKT regimes, whereas the Lean module \texttt{ExactExamples.lean} certifies the exact candidate and planner-welfare identities, \emph{not} a full Lean proof of nine-regime Nash globality or uniqueness of all asymmetric equilibria.
+
+A distinct, earlier benchmark uses $A=10$, $t=1/2$, $b=n=3/5$, $c=9/20$, $k_0=\kappa=1$, $R=2$, and $\Delta=17/50$ (so $e=3/10$). Exact piecewise unilateral-deviation verification gives the symmetric Nash research effort $x^D=389/6470$ and planting share $a^D=141/6470$; the national optimum is again zero, with welfare loss $2569157/418609000$. The example has nonzero competitive coupling and is not the analytic $e=0$ family of Proposition 3. Here too, Lean checks rational candidate and planner identities but not the complete piecewise Nash certificate.
 
 \subsection{Interpretation and external validity}
 A regional public breeder may rationally finance a quality improvement because the induced private variety replacement redistributes agricultural product-market rents. The national welfare effect also counts displaced rents and the real fiscal cost of research. The analysis does not imply that actual public breeding budgets should be eliminated: it abstracts from disease resistance, climate adaptation, spillovers to future varieties, uncertain discoveries, farmer heterogeneity, and institutional intergovernmental transfers. The model is a diagnostic benchmark for distinguishing adoption efficiency from research efficiency.
