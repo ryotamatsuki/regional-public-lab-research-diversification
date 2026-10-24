@@ -5,6 +5,7 @@ on:
       - research/2026-10-24-ijio-response-audit
     paths:
       - 'checkpoints/2026-10-25/35_stage11_hostile_referee/**'
+      - 'checkpoints/2026-10-25/32_stage10_manuscript/**'
       - '.github/workflows/public-breeding-stage11-final.yml'
   workflow_dispatch:
 permissions:
