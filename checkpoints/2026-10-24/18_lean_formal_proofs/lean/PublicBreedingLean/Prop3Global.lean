@@ -1,5 +1,4 @@
 import Mathlib
-import PublicBreedingLean.Core
 
 /-!
 # Proposition 3+: exact global optimality over ALL planting regimes
