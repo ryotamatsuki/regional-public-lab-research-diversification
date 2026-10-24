@@ -43,13 +43,16 @@ jobs:
           from pathlib import Path
           from zipfile import ZipFile, ZIP_DEFLATED
           with ZipFile('JAFIO_LaTeX_Submission.zip', 'w', ZIP_DEFLATED) as archive:
-              for source, target in [('paper.tex','paper.tex'), ('references.bib','references.bib'), ('SUBMISSION_README.md','README.md')]:
+              for source, target in [('paper.tex','paper.tex'), ('references.bib','references.bib'), ('SUBMISSION_README.md','README.md'), ('dgruyter.sty','dgruyter.sty'), ('jafio-chicago-local.bst','jafio-chicago-local.bst')]:
                   text = Path(source).read_text()
                   for token in ['ryotamatsuki', 'github.com/', '/workspace/', 'checkpoints/']:
                       assert token not in text.lower(), (source, token)
                   archive.write(source, target)
+              archive.write('logos/dg-degruyter.pdf', 'logos/dg-degruyter.pdf')
           print('Anonymous source package created; external author/policy approval still required')
           PY
+      - name: Build and test anonymous bounded reproducibility supplement
+        run: python checkpoints/2026-10-25/43_jafio_submission_optimization/make_blinded_supplement.py --test
       - uses: actions/upload-artifact@v4
         with:
           name: regional-public-breeding-jafio-review-and-source
@@ -58,6 +61,7 @@ jobs:
             checkpoints/2026-10-25/43_jafio_submission_optimization/paper.log
             checkpoints/2026-10-25/43_jafio_submission_optimization/paper.bbl
             checkpoints/2026-10-25/43_jafio_submission_optimization/JAFIO_LaTeX_Submission.zip
+            checkpoints/2026-10-25/43_jafio_submission_optimization/JAFIO_Blinded_Reproducibility.zip
           retention-days: 30
   lean-proof-core:
     runs-on: ubuntu-latest

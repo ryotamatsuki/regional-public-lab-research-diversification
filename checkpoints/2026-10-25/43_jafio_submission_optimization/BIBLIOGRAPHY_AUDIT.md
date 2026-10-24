@@ -30,3 +30,11 @@ This is a bibliographic identity audit. It does not certify every substantive in
 Retain all 14 existing entries. Do not change correct issue years to DOI online/backfile years. Do not remove Foster’s documented middle initial simply because Crossref has a shorter display name. Preserve the protected R&D and Honeycrisp capitalization and the LaTeX accents for Stéphan Marette and Metin Çakır. DOI case is immaterial.
 
 Any newly added Winfree–McCluskey entry must be checked separately for online-versus-issue year and article number; the JAFIO-fit audit owns that addition and the substantive comparison.
+
+## Chicago author–date output adaptation
+
+The publisher's downloaded reference-style document (`JAFIO` journal reference-style link; title “REFERENCE STYLE CHICAGO MANUAL OF STYLE author date”, version 1.2, 27 March 2024) specifies alphabetical order, first-author surname inversion, year after authors, quotation marks for article titles, journal volume and issue followed by pages, and DOI URLs. The original `plainnat` output does not meet those examples.
+
+`jafio-chicago-local.bst` is a **local project adaptation**, not an official JAFIO style or a publisher-certified implementation. It is derived from Patrick W. Daly's LPPL-licensed `plainnat.bst`, with original copyright/license notices retained and a new filename. For the article and book types present in this paper it changes name order, date placement, title punctuation, volume/issue/page presentation and DOI URLs; alphabetic sorting and natbib author–date labels remain supported. Three-author in-text labels list all names; four or more use et al. Article numbers can be supplied with the inherited `eid` field. Other entry types retain inherited behavior and are not certified against the publisher guide.
+
+A clean scratch test of all 15 current records ran BibTeX and repeated pdfLaTeX successfully, with no BibTeX warnings or undefined references/citations. The actual manuscript's final CI and PDF appearance must still be checked separately. Set natbib's author/year separator to an empty string (e.g. `\setcitestyle{authoryear,round,aysep={}}`) for Chicago parenthetical citations. Title capitalization is intentionally preserved from `.bib`; editorial Title Case changes do not alter bibliographic identity. The local style must accompany LaTeX source packages.

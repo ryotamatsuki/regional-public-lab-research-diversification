@@ -20,3 +20,8 @@ Date: 2026-10-25 JST. Base: checkpoint38 paper.tex at branch head 5689ab04971d1e
 - Final independent editorial audit found three repairable issues: added a first linear-demand subsection so Section3 has two subheads; supplied the existing e=1/100 example's omitted n=21/100, Delta=49/100 parameters relative to (17), checked against the exact script; replaced the AI declaration's internal review-scope shorthand with concrete content.
 - The invariance checker preserves every original math expression and separately records/asserts the sole parameter-clarification addition. No theorem assumption changes.
 - Set bibliography in a grouped small font to prevent a single-reference overflow page; mathematical text font is unchanged.
+
+- Subsequently retrieved and applied the actual official LaTeX package. Vendor dgruyter.sty and logo are unchanged; a legacy babel compatibility guard and current English language configuration reside in paper.tex. No fictional publication metadata.
+- Retrieved the full journal Chicago author-date style sheet; replaced provisional plainnat output with a tested, explicitly local LPPL adaptation. Bibliographic title capitalization changed for presentation only.
+- Added factual pure-theory/no-participants/no-animals statement and identified completed anonymous Supplementary Material; no unverified human authorship contribution or funding added.
+- All original equations/theorem statements remain identical under official template conversion; only front-matter syntax changes.

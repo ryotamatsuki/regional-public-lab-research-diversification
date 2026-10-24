@@ -4,7 +4,7 @@ Verified date: 2026-10-25 JST. **Overall CONDITIONAL / NOT READY for final submi
 
 ## Current official evidence
 
-The 2025-10-11 author guide supersedes the older 2024 guide. Its indexed sections were retrieved; direct publisher PDF requests returned HTTP 405. It was not downloaded or visually inspected in full.
+The 2025-10-11 author guide supersedes the older 2024 guide. The complete 12-page official PDF was subsequently downloaded through direct urllib access and its full extracted text inspected. Web open had returned HTTP 405; that earlier access limit is superseded for this guide.
 
 | Item | 2025 guide requirement or evidence | Status/action |
 | --- | --- | --- |
@@ -22,11 +22,11 @@ Source: https://www.degruyterbrill.com/publication/journal_key/JAFIO/downloadAss
 
 ## Journal route and source-file preparation
 
-Official homepage welcomes theoretical articles and notes. **Choose Research Article**, because this manuscript needs linked results and globally sufficient proofs, rather than selecting Note merely because some examples are short. Current article-category-specific limits in the separate Manuscript Checklist remain unverified.
+Official homepage welcomes theoretical articles and notes. **Choose Research Article**, because this manuscript needs linked results and globally sufficient proofs, rather than selecting Note merely because some examples are short. The full 2025 guide p.2 explicitly lists Research Article and Note, alongside Review, Book Review, Letter, Editorial, Economic Perspectives, Erratum, Comment and Reply. Category-specific length limits in the separate Manuscript Checklist remain unverified.
 
 Source: https://www.degruyterbrill.com/journal/key/jafio/html
 
-The older official manuscript-preparation guide explicitly accepts LaTeX, requests a PDF where mathematical material is present, links a journal LaTeX package, and places appendices before references. The 2025 guide's verified indexed sections do not contradict native LaTeX, but current exact upload slots, template package contents, equation-symbol formatting and appendix order were not independently downloaded. Use .tex/.bib and PDF, preserve a self-contained source ZIP, and verify portal conversion before final submission. Do not describe an ordinary article.cls file as the official journal template. The old flexible heading-case instruction is superseded by the 2025 Title Case instruction.
+The older official manuscript-preparation guide explicitly accepts LaTeX, requests a PDF where mathematical material is present, links a journal LaTeX package, and places appendices before references. The complete 2025 guide confirms appendix placement before references (p.12), consecutively numbered editable displayed equations when referenced, Latin/Greek symbols (p.11), and supplementary files no larger than 10 MB each (p.12). Exact current portal slots and template compatibility require separate testing. Use .tex/.bib and PDF, preserve a self-contained source ZIP, and verify portal conversion before final submission. Do not describe an ordinary article.cls file as the official journal template. The old flexible heading-case instruction is superseded by the 2025 Title Case instruction.
 
 Older official preparation guide:
 https://www.degruyterbrill.com/publication/journal_key/JAFIO/downloadAsset/JAFIO_MANUSCRIPT%20PREPARATION%20GUIDELINES.pdf
@@ -34,7 +34,7 @@ https://www.degruyterbrill.com/publication/journal_key/JAFIO/downloadAsset/JAFIO
 Official linked template URL (existence of link verified; ZIP compatibility not certified):
 https://www.degruyter.com/publication/journal_key/JAFIO/downloadAsset/JAFIO_LaTeX-Template%20for%20Authors.zip
 
-Older 2024 author guide corroborates double-blind review and a separate title-page upload. The newer guide and actual portal must control any further changes. Anonymous referee files should have no identifying GitHub URLs, real author names, email, affiliations, local home paths or identifying PDF metadata. Audit scripts and the repository are author-facing working material; their existence does not make them suitable blinded supplementary files automatically.
+Older 2024 author guide corroborates double-blind review and a separate title-page upload. The complete 2025 guide independently confirms separate title-page requirements (p.9), including a short title of at most 75 characters, correspondence details and manuscript/table/figure/supplement counts. The actual portal must control any further changes. Anonymous referee files should have no identifying GitHub URLs, real author names, email, affiliations, local home paths or identifying PDF metadata. Audit scripts and the repository are author-facing working material; their existence does not make them suitable blinded supplementary files automatically.
 
 https://www.degruyterbrill.com/publication/journal_key/JAFIO/downloadAsset/JAFIO_Instructions%20for%20Authors.pdf
 
@@ -64,7 +64,7 @@ Source: https://www.degruyterbrill.com/publishing/about-us/new-website-faqs/auth
 
 The publisher policy rejects AI-generated papers, excludes AI authorship, requires disclosure of substantial output and research-method use, and leaves responsibility with human authors. Simple proofreading receives different treatment. This project's actual assistance extends beyond proofreading. The policy is not interpreted here as an automatic ban on all AI-assisted research, or as automatic acceptance once a disclosure is added. The human intellectual contribution and review record remains necessary; seek publisher clarification if the production process falls into its ambiguous AI-generated-paper boundary.
 
-Source: https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence (indexed policy dated September 2026; direct fetch restricted).
+Source: https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence (complete HTML retrieved by direct urllib; September 2026 policy date and full policy text inspected).
 
 See AI_USE_AND_AUTHOR_ACCOUNTABILITY.md for the factual record and proposed disclosure. Do not mark this gate PASS solely because Lean, SymPy or agents audited the paper.
 
@@ -78,3 +78,19 @@ See AI_USE_AND_AUTHOR_ACCOUNTABILITY.md for the factual record and proposed disc
 - Research Article source ZIP, peer-review PDF, separate real title page, cover letter and publisher forms ready before actual final submission.
 
 No final submission, journal communication, main-branch change or merge is performed by this checklist.
+
+## Final format implementation — supersedes earlier provisional format notes
+The complete 2025-10-11 guide, official linked LaTeX ZIP and Chicago Author-Date
+Reference Style Sheet have now been downloaded and inspected. The paper applies
+the unmodified official dgruyter.sty (and official logo), with an English/legacy
+babel compatibility guard in paper.tex. No dummy DOI or acceptance data are used.
+The template's generic numbered-reference example is superseded by the
+journal-specific Chicago author-date style sheet. A clearly labelled LOCAL LPPL
+adaptation of plainnat, jafio-chicago-local.bst, implements the 15 article/book
+entries; it is not publisher-issued. Citation parentheses/year punctuation,
+surname-first references, quoted article titles, year position, volume/issue,
+page/article number and DOI URLs were checked. Appendices precede references.
+Current headings have at least two sibling subheadings where subdivided.
+Anonymous exact-code/Lean supplement was built and independently extracted/run;
+it is below the 10MB per-file limit. Remaining portal verification and actual
+author declarations are not resolved by these technical checks.

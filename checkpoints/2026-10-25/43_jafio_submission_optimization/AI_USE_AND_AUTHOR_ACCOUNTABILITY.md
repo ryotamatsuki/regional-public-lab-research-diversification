@@ -37,8 +37,7 @@ sessions have not been established and are not invented.
 ## Current publisher policy gate
 Official policy URL:
 https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence
-Search-indexed policy is labelled “As of September 2026”; direct page retrieval
-returns 405 in this environment. It rejects AI-generated papers and places full
+Full policy HTML was downloaded directly and inspected; it is labelled “As of September 2026”. Web-open initially returned 405, but direct retrieval subsequently succeeded. It rejects AI-generated papers and places full
 responsibility on human authors, while discussing disclosed AI assistance.
 Disclosure is necessary but is not proof that the research meets the human
 scholarly-contribution requirement. No claim is made that the publisher has

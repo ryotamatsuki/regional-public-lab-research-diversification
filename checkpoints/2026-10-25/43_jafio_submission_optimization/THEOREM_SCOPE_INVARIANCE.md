@@ -38,3 +38,11 @@ The Stage 6 downgrade remains binding: general price incidence, overpromotion an
 Run `python checkpoints/2026-10-25/43_jafio_submission_optimization/verify_jafio.py` from the repository root with SymPy 1.13.3 installed. The runner executes Stage 9, the independent Stage 11 script, and unchanged Stage 10/13 source checks. After a clean LaTeX/BibTeX build, it also rejects unresolved references/citations and checks the PDF signature. The combined workflow rebuilds the proof core in a separate job and uploads the review PDF, log, resolved bibliography, and minimal anonymous LaTeX source ZIP.
 
 PDF page rendering/visual review, current publisher policy, bibliographic primary-source verification, and substantive human-author accountability remain distinct checks. They must not be marked PASS from this script alone.
+
+## Final official-template conversion
+The official template changes front-matter syntax to abstract/keywords commands
+and the typography of the existing environments. Original theorem text, displays,
+and inline math still match; the same separately asserted existing-example
+parameter clarification is the sole added math notation. The checked original
+equation labels and proposition numbering are preserved. Bibliography style and
+title capitalization are editorial changes, not theory changes.

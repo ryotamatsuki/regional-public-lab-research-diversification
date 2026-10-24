@@ -1,23 +1,30 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,natbib}
-\usepackage[hidelinks]{hyperref}
+\documentclass[USenglish]{article}
+\makeatletter\@ifundefined{l@ngerman}{\@namedef{l@ngerman}{255}}{}\makeatother
+\usepackage[big,online]{dgruyter}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools,booktabs}
+\usepackage[authoryear]{natbib}
+\hypersetup{hidelinks}
+\setcitestyle{authoryear,round,aysep={},yysep={,},notesep={, }}
 \setlength{\emergencystretch}{3em}
+\raggedbottom
 \newtheorem{lemma}{Lemma}
 \newtheorem{proposition}{Proposition}
 \newtheorem{corollary}{Corollary}
 \newtheorem{remark}{Remark}
-\title{Regional Public Breeding and Variety Replacement: Decentralized Research Incentives and National Welfare}
-\author{Anonymous manuscript}
-\date{}
 \begin{document}
-\maketitle
-\begin{abstract}
+\articletype{Research Article}
+\title{Regional Public Breeding and Variety Replacement: Decentralized Research Incentives and National Welfare}
+\runningtitle{Regional Public Breeding and Variety Replacement}
+\author{Anonymous manuscript}
+\runningauthor{Anonymous}
+\abstract{
 Can efficient private variety replacement coexist with nationally inefficient public breeding research? We study two regional public laboratories that invest in new-variety quality before competitive growers allocate fixed land between old and new varieties in a nationally integrated, differentiated-product market. Growers' planting decisions maximize national welfare conditional on research, but regional research incentives reflect the territorial distribution of producer returns and consumer surplus. On a symmetric interior branch of the linear-demand model, the difference between regional and national marginal incentives depends on the new-variety planting share and can change sign. A restricted nonlinear-demand extension identifies the role of common old- and new-variety demand curvature. In an exact parameter family, each region's unique global best response entails positive research, while the unique national optimum is zero research and adoption. The resulting national welfare loss is established over all planting regimes and nonnegative research deviations; the excluded boundary has multiple research equilibria. Research best responses are independent in this analytic family, although regional payoffs remain interdependent. The results distinguish efficient crop replacement from efficient public support for its development under the stated demand and public-objective assumptions; they do not estimate actual breeding returns or identify an optimal policy instrument.
-\end{abstract}
-
-\noindent\textbf{Keywords:} public agricultural research; variety replacement; regional governments; product differentiation; national welfare\\
-\textbf{JEL:} H77, O32, Q16.
+}
+\keywords{public agricultural research; variety replacement; regional governments; product differentiation; national welfare}
+\maketitle
+\noindent\textbf{JEL:} H77, O32, Q16.
 
 \section{Introduction}
 If competitive farmers replace crop varieties efficiently, does it follow that public investment in developing those varieties is efficient? The two decisions belong to different actors. A public laboratory improves variety quality; growers subsequently choose how much land to convert. A quality improvement changes not only the attractiveness of the new variety but also market prices, returns to established varieties, and consumer surplus. A regional authority may therefore assess the same research differently from a national welfare planner.
@@ -35,7 +42,7 @@ The interpretation is deliberately limited. Each regional government values one-
 
 \section{Economic Environment}
 \subsection{Timing, Goods, and Public Objectives}
-There are two regions, $i\in\{1,2\}$, each with one unit of agricultural land. All players know the market primitives, and growers observe the research choices before deciding how to plant. The old and new varieties in region $i$ are denoted $O_i$ and $N_i$. In stage 1, the regional public laboratory chooses $x_i\geq 0$, a quality-enhancing research effort for $N_i$. In stage 2, price-taking growers choose the share $a_i\in[0,1]$ of land planted to $N_i$, so quantities are $q_{O_i}=1-a_i$ and $q_{N_i}=a_i$. Consumer markets then clear. Governments correctly anticipate the competitive stage-2 outcome. The end matter discloses substantive AI assistance with drafting, source comparisons, verification code and formalization; the analytical proofs below state their arguments independently of those tools.
+There are two regions, $i\in\{1,2\}$, each with one unit of agricultural land. All players know the market primitives, and growers observe the research choices before deciding how to plant. The old and new varieties in region $i$ are denoted $O_i$ and $N_i$. In stage 1, the regional public laboratory chooses $x_i\geq 0$, a quality-enhancing research effort for $N_i$. In stage 2, price-taking growers choose the share $a_i\in[0,1]$ of land planted to $N_i$, so quantities are $q_{O_i}=1-a_i$ and $q_{N_i}=a_i$. Consumer markets then clear. Governments correctly anticipate the competitive stage-2 outcome. This theoretical study involves no human participants, animals or personal data. The end matter discloses substantive AI assistance with drafting, source comparisons, verification code and formalization; the analytical proofs below state their arguments independently of those tools.
 
 For $q=(q_{O_1},q_{N_1},q_{O_2},q_{N_2})^\top$, national gross utility is
 \begin{equation}
@@ -295,7 +302,7 @@ Efficient competitive variety replacement need not imply efficient regional publ
 OpenAI ChatGPT assisted literature searches and comparisons, substantive manuscript drafting and revision, symbolic-verification code, and the development and review of Lean formal proof files. This assistance extended beyond language correction. Source-record checks, exact symbolic calculations and formal verification provide distinct, bounded checks; they do not replace human scholarly judgment or establish originality. The author has attested review of the theory's assumptions, conditional planting efficiency, restricted demand-curvature result, global research and welfare comparisons, and verification boundaries. The method and extent of independent human rederivation are not documented in the available research record. The human author is responsible for verifying and approving the submitted text, mathematical arguments, interpretations and references. AI tools are not authors.
 
 \section*{Data and Code Availability}
-This is a theoretical study and uses no empirical dataset. Symbolic-verification scripts and formal proof sources form part of the associated reproducibility materials; the verification scope is described in the appendices. Any supplementary code supplied for review must be stripped of identifying repository metadata.
+This is a theoretical study and uses no empirical dataset. Symbolic-verification scripts and formal proof sources form part of the associated reproducibility materials; the verification scope is described in the appendices. Supplementary Material provides anonymous exact-verification scripts and formal proof sources with reproducibility instructions.
 
 \appendix
 \section{Nonlinear Demand: Proof from Market Primitives}
@@ -369,7 +376,7 @@ For completeness, an independent example uses $A=10$, $t=1/2$, $b=n=3/5$, $c=9/2
 
 \begingroup
 \small
-\bibliographystyle{plainnat}
+\bibliographystyle{jafio-chicago-local}
 \bibliography{references}
 \endgroup
 

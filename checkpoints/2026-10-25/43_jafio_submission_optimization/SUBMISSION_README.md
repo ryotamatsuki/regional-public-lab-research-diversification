@@ -1,17 +1,17 @@
-# Review source package — provisional
+# Anonymous LaTeX review source
+Compile paper.tex with pdfLaTeX, BibTeX, pdfLaTeX twice, or latexmk -pdf.
+Keep references.bib, dgruyter.sty, jafio-chicago-local.bst and logos/ beside it.
 
-Compile paper.tex with pdfLaTeX, BibTeX, pdfLaTeX twice (or latexmk -pdf).
-Dependencies are standard article, geometry, amsmath/amssymb/amsthm/mathtools,
-booktabs, natbib, hyperref. references.bib must be beside paper.tex.
-This is a portable manuscript using the standard article class, NOT a
-publisher-issued LaTeX template.
+The official journal-linked template package supplies dgruyter.sty and the logo,
+retained unchanged. The local bibliography style adapts plainnat under LPPL to
+the journal's Chicago author-date examples; it is NOT an official publisher
+bibliography style. The source has a small compatibility guard for a legacy
+German-language test in the official style; English is the document language.
 
-The manuscript contains its analytical proofs and explicitly states the bounded
-scope of external symbolic/formal checks. This source archive is not a code
-replication archive and does not certify all economics in a proof assistant.
+No received/accepted dates, journal volume, issue or DOI are invented.
+This is a blinded review draft, not a final publication proof. Supply a separate
+accurate title page and publisher declarations before actual submission.
 
-This is an anonymous review draft, not a complete final submission:
-the author must supply a separate accurate title page and declarations,
-review the final paper and substantive AI disclosure, and resolve publisher
-policy/portal requirements before submission. No empirical dataset is used.
-No author identity, funding, affiliation or conflicts have been fabricated.
+The separate Supplementary Material archive contains exact verification scripts
+and scoped Lean sources. Neither the paper nor the supplement claims that every
+economic derivation is formally certified. No empirical dataset is used.

@@ -48,7 +48,7 @@ def check_editorial_invariants():
     keys = set(re.findall(r'(?m)^@\w+\{\s*([^,\s}]+)', bib))
     citations = {k.strip() for group in find(r'\\cite(?:p|t|author|year)?(?:\[[^]]*\]){0,2}\{([^}]+)\}', new) for k in group.split(',')}
     assert citations == keys, (citations - keys, keys - citations)
-    abstract = find(r'\\begin\{abstract\}(.*?)\\end\{abstract\}', new)[0].strip()
+    abstract = new.split(r'\abstract{', 1)[1].split(r'\keywords{', 1)[0].strip().removesuffix('}').strip()
     words = len(abstract.split())
     assert 100 <= words <= 230, f'abstract {words} words: review approx. 200 recommendation'
     assert '\n\n' not in abstract, 'abstract must be one paragraph'

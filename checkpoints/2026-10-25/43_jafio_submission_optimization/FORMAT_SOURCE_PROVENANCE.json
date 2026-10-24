@@ -1,0 +1,22 @@
+{
+  "official_template_zip": {
+    "bytes": 2681410,
+    "sha256": "d669985fda79c96d976108605a97d1b485763d229f15368fa47b14585d539811"
+  },
+  "author_guide2025": {
+    "bytes": 445542,
+    "sha256": "e4d655c58e382c5d294ebc6bebb00a505471993b4c80618292b5933dd806cbb3"
+  },
+  "reference_style_sheet": {
+    "bytes": 185489,
+    "sha256": "fcd912aeb5fd9425edca3856538f2e2d0a8132443ae2f48ae26bb00bffab6bf6"
+  },
+  "vendor_style": {
+    "bytes": 112460,
+    "sha256": "1168b059f63a43b0b023b57a5a5831e0c812e7e73e1673c73eb563dfdba6f2a1"
+  },
+  "vendor_logo": {
+    "bytes": 20215,
+    "sha256": "f758d20d5eb4ef40640180ef21084576fe9a9781315d512e8f46417b632e70d0"
+  }
+}

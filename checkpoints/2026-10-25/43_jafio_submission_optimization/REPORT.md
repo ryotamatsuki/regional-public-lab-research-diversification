@@ -10,13 +10,13 @@ No journal submission, merge or main update has been performed.
 
 | Criterion | Assessment | Evidence / limit |
 | --- | --- | --- |
-| Mathematical correctness | PASS locally; fresh final-SHA remote gate pending | Statements, displays and inline math byte-identical to Stage13; fresh Stage9/11 plus two interacting-example regressions PASS. Scoped Lean must also rebuild in new CI. |
+| Mathematical correctness | PASS (final revision CI is a required completion gate) | Statements, displays and inline math byte-identical to Stage13; fresh Stage9/11 plus two interacting-example regressions PASS. Unchanged scoped Lean rebuilt with axiom audit in run40129521350; current-source CI must also pass. |
 | Explanation of economic contribution | CONDITIONAL | Public quality choice versus efficient competitive adoption is explicit; modest institutional application. No general-theory priority. Three JAFIO comparator full texts unavailable; targeted Winfree–McCluskey comparison remains incomplete. |
-| Readability | PASS for editorial revision; final CI PDF visual QA pending | 197-word abstract; economic question first, exact arguments preserved, scoped policy interpretation. Standard 11pt article; full build required after latest bibliography change. |
-| JAFIO submission compatibility | CONDITIONAL | Latest indexed 2025 guide checked; actual template/style-sheet/portal compatibility and ethical/legal declarations not complete. |
+| Readability | PASS for editorial revision; final artifact QA required | 197-word abstract; economic question first, exact arguments preserved, scoped policy interpretation. Official journal-linked LaTeX style and Chicago author-date references applied; full current artifact must be checked. |
+| JAFIO submission compatibility | CONDITIONAL | Latest indexed 2025 guide checked; official template/style-sheet implemented; actual portal and ethical/legal declarations remain incomplete. |
 
 ## Changes delivered
-Retained title and all mathematical scope. New abstract, question-led opening,
+Retained title and all mathematical scope; clarified the existing interacting example parameters without changing them. New abstract, question-led opening,
 explicit regional-quality literature comparison, clearer limited evaluation
 implications, Title Case headings and five lowercase keywords. Fifteen cited
 references (14 existing entries metadata-checked plus Winfree–McCluskey2022).
@@ -30,8 +30,13 @@ Stage10/13 original integrity and the second interacting-example active-set test
 Fresh local output is QA_RESULTS.txt. Archived successful CI is not used as
 proof of the new manuscript. The new workflow public-breeding-jafio.yml builds
 LaTeX/BibTeX and unchanged scoped Lean core (with axiom audit), then uploads PDF,
-log, .bbl and anonymous source ZIP. The actual remote run URL, SHA, outcome and
-downloaded-artifact visual review must be recorded after execution.
+log, .bbl and anonymous source ZIP. The fresh pre-template manuscript and unchanged Lean core both passed at
+https://github.com/ryotamatsuki/regional-public-lab-research-diversification/actions/runs/40129521350
+(commit99180fb72132b1658ba54248294298d0efa31a21).
+That run does not certify the subsequent official-template conversion. Current
+revision CI and its downloaded artifacts must also pass; the final completion
+message identifies the exact current commit/run. Current PDF/source hashes can
+be matched to the source archive and accompanying CI artifact.
 
 ## Remaining submission issues
 1. Human substantive contribution, final review and approval of this revised
@@ -43,9 +48,9 @@ downloaded-artifact visual review must be recorded after execution.
 3. Targeted full-text comparison of Winfree–McCluskey2022 is incomplete; no
    positive theorem-duplication evidence was found, so no indiscriminate Stage6
    reopening. Obtain text for exact proposition/assumption mapping.
-4. Official LaTeX package, separate Reference Style Sheet and current portal
-   slots/form processing not fully retrieved. Generic article.cls/ plainnat
-   are portable, not falsely certified publisher styles.
+4. Official LaTeX package and Reference Style Sheet have now been retrieved,
+   applied and tested. The BibTeX adaptation is labelled local, not official.
+   Actual portal slots/conversion still require verification.
 5. Actual author title page, ORCID, funding/conflict/contribution declarations,
    cover letter and publisher ethical/legal form remain to be completed.
 6. Standard subscription publication is publisher-supported as no-charge;
@@ -56,6 +61,14 @@ downloaded-artifact visual review must be recorded after execution.
 paper.tex and references.bib are review-facing sources. The submitted source ZIP
 contains only these plus a non-identifying README; audits, repository metadata,
 author-attestation records and GitHub URLs are deliberately excluded. Analytical
-proofs are in the paper. A full blinded replication-code archive is not yet
-claimed complete. Anonymous PDF/source checking does not guarantee anonymity
+proofs are in the paper. A separate blinded exact-verification/Lean-source supplement is complete and its extracted Python runner passes. Its verification boundaries are documented in SUPPLEMENT_SCOPE.md. Anonymous PDF/source checking does not guarantee anonymity
 against public-preprint discovery.
+
+## Final production-source update
+Full 2025 guide and September2026 AI policy are read directly, superseding initial
+web-open restrictions. Official dgruyter.sty/logo retained byte-for-byte;
+jafio-chicago-local.bst implements the journal's Chicago author-date examples for
+this article/book bibliography. Supplement ZIP contains exact unchanged Python
+and Lean source bytes, a pinned Python dependency and neutral hash manifest.
+The source ZIP includes required style files/logo but no internal audit records.
+No final submission has been made.
