@@ -58,7 +58,7 @@ mid=s.factor(regional.subs(a1,(zz+x1)/2))
 opt=(1+3*zz)/13
 adopt=(1+16*zz)/26
 assert s.simplify(s.diff(mid,x1).subs(x1,opt))==0
-assert s.factor(mid.subs(x1,opt)-mid)==s.Rational(13,16)*(x1-opt)**2
+assert s.factor(mid.subs(x1,opt)-mid-s.Rational(13,16)*(x1-opt)**2)==0
 assert s.factor(mid.subs(x1,opt)-(48*zz**2+32*zz+1)/208)==0
 w_at=s.factor(social.subs({x1:opt,x2:opt,a1:adopt,a2:adopt}))
 assert s.factor(w_at-(10*zz-1)*(22*zz+3)/338)==0
