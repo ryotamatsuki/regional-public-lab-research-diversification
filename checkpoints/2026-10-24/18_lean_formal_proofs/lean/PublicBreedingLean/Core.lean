@@ -76,7 +76,7 @@ theorem p1_half_share (h j e : ℝ)
     (hj : e = 2*j) (hJ : 2*h-e ≠ 0) :
     (h-j)/(2*h-e) = (1/2 : ℝ) := by
   rw [hj] at hJ ⊢
-  field_simp [hJ]
+  apply (div_eq_iff hJ).2
   ring
 
 /-- P1A: transform the direct regional/national welfare incidence into
@@ -87,11 +87,14 @@ theorem p1_wedge_factorization
     (hJ : 2*h-e ≠ 0) (hL : k+2*h-e ≠ 0) :
     (h-j-(2*h-e)*a)/(2*(k+2*h-e)) =
       ((2*h-e)/(2*(k+2*h-e))) * ((h-j)/(2*h-e)-a) := by
+  have hid : ((h-j)/(2*h-e))*(2*h-e)=h-j := by
+    field_simp [hJ]
   have hnum :
       h-j-(2*h-e)*a =
         (2*h-e)*((h-j)/(2*h-e)-a) := by
-    field_simp [hJ]
-    ring
+    calc
+      _ = ((h-j)/(2*h-e))*(2*h-e)-(2*h-e)*a := by rw [hid]
+      _ = _ := by ring
   rw [hnum]
   ring
 
