@@ -1,0 +1,25 @@
+{
+  "retrieved_date_jst": "2026-10-25",
+  "method": "urllib.request direct publisher downloads; text extraction inspected",
+  "guide": {
+    "url": "https://www.degruyterbrill.com/publication/journal_key/JAFIO/downloadAsset/JAFIO_Instructions%20for%20Authors%20JAFIO.pdf",
+    "bytes": 445542,
+    "sha256": "e4d655c58e382c5d294ebc6bebb00a505471993b4c80618292b5933dd806cbb3",
+    "pages": 12,
+    "dated": "2025-10-11"
+  },
+  "ai_policy": {
+    "url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence",
+    "bytes": 90628,
+    "sha256": "226d1e54e39900584c0f1c86702f735f5e0780505d088bdb83ea402e6d6fb602",
+    "dated": "September 2026"
+  },
+  "article_fulltexts": {
+    "dois": [
+      "10.1515/jafio-2019-0051",
+      "10.1515/jafio-2023-0062",
+      "10.1515/jafio-2025-0004"
+    ],
+    "status": "Unavailable; direct /pdf requests and 12 old-domain/license/de/html variants returned HTTP202 with zero-byte text/html bodies. No article PDF obtained."
+  }
+}

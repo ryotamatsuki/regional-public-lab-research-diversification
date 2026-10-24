@@ -1,0 +1,28 @@
+name: Public Breeding Stage 11 Hostile Referee Reconstruction
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-25/35_stage11_hostile_referee/**'
+      - 'checkpoints/2026-10-25/32_stage10_manuscript/**'
+      - '.github/workflows/public-breeding-stage11-final.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hostile-math-and-manuscript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install fixed symbolic environment
+        run: python -m pip install -r checkpoints/2026-10-25/31_stage9_reproducibility/requirements.txt
+      - name: Independently derive game from four-good utilities and falsify inflated claims
+        run: python checkpoints/2026-10-25/35_stage11_hostile_referee/independent_referee_reconstruction.py
+      - name: Check Stage 10 frozen theorem statements and all 14 source links
+        run: python checkpoints/2026-10-25/32_stage10_manuscript/verify_manuscript.py
+      - name: Regression of all Stage 9 pinned sources and exact tests
+        run: python checkpoints/2026-10-25/31_stage9_reproducibility/verify_all.py

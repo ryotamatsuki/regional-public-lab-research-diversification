@@ -1,0 +1,105 @@
+# Canonical Stage 6 — Novelty Re-Kill (2026-10-24)
+
+**Project checkpoint:** 16_canonical_stage6_novelty_rekill (the number 16 is project artifact numbering, NOT canonical workflow Stage 16).  
+**Canonical Stage 6 verdict:** **CONDITIONAL GO — one blocker: evidence-scoped theorem absorption and full-paper editorial distinctiveness of P3+**.  
+**NOT:** Stage 6 GO, Theory Freeze, Stage 7.5A GO, submission GO, or model change.
+
+## A. Application-stripped economic object
+
+Two territorially separate authorities simultaneously choose costly continuous quality/demand investment x_i>=0, maximizing G_i=regional producer income + 1/2 common consumer surplus - R*x_i^2/2. Competitive followers choose a_i in [0,1] allocating one unit of constrained land between legacy and upgraded differentiated output. Four prices form in a common competitive goods market via V(q;x), q=(1-a1,a1,1-a2,a2); the planner maximizes W=G1+G2. No fixed R&D setup fee, patent rent or oligopoly seller action.
+
+P1: in symmetric interior with h=1-t, j=b-c, e=b+n-2c, L=kappa+2h-e, wedge
+(G_i)_(x_i)-W_(x_i)=[(2h-e)/(2L)]*(a_star-a), a_star=(h-j)/(2h-e).
+P2: restricted separable symmetric nonlinear inverse demand: wedge sign governed by H(1-a)-H(a), H(q)=q*phi''(q); NOT arbitrary nonlinear preferences.
+Farm Lemma: for fixed x, follower KKT = national optimum over a, including corners. Corollary: for symmetric interior Nash and interior planner, aD-aP=(xD-xP)/M; this is simple algebra, not new independent theorem.
+P3+: for exact original baseline slice t=1/2,b=c=n=1/5,k0=kappa=1,R=2,Delta=1/2+z and z in ((-4+sqrt(13))/12,0], xD=(1+3z)/13>0,aD=(1+16z)/26>0 are the unique research Nash, while national global xP=aP=0 and WD-W0=(10z-1)(22z+3)/338<0. Both regions prefer *mutual* non-research to the mutually positive Nash. **This analytic slice has e=j=0, so there is NO first-stage cross-strategic R&D response**. A separate *exact numerical rational instance* with e=1/100 has strictly negative effort cross-partial and a symmetric Nash with W<W0, but has no complete all-asymmetric-equilibria uniqueness proof.
+
+Stage6 mathematical claims are conditional on existing exact-rational model/proof certificates; mathematical truth DOES NOT CERTIFY novelty.
+
+## B. Literature re-kill: original source versions, exact mechanisms, reading depth
+
+Source S1, **Dixit and Norman (1978), Advertising and Welfare**, Bell Journal of Economics 9:1-17, DOI/reference https://ideas.repec.org/a/rje/bellje/v9y1978ispringp1-17.html . Accessible 1976 author version (Warwick 34-page PDF) https://warwick.ac.uk/fac/soc/economics/research/workingpapers/1968-1977/twerp082.pdf visually examined at sample page; published abstract explicitly establishes the private-profitable-vs-socially-overdone investment result. **Fisher and McGowan (1979), Advertising and Welfare: Comment**, https://doi.org/10.1017/CBO9780511572180.016 , explicitly explain that a bare outward demand shift can be relabeled product-improvement R&D and warn about welfare-of-changing-tastes comparisons. **Verdict: generic negative welfare from demand-shifting investment is old.** Our true quality enters utility V(q;x), not mere deceptive advertising; changing utility welfare comparisons matters.
+
+Source S2, **Alston, Freebairn, James (2001), Beggar-Thy-Neighbor Advertising**, AJAE 83(4):888-902, https://doi.org/10.1111/0002-9092.00217 . The accessible full-text-like original article transcript https://www.academia.edu/171777158/Beggar_thy_Neighbor_Advertising_Theory_and_Application_to_Generic_Commodity_Promotion_Programs provides original eqs 1-14 and source discussion around Figure 2 (noncooperative advertising, cross-commodity producer loss, producers mutually benefiting from reducing advertising). Their explicitly stated demand-related goods have independent supply functions Q_i=S_i(P_i), and local producer groups maximize commodity profit minus advertising, while the cooperative comparator sums producers' PROFITS, expressly excluding consumer welfare. Our q_iO+q_iN=1 farm planting KKT + own fraction of national CS + national full welfare differ materially. Their source expressly acknowledges that supply links could be added, so it is false to claim nonabsorption solely because baseline supply is independent. **Verdict: generic P3 rent-shift and profitable bilateral reductions already known; exact public-R&D/adoption theorem not directly isomorphic under their displayed eqs, but full article/appendix absorption remains uncertain.** Read depth: original model, equilibrium discussion, selected formula and conclusions; not all appendices verified.
+
+Source S3, **Balagtas and Kim (2007), Measuring the Effects of Generic Dairy Advertising in a Multi-Market Equilibrium**, AJAE 89:932-946, https://doi.org/10.1111/j.1467-8276.2007.01037.x . Refereed publisher abstract https://academic.oup.com/ajae/article-abstract/89/4/932/146128 confirms both related demands and COMPETITIVE REALLOCATION of shared raw milk across downstream products, and that single-market promotion calculations overstate returns. Full accessible earlier author *draft*, titled Beggar-Thy-Self Advertising, https://www.researchgate.net/publication/23506043_Beggar-Thy-Self_Advertising_A_Multi-Market_Model_of_Generic_Promotion_for_Dairy_Products , equations (1)-(14) competitive raw material allocation and (39)-(48) JOINT dairy-producer-maximizing promotion. That is not a noncooperative two-territory public quality-R&D game. **Verdict: resource reallocation as mechanism is old; final published theorem text remains uninspected and its full absorption of candidate unverified.** Crucial bibliography regression: prior Stage 10 only used a meeting draft and failed to treat 2007 AJAE publication as primary. Corrected by Stage 11 onward.
+
+Source S4, **Kinnucan and Miao (2000), Distributional Impacts of Generic Advertising on Related Commodity Markets**, AJAE 82:672-678, https://doi.org/10.1111/0002-9092.00059 . Published Oxford page restricted/for purchase. Only first page and indexed bibliographic facts visible. **Verdict UNRESOLVED**, DO NOT infer formula or proposition from title.
+
+Source S5, **Lence, Marette, Hayes, Foster (2007), Collective Marketing Arrangements for Geographically Differentiated Agricultural Products**, AJAE 89:947-963, https://doi.org/10.1111/j.1467-8276.2007.01036.x . Directly visually inspected full **2006 Iowa State author working paper** https://www.card.iastate.edu/files/publications/pdf/06MWP9.pdf ; specific WP propositions:
+- WP Proposition 1, print page 23 / PDF zero-index 24: ordering of maximum fixed new-product development cost across cooperative grower regimes and social planner.
+- WP Proposition 2, print page 26 / PDF index 27: conditional welfare ordering across market-power organizations, all positive under specific producer association choice.
+- WP Proposition 3, print pages 27-28 / PDF indices 28-29: positive social gains from allowing organizations with market power to develop new regionally differentiated agricultural goods where perfect-competition organization would not.
+Also competitive farmer LAND SHARE / new-old product, choice of innovation quality and consumer/producer welfare. **This fully kills novelty of those ingredients.** Not a noncooperative Nash across two geographically different public R&D agencies with national welfare and fixed-fee-free distortion. **NOT DIRECTLY ABSORBED IN VERIFIED 2006 WP PROP 1–3**, not a universal originality guarantee nor proof the 2007 published text is word-for-word the WP.
+
+Source S6, **Cardon and Pope (2003), Agricultural Market Structure, Generic Advertising, and Welfare**, JARE 28:185-200, https://doi.org/10.22004/ag.econ.31098 and journal https://jareonline.org/articles/agricultural-market-structure-generic-advertising-and-welfare/ . **NEW MATERIAL ANCESTOR DISCOVERED IN THIS PASS.** The original PDF indexed extract contains source Proposition 1 (published print page 193) and marginal welfare equation (24): for persuasive advertising by competitive marketing order vs a MONOPOLIST rival, optimal advertising is zero if raising marketing-order ads lowers monopolist output. Thus the phenomenon "private advertising positive but social planner zero" has a refereed agriculture-economics theorem precedent. Published PDF direct fetch returned 403; provenance is an indexed extract of the PRIMARY PDF, not a verified full visual PDF. **Exact candidate P3+ public-quality/competitive-old-new conversion/game is NOT DIRECTLY ABSORBED BY THE INSPECTED CARDON PROP 1**; no broad first-to-show-social-zero claim is permissible.
+
+Source S7, **Carpio and Isengildina-Massa (2016), Does Government-sponsored Advertising Increase Social Welfare?**, Applied Economic Perspectives and Policy 38(2):239-259, https://doi.org/10.1093/aepp/ppv012 . Publisher abstract/readable author earlier 2013 conference abstract concern public-sponsored demand shifting in a COMPETITIVE downstream market, evaluating prices, consumer welfare and a South Carolina local-food campaign. One social planner picks advertising, not simultaneous two-region public Nash. **Public sponsorship and price-taking markets alone are old; exact two-stage game distinction remains.**
+
+Source S8, **Zhang (2022), Competition and the Negative Expected Social Value of Cost-Reducing Innovation**, Manchester School, https://doi.org/10.1111/manc.12388 . Negative value of an innovation has precedent with patent races, sunk participation and royalty/licensing. Full appendices not inspected in this pass. This source kills an unqualified negative-innovation-value novelty claim, not the exact continuous funded public breeder equilibrium.
+
+Source S9, **Tullock (1980) generic rent-seeking parent class**, see explicit modern contest game https://www.mdpi.com/2073-4336/13/6/83/xml . Noncooperative positive rent-capture effort and social resource waste **does not depend on a fixed entry fee** in well-known contest settings. However, candidate quality directly raises consumer V and followers reallocate fixed acres, whereas Tullock's prize contest uses a success probability. **QUALITATIVE ABSORPTION, NOT DIRECT ISOMORPHISM TO THE STANDARD CONTEST SUCCESS FUNCTION.**
+
+Search cutoff 2026-10-24; no claim of exhaustive world-literature coverage. Original publisher proofs for selected 2000/2007 AJAE studies were inaccessible. Accessible 2005/06 working drafts must never be mislabeled as final articles.
+
+## C. Actual theorem absorption map with falsifiers and status
+
+| Our claim | Concrete parent mapping attempted | Required substantive difference | Stage 6 novelty status |
+|---|---|---|---|
+| Farm Lemma, conditional adoption efficient | Differentiate V−K holding x; consumer price equals competitive inverse demand, KKT coincide | NONE in price-taking welfare calculus | **ABSORBED, DO NOT MARKET AS NEW** |
+| P1 generic marginal price-wedge identity | Producer price income plus partial CS; impose q=q0+Sa; differentiate price response −BS*a_x; use envelope theorem | NONE mathematical; specific market B, x and K produce its coefficients | **ABSORBED mathematical operator**. Distinct economic sign at share threshold may have field interpretive value |
+| Corollary xD-xP vs aD-aP | Symmetric interior farmer a=(z+x)/M; subtract two FOCs | NONE | **ABSORBED algebraic corollary** |
+| P2 nonlinear H(q) | Apply P1 generic incidence at restricted symmetric separable inverse demand; q times price slopes | Extra bounded phi restrictions are within parent family, not an independent game | **PARTIALLY ABSORBED**. Whether specific sign/slope neutrality appeared before is **UNRESOLVED**, not certified innovation |
+| P3+ social-optimal zero vs positive Nash, generic sign | AFJ two noncooperative producer-group ads and joint reduced spending; Cardon/Pope original p.193, Dixit/Norman, Tullock pure rent dissipation | None to recover the headline as *qualitative economics* | **ABSORBED GENERIC PHENOMENON**; first-ever harmful public R&D claim PROHIBITED |
+| P3+ *exact institution-specific analytic family* | Map AFJ x_i=A_i; Balagtas milk realloc→land realloc; Lence new-good acreage a; Cardon advertising A2→xi | Must change original objectives to public own growers+1/2 national CS; introduce market-clearing old/new KKT under shared land; change stage choices from joint producer promotion or monopsony/monopoly to two regional simultaneous **quality** research agencies; eliminate setup cost for Lence and monopolist for Cardon | **NO DIRECT ISOMORPHISM IN VERIFIED MODEL/PROPOSITION SCOPE; UNRESOLVED GLOBAL PARENT-THEOREM NONABSORPTION** |
+| P3+ analytic strictly negative strategic interaction | Inspect research cross partial | In analytic e=j=0, cross partial ZERO; separate e=.01 exact example is true strict substitutes | **RETRACT ANY UNIVERSAL/ANALYTIC STRATEGIC-SUBSTITUTES CLAIM** |
+
+An unprinted formula obtained as a short corollary from a prior general theorem is ABSORBED by the canonical workflow. We must not mistake absence of the same printed word "breeding" or same 50% figure for new mathematics.
+
+## D. Novelty false-positive regression
+
+- **KILLED**: crop land reallocation or multiple product markets are independent novel mechanisms (Balagtas/Kim; Lence et al.).
+- **KILLED**: noncooperative costly quality/demand investing with nationwide socially optimal zero is first-ever (Dixit/Norman, Cardon/Pope, rent seeking).
+- **KILLED**: P1 price-incidence identity and Corollary as new general theorems (standard envelope/KKT).
+- **DOWNGRADED**: P2 arbitrary nonlinear demand generality (only restricted smooth symmetric separable phi class).
+- **DOWNGRADED**: P3+ analytical open interval "real strategic rivalry": e=j=0 within this interval. Nonzero e exact point is genuine robust existence, not universal unique Nash.
+- **RETAINED AS MATHEMATICS**: positive full global local Nash vs planner zero in an interval without fixed cost; strictly e>0 symmetric Nash supporting example. Correctness does not certify independent economic novelty.
+- **CORRECTED EDITORIAL REGRESSION**: Stage 13 said full-paper route requires three individually novel deep theorems; it does not. A well-supported single institutional mechanism plus interpretive comparative statics and welfare implication can be a full applied theory paper, but requires independent editorial adequacy, not a shortcut.
+
+## E. Provisional economic-completeness and editorial challenge (separate from Stage 6 novelty)
+
+**Positive editor pitch:** Local public breeders design improved region-specific quality for private price-taking growers, who choose old/new crops on fixed agricultural land. The *grower adoption itself* solves a conditional social planner problem. Nevertheless, regional public financing fails to internalize price and income spillovers. Adoption composition and demand curvature determine whether the R&D wedge is positive, negative, or neutral. Most strikingly a continuous parameter interval supports a positive globally checked local research Nash despite a unique nationwide research-zero optimum, without patents, fixed entry costs or monopolistic crop producers; an exact e>0 instance preserves it under strategic R&D substitution. This can clarify fiscal decentralization of public agricultural quality investment.
+
+**Hostile field-editor rejection:** All components of this explanation are in familiar cooperative vs noncooperative promotion, market-incidence, competitive land reallocation, and rent-seeking theories. Cardon–Pope already has welfare-optimal advertising zero. The neat analytic P3+ result removes cross-region strategic interaction, so the valuable public laboratory *game* might be a textbook unilateral transfer issue restated in fruit-growing notation. A coupled e>0 instance exists, but no broad nonzero-e characterization was proved. No estimated demand, magnitude or implementable funding mechanism ties the exact thresholds to actual public R&D choices. The paper may be mathematically polished but economically unsurprising and too abstract for a full-length established agricultural field journal. This is a serious unresolved editorial objection, not a mathematically false theorem.
+
+Completeness ledger:
+- WHY the decentralized failure: P1 + conditional-efficiency Lemma **ANSWERED IN MODEL**.
+- WHEN direction reverses: P1 and restricted P2 **ANSWERED IN VERIFIED DOMAINS**.
+- CAN nationally dominated research exist: P3+ full analytic existence **ANSWERED**.
+- Independent generic novelty / value beyond price externality: **ESSENTIAL STAGE-6 BLOCKER**.
+- True sample size / welfare scale in Ehime or elsewhere: **BOUNDED LIMITATION**, no real-world magnitude claims.
+- Implementable fiscal agreement, taxes or authorization: **BOUNDED LIMITATION** only for explicitly diagnostic pure theory (WHY/SHOULD yes, COULD out of scope). If paper promises executable program, it becomes ESSENTIAL instead.
+- Dynamic cohorts/private licensing/irrevocable orchard investments: **FUTURE PAPER**, NOT required in baseline.
+
+Model investment alternatives:
+- **BASELINE FULL PAPER**, owner's preference: retain P1–P3+, Lemma, Corollary, zero model changes. **PREFERRED CONDITIONALLY**, but full editorial case must survive existing parents.
+- **ONE BOUNDED EXTENSION**: federal matching-grant or bilateral public coordination with funding incidence; generic Pigouvian subsidy absorption risk HIGH; new objectives require stages 3/4/4A/6 again; **NOT AUTHORIZED**.
+- **RESEARCH NOTE/REFRAME**: if full-paper distinctive value fails, retain mathematics and honestly downgrade claim. **CONTINGENCY, NOT OWNER-SELECTED ROUTE**.
+
+## F. Two independent Stage 6 outputs and one-stop closure
+
+**A. CURRENT PAPER — CONDITIONAL GO**, not GO/freeze. One blocker: **complete a source-bounded verdict on theorem-level novelty and sufficient full-paper economic learning for P3+ beyond classic cooperative advertising / rent seeking / zero-social-advertising optimum**. Obtain decisive original final theorems from AFJ 2001, Balagtas/Kim 2007 and Kinnucan/Miao 2000 when accessible, recording exact page/proof and version. If paywalls persist after one bounded retrieval, state **UNRESOLVED** and restrict the originality claim to *specific public breeding game and application*, not a novel general theorem. Apply one independent field-editor value judgment to that narrower claim. If the only difference is sector labels, STOP full-paper research with NO-GO, rather than adding arbitrary players or assumptions. This is the ONE Stage6 blocker, not a blanket obligation to establish world-first priority.
+
+**B. FUTURE QUESTIONS (AUDITOR-INFERRED, UNVERIFIED, NOT AUTHORIZED and cannot alter A verdict)**:
+1. Intergovernmental public-breeding coordination under credible **fiscal incidence and budget-balance**. New knowledge: when regional governments can implement nationwide planner's research choices with self-financed grants/agreements and grower benefit spillovers. Parent kill: standard Pigouvian incentive alignment and fiscal federalism. Minimal falsifier: if linear marginal subsidy trivially decentralizes all relevant corners without any contract or budget constraint being binding, abandon. Status UNRESOLVED / PROPOSED ONLY.
+2. Long-lived orchards with **irreversible replacement of heterogeneous vintages** and anticipatory regional research. New knowledge: whether sunk planting creates a dynamic R&D bias not reducible to today's convex conversion K. Parent kill: classic vintage-capital and irreversible-adoption games. Minimal test: solve minimal 2-period irreversible allocation and compare with static wedge, STOP if only relabeling K. Status UNRESOLVED / PROPOSED ONLY.
+
+**Scope permitted today:** a bounded and checkable application statement, not priority over all previous theory: region-specific publicly financed quality effort with competitive fixed-land cultivar conversion yields an adoption-dependent regional-national welfare wedge and a fully proved no-fixed-fee positive local investment/zero national optimum in a nonempty analytic parameter interval, with separately checked genuinely coupled research example.
+
+**Prohibited:** first example of wasteful quality innovation; original generic incidence theorem; all public breeders overinvest; universal half-share subsidy advice; strictly strategic-substitute analytic family e=0; published AJAE parent-proofs all audited; Stage6 GO; Stage8 frozen theory.
+
+## References and governance
+
+Canonical Stage 6: https://github.com/ryotamatsuki/research-paper-workflow/blob/main/THEORY_PAPER_RESEARCH_PIPELINE.md . Supporting novelty and completeness checklists in that same workflow repo. Compare prior project checkpoints 04, 10–15 and preserve their positive AND negative finding history. No theorem proofs, payoff structures, main models or PR base files changed in this operation.
+
+A Stage6 CONDITIONAL GO is a proper stop here rather than a falsely sealed novelty certificate. Subsequent Stage 4A and Stage 7.5A/Lean are separate requirements even if this blocker closes.

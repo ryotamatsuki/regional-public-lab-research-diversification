@@ -1,0 +1,52 @@
+name: Public Breeding Stage 13 Full-Paper Integration
+
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/paper.tex'
+      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/references.bib'
+      - 'checkpoints/2026-10-25/38_stage13_full_paper_integration/verify_integration.py'
+      - '.github/workflows/public-breeding-stage13.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-breeding-stage13-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrate-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate integrated manuscript theorem scope, reference ordering, limits
+        run: python checkpoints/2026-10-25/38_stage13_full_paper_integration/verify_integration.py
+      - name: Check final Stage 10 source remains frozen against Stage 8
+        run: python checkpoints/2026-10-25/32_stage10_manuscript/verify_manuscript.py
+      - name: Build Stage 13 manuscript including BibTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper.tex
+          working_directory: checkpoints/2026-10-25/38_stage13_full_paper_integration
+          work_in_root_file_dir: true
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Check PDF and LaTeX unresolved reference errors
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd checkpoints/2026-10-25/38_stage13_full_paper_integration
+          test -s paper.pdf
+          ! grep -iE 'undefined citations|citation .* undefined|undefined references|reference .* undefined|LaTeX Error' paper.log
+          python -c 'from pathlib import Path; p=Path("paper.pdf"); assert p.read_bytes().startswith(b"%PDF-"); print("PASS Stage 13 PDF bytes:", p.stat().st_size)'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: regional-public-breeding-stage13-integrated-paper
+          path: checkpoints/2026-10-25/38_stage13_full_paper_integration/paper.pdf
+          retention-days: 30

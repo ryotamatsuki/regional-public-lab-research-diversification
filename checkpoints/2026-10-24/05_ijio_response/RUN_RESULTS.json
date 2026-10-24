@@ -1,0 +1,76 @@
+{
+  "audit_date": "2026-10-24",
+  "verdict": "PARTIALLY OVERCOME / REVISE",
+  "provenance": "Independent local Python audit with numpy scipy sympy; Stage 05 GitHub script is a compact, separately authored reproduction; GitHub Actions not run.",
+  "symbolic_n2": "Verified symbolic wedge = [h+c-b+(b+n-2c-2h)a]/[2(K''+2h-(b+n-2c))] at f'=1",
+  "linear": [
+    {
+      "delta": 0.8,
+      "effort_local": 0.15610509634935,
+      "effort_social_symmetric": 0.12499997251907,
+      "adoption_local": 0.2635239549345,
+      "adoption_social": 0.24999998805177,
+      "welfare_local": 18.51098560988346,
+      "welfare_social": 18.5125
+    },
+    {
+      "delta": 1.7,
+      "effort_local": 0.34389488787735,
+      "effort_social_symmetric": 0.37500003624099,
+      "adoption_local": 0.73647603820754,
+      "adoption_social": 0.75000001575695,
+      "welfare_local": 19.41098560834757,
+      "welfare_social": 19.4125
+    },
+    {
+      "delta": 0.34,
+      "effort_local": 0.06012364666533,
+      "effort_social_symmetric": 0,
+      "adoption_local": 0.02179288985449,
+      "adoption_social": 0,
+      "welfare_local": 18.3938626333342,
+      "welfare_social": 18.4
+    }
+  ],
+  "max_abs_linear_wedge_finite_difference_error": 3.2997641424836743e-10,
+  "nonlinear_cases": {
+    "N": [
+      2,
+      3,
+      5
+    ],
+    "gamma": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "a": [
+      0.25,
+      0.75
+    ],
+    "case_count": 24,
+    "max_abs_formula_vs_finite_difference": 1.2761782325343418e-9
+  },
+  "national_global_zero_certificate": {
+    "delta": 0.34,
+    "z": "-1/100",
+    "eigenvalues_H_minus_inverse_R": [
+      "6/5",
+      "9/5"
+    ],
+    "result": "strictly negative welfare deviation for nonzero effort/adoption in feasible set"
+  },
+  "fixed_adoption_direct_quality_spillover_counterexample": {
+    "epsilon": 0.2,
+    "other_region_new_area": 0.25,
+    "wedge": -0.05
+  },
+  "limitations": [
+    "No claim of novelty from general envelope identity",
+    "No empirical calibration",
+    "Remote GitHub Actions test not executed",
+    "Symmetric social benchmark search in independent audit; archived Stage 04 contains exact exhaustive unilateral deviation checks",
+    "No theorem-by-theorem complete prior literature proof equivalence"
+  ]
+}

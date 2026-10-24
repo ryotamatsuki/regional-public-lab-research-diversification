@@ -1,0 +1,39 @@
+name: Public Breeding Lean Proof Audit
+
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-24/18_lean_formal_proofs/**'
+      - '.github/workflows/public-breeding-lean.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: public-breeding-lean-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lean-proof-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bootstrap elan and resolve Lake dependencies
+        shell: bash
+        run: |
+          set -euxo pipefail
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          export PATH="$HOME/.elan/bin:$PATH"
+          cd checkpoints/2026-10-24/18_lean_formal_proofs/lean
+          lake update
+      - name: Build Lean 4/mathlib proof cores and audit axioms
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: checkpoints/2026-10-24/18_lean_formal_proofs/lean
+          build: true
+          test: false
+          axiom-audit: true

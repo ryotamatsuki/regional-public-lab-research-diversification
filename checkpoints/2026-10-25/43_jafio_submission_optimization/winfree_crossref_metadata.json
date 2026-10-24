@@ -1,0 +1,74 @@
+{
+  "title": [
+    "Economic Implications of Protecting Regional Reputations"
+  ],
+  "author": [
+    {
+      "given": "Jason A.",
+      "family": "Winfree",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Agricultural Economics and Rural Sociology , University of Idaho , 875 Perimeter Drive MS 2334 , Moscow , ID 83844 , USA"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Jill J.",
+      "family": "McCluskey",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Economic Sciences , Washington State University , Pullman , WA 99164 , USA"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Journal of Agricultural &amp; Food Industrial Organization"
+  ],
+  "volume": "20",
+  "issue": "1",
+  "page": null,
+  "article-number": "20190051",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        3,
+        6
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        23
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        3,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1515/jafio-2019-0051"
+}

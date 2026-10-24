@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-24",
+  "audit_kind": "independent four-good primitive reconstruction plus prior archived code reruns",
+  "assertions_passed": 13,
+  "primitive_checks": [
+    "fixed-effort farmer KKT identical to national welfare conditional KKT both regions",
+    "inverse adoption FOC linear coefficients d and e",
+    "P1 local minus national marginal welfare wedge under farmer FOCs",
+    "national research envelope conditional on farmer FOCs",
+    "P1 interior local-vs-planner Nash effort gap",
+    "Corollary adoption effort gap",
+    "Nash/Planner adoption relative to threshold relation",
+    "P3 e=0 local payoff from four-good primitive",
+    "P3 local interior concavity and optimizer",
+    "P3 z critical positive-best-response gain",
+    "P3 worldwide welfare negative under analytic Nash",
+    "P2 nonlinear restricted-demand incidence with common g cancellation",
+    "P3 e>0 rational local equilibrium adoption effort and strictly negative national welfare"
+  ],
+  "archived_rechecks": [
+    {
+      "path": "public_breeding_stage14/verify_wasteful_rd_open_set.py",
+      "outcome": "PASS"
+    },
+    {
+      "path": "public_breeding_stage14/verify_e_positive_global_nash.py",
+      "outcome": "PASS",
+      "adoption_statuses_examined": 9,
+      "global_unilateral_candidates": 9,
+      "nonempty_effort_intervals": 7
+    }
+  ],
+  "P3_analytic": {
+    "parameter_domain": "t=1/2,b=c=n=1/5,k0=kappa=1,R=2,Delta=1/2+z",
+    "z_lower": "(-4+sqrt(13))/12",
+    "z_upper_inclusive": "0",
+    "unique_global_Nash_effort": "(1+3z)/13",
+    "Nash_adoption": "(1+16z)/26",
+    "unique_national_research_optimum": "0",
+    "unique_national_adoption_optimum": "0",
+    "social_welfare_gap": "(10z-1)*(22z+3)/338",
+    "note": "cross-region research interaction zero in this analytic family"
+  },
+  "P3_strict_coupling": {
+    "e": "1/100",
+    "research_cross_partial": "-50/39999",
+    "symmetric_Nash_effort": "9751/130096",
+    "symmetric_Nash_adoption": "1051/32524",
+    "national_welfare_gap": "-1933000423/211562115200",
+    "claim": "verified best response at symmetric profile, not full set of all asymmetric Nash"
+  },
+  "status": {
+    "math": "PASS with exact quantifiers",
+    "theorem_novelty": "UNRESOLVED",
+    "formal_verification": "APPLICABLE_NOT_TESTED",
+    "theory_freeze": "BLOCKED",
+    "submission": "NOT_AUTHORIZED"
+  },
+  "local_script": "/mnt/data/public_breeding_integrated_final_audit.py",
+  "disclaimer": "Symbolic algebra and exact rational enumeration are not Lean proof certificates or independent human refereeing."
+}
