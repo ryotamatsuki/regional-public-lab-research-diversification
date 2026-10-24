@@ -62,6 +62,17 @@ assert s.factor(mid.subs(x1,opt)-mid-s.Rational(13,16)*(x1-opt)**2)==0
 assert s.factor(mid.subs(x1,opt)-(48*zz**2+32*zz+1)/208)==0
 w_at=s.factor(social.subs({x1:opt,x2:opt,a1:adopt,a2:adopt}))
 assert s.factor(w_at-(10*zz-1)*(22*zz+3)/338)==0
+# Separate unilateral improvement from mutual-restraint gains: the rival's
+# consumer-surplus contribution cancels in a unilateral but not joint baseline.
+mutual={x1:opt,x2:opt,a1:adopt,a2:adopt}
+zero={x1:0,x2:0,a1:0,a2:0}
+other_stays={x1:0,x2:opt,a1:0,a2:adopt}
+g_local_joint=s.factor(Gp3.subs(mutual)-Gp3.subs(zero))
+g_local_unilateral=s.factor(Gp3.subs(mutual)-Gp3.subs(other_stays))
+assert s.factor(g_local_joint-w_at/2)==0
+assert s.factor(g_local_unilateral-(48*zz**2+32*zz+1)/208)==0
+assert g_local_joint.subs(zz,0)==-s.Rational(3,676)
+assert g_local_unilateral.subs(zz,0)==s.Rational(1,208)
 square=zz*(a1+a2)-s.Rational(3,4)*(a1*a1+a2*a2)-(x1-a1/2)**2-(x2-a2/2)**2
 assert s.expand(social-square)==0
 zc=(-4+s.sqrt(13))/12
