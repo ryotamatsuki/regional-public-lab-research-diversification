@@ -88,7 +88,7 @@ theorem p1_wedge_factorization
     (h-j-(2*h-e)*a)/(2*(k+2*h-e)) =
       ((2*h-e)/(2*(k+2*h-e))) * ((h-j)/(2*h-e)-a) := by
   have hid : ((h-j)/(2*h-e))*(2*h-e)=h-j := by
-    field_simp [hJ]
+    exact (eq_div_iff hJ).mp rfl
   have hnum :
       h-j-(2*h-e)*a =
         (2*h-e)*((h-j)/(2*h-e)-a) := by
