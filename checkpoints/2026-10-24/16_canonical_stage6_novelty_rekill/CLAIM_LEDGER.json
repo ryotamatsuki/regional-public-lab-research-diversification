@@ -1,0 +1,108 @@
+{
+  "canonical_stage": "6 — Novelty Re-Kill",
+  "date_jst": "2026-10-24",
+  "verdict": "CONDITIONAL GO",
+  "is_frozen": false,
+  "full_paper": "CONDITIONAL RESEARCH CONTINUATION; NO FORMAL MANUSCRIPT/ SUBMISSION GO",
+  "single_blocker": "P3+ — strongest predecessor theorem and independent field-editor economic contribution beyond standard rent-shifting/price incidence; published final AFJ/Balagtas-Kim/Kinnucan-Miao materials incompletely inspected",
+  "claim_certification": [
+    {
+      "id": "L1",
+      "claim": "conditional efficiency of competitive farm adoption at fixed x",
+      "novelty": "ABSORBED",
+      "math": "verified, including KKT corners"
+    },
+    {
+      "id": "P1",
+      "claim": "local-national marginal R&D wedge proportional to variety adoption threshold",
+      "novelty": "ABSORBED as general price-incidence/envelope theorem; specific economic threshold partially distinctive",
+      "math": "verified in symmetric interior"
+    },
+    {
+      "id": "C1",
+      "claim": "new-variety adoption gap equals research effort gap divided by M",
+      "novelty": "ABSORBED",
+      "math": "verified for symmetric interior comparisons"
+    },
+    {
+      "id": "P2",
+      "claim": "nonlinear demand curvature H(q) signs interior welfare wedge",
+      "novelty": "PARTIALLY ABSORBED; special sign classification UNRESOLVED",
+      "math": "verified only restricted symmetric separable demand class"
+    },
+    {
+      "id": "P3+",
+      "claim": "positive locally chosen quality research but unique globally optimal zero national research on analytic z interval",
+      "novelty": "GENERIC PHENOMENON ABSORBED; EXACT PUBLIC-BREEDING GAME NOT DIRECTLY ABSORBED IN INSPECTED SCOPE; PUBLISHED-PARENT FORMAL CERTIFICATION UNRESOLVED",
+      "math": "verified e=j=0, with no strategic R&D interaction"
+    },
+    {
+      "id": "P3+e>0",
+      "claim": "same phenomenon under strictly negative regional research cross-partial",
+      "novelty": "UNRESOLVED",
+      "math": "exact e=1/100 symmetric Nash existence verified; full Nash-set uniqueness not claimed"
+    }
+  ],
+  "primary_source_depth": [
+    {
+      "key": "DixitNorman1978",
+      "depth": "1976 author PDF visually checked selected pages + published abstract",
+      "status": "generic overinvestment known"
+    },
+    {
+      "key": "FisherMcGowan1979",
+      "depth": "publisher original comment abstract and introductory passage",
+      "status": "R&D analogy welfare-benchmark caveat"
+    },
+    {
+      "key": "AlstonFreebairnJames2001",
+      "depth": "authentic indexed equation transcript and selected model/results, no full appendices",
+      "status": "generic beggar-thy-neighbor absorbed; exact game not mapped"
+    },
+    {
+      "key": "BalagtasKim2007",
+      "depth": "2007 publisher abstract + 2005/06 full earlier draft, NOT published PDF proof",
+      "status": "shared input conversion known, exact final theorem unresolved"
+    },
+    {
+      "key": "LenceEtAl2007",
+      "depth": "full 2006 author WP with proposition 1-3 visually reviewed, not final published version",
+      "status": "no direct isomorphism to inspected propositions"
+    },
+    {
+      "key": "CardonPope2003",
+      "depth": "journal/publisher abstract and original PDF indexed p193 Proposition1",
+      "status": "socially optimal zero promotional spending precedent"
+    },
+    {
+      "key": "KinnucanMiao2000",
+      "depth": "publisher metadata + first page only",
+      "status": "UNRESOLVED"
+    },
+    {
+      "key": "CarpioIsengildinaMassa2016",
+      "depth": "publisher abstract + earlier conference paper abstract",
+      "status": "public advertisement and perfect competition precedents"
+    },
+    {
+      "key": "Zhang2022",
+      "depth": "publisher abstract and earlier project source review",
+      "status": "negative social value of R&D precedent"
+    },
+    {
+      "key": "Tullock1980_parent",
+      "depth": "classic concept + accessible later formal contest literature",
+      "status": "rent dissipation without fixed fee known; stochastic contest nonisomorphic"
+    }
+  ],
+  "new_novelty_regressions": [
+    "Cardon and Pope 2003 published zero-social-promotional-optimum theorem overlooked",
+    "Dixit and Norman 1978 and Fisher-McGowan 1979 product-improvement R&D analogy overlooked",
+    "Tullock-style rent dissipation can have positive costly equilibrium without fixed investment entry fees",
+    "P3+ clean analytic proof e=j=0 eliminates strategic cross-response"
+  ],
+  "finite_closure_criterion": "Verify actual final prior model/theorem in one bounded source pass where obtainable; if not obtainable label unknown, restrict to applied/game characterization, conduct one honest full-paper editor-value test. If it is only verbal relabeling, NO-GO full paper. Do not prolong indefinitely.",
+  "model_modified": false,
+  "original_proofs_modified": false,
+  "Stage8_TheoryFreeze": "BLOCKED"
+}
