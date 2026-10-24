@@ -93,6 +93,7 @@ Differentiating $V(q(a);x)-\sum_iK_i(a_i)$ with respect to $a_i$ gives $p_{N_i}-
 The lemma does not establish efficient stage-1 research. It instead isolates the externality in governments' incentives to shift the subsequent market allocation.
 
 \section{Decentralized Research Incentives}
+\subsection{Linear-Demand Research Incentives}
 For a symmetric interior allocation, $a_1=a_2=a=(z+x)/M$. Define
 \begin{equation}
  \xi=\frac{2h-e}{2L},\qquad a^\star=\frac{h-j}{2h-e},
@@ -276,7 +277,7 @@ The result is stronger than a local overinvestment derivative: each region finds
 The harmful positive-research equilibrium persists with a quartic public research cost in one re-solved specification. With unequal old/new demand curvature, however, half-adoption neutrality fails: the tested marginal wedge equals $-1/16$ at $a=1/2$. A separate quartic conversion-cost exercise preserves a positive signed wedge ($7/151$) at its tested interior point. These are bounded positive and negative checks, not general robustness theorems.
 
 \subsection{Nonzero Cross-Region Interaction}
-The analytic family in Section 4 has $e=0$. A distinct rational parameter example with $e=1/100$ yields positive symmetric public research $x^D=9751/130096$ and adoption $a^D=1051/32524$. The national optimum is again zero. The welfare difference is
+The analytic family in Section 4 has $e=0$. Relative to \eqref{eq:family}, the interacting example sets $n=21/100$ and $\Delta=49/100$, leaving all other primitives unchanged. A distinct rational parameter example with $e=1/100$ yields positive symmetric public research $x^D=9751/130096$ and adoption $a^D=1051/32524$. The national optimum is again zero. The welfare difference is
 $-1933000423/211562115200$. Its local cross-research derivative is $-50/39999<0$. This example addresses the absence of strategic cross-effects in the analytically transparent $e=0$ family but does not establish uniqueness of all asymmetric equilibria. The global unilateral best response was checked by exact arithmetic across the nine adoption KKT regimes, whereas the formal-verification project certifies the exact candidate and planner-welfare identities, \emph{not} a full Lean proof of nine-regime Nash globality or uniqueness of all asymmetric equilibria.
 
 \subsection{Interpretation and External Validity}
@@ -291,7 +292,7 @@ For evaluation, three distinctions follow within the model. Efficient uptake of 
 Efficient competitive variety replacement need not imply efficient regional public research. In the specified economy, research incentives depend on planting composition, and a nonempty parameter interval yields globally positive local research effort despite a unique national optimum of no research. These results identify a conditional welfare distortion in decentralized breeding, not a general recommendation to reduce actual agricultural research budgets.
 
 \section*{Declaration of Generative AI and AI-Assisted Technologies}
-OpenAI ChatGPT assisted literature searches and comparisons, substantive manuscript drafting and revision, symbolic-verification code, and the development and review of Lean formal proof files. This assistance extended beyond language correction. Source-record checks, exact symbolic calculations and formal verification provide distinct, bounded checks; they do not replace human scholarly judgment or establish originality. The author has attested completion of the previously specified theory-review scope. The method and extent of independent human rederivation are not documented in the available research record. The human author is responsible for verifying and approving the submitted text, mathematical arguments, interpretations and references. AI tools are not authors.
+OpenAI ChatGPT assisted literature searches and comparisons, substantive manuscript drafting and revision, symbolic-verification code, and the development and review of Lean formal proof files. This assistance extended beyond language correction. Source-record checks, exact symbolic calculations and formal verification provide distinct, bounded checks; they do not replace human scholarly judgment or establish originality. The author has attested review of the theory's assumptions, conditional planting efficiency, restricted demand-curvature result, global research and welfare comparisons, and verification boundaries. The method and extent of independent human rederivation are not documented in the available research record. The human author is responsible for verifying and approving the submitted text, mathematical arguments, interpretations and references. AI tools are not authors.
 
 \section*{Data and Code Availability}
 This is a theoretical study and uses no empirical dataset. Symbolic-verification scripts and formal proof sources form part of the associated reproducibility materials; the verification scope is described in the appendices. Any supplementary code supplied for review must be stripped of identifying repository metadata.
@@ -366,7 +367,10 @@ For the main interacting rational example with $e=1/100$, the exact-arithmetic p
 
 For completeness, an independent example uses $A=10$, $t=1/2$, $b=n=3/5$, $c=9/20$, $k_0=\kappa=1$, $R=2$, and $\Delta=17/50$ (so $e=3/10$). Exact piecewise unilateral-deviation verification gives the symmetric Nash effort $x^D=389/6470$ and planting share $a^D=141/6470$; the national optimum is again zero, with welfare loss $2569157/418609000$. This example has nonzero competitive coupling and is distinct from the analytic $e=0$ family. Formal Lean checks apply to candidate and planner identities, whereas the complete piecewise Nash certificate was checked by exact external computation.
 
+\begingroup
+\small
 \bibliographystyle{plainnat}
 \bibliography{references}
+\endgroup
 
 \end{document}

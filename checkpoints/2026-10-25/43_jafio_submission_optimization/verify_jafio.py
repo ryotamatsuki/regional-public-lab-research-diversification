@@ -18,6 +18,15 @@ def check_editorial_invariants():
     old = (BASE / 'paper.tex').read_text()
     new = (HERE / 'paper.tex').read_text()
     bib = (HERE / 'references.bib').read_text()
+    # Only new mathematical notation supplies the already-verified interacting
+    # example's missing primitives; it changes no economic assumption or result.
+    clarification = r'Relative to \eqref{eq:family}, the interacting example sets $n=21/100$ and $\Delta=49/100$, leaving all other primitives unchanged. '
+    assert new.count(clarification) == 1
+    # The archived exact script reconstructs B with n=21/100 and delta=49/100.
+    script = (ROOT / 'checkpoints/2026-10-24/14_full_paper_reopen_p3_analytic_open_set/verify_positive_e_global_nash.py').read_text()
+    assert 'delta=F(49,100)' in script and 'F(21,100)' in script
+    new = new.replace(clarification, '')
+
     for env in ('lemma', 'proposition', 'corollary', 'equation', 'align'):
         pattern = r'\\begin\{' + env + r'\}.*?\\end\{' + env + r'\}'
         assert find(pattern, old) == find(pattern, new), f'{env} changed'

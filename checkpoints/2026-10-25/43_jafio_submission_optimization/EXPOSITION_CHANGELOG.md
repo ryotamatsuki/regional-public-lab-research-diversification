@@ -16,3 +16,7 @@ Date: 2026-10-25 JST. Base: checkpoint38 paper.tex at branch head 5689ab04971d1e
 - Added Winfree and McCluskey (2022) as a genuinely close regional-quality/welfare comparison, grounded in publisher-supplied abstract and DOI metadata; no unseen theorem absence is asserted. Fifteen references now cited.
 - Moved references after appendices in line with available official preparation guidance. Latest indexed guide does not settle precise ordering, recorded as a residual format check.
 - Shortened the long Appendix B heading and added emergency line stretch to avoid overfull lines without changing mathematics.
+
+- Final independent editorial audit found three repairable issues: added a first linear-demand subsection so Section3 has two subheads; supplied the existing e=1/100 example's omitted n=21/100, Delta=49/100 parameters relative to (17), checked against the exact script; replaced the AI declaration's internal review-scope shorthand with concrete content.
+- The invariance checker preserves every original math expression and separately records/asserts the sole parameter-clarification addition. No theorem assumption changes.
+- Set bibliography in a grouped small font to prevent a single-reference overflow page; mathematical text font is unchanged.

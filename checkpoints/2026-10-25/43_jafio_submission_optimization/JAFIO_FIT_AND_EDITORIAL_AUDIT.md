@@ -62,3 +62,15 @@ A suitable introduction comparison is: “Winfree and McCluskey study how region
 - Publisher-supplied article record: https://ideas.repec.org/a/bpj/bjafio/v20y2022i1p10n2.html
 
 No claim here uses journal rank or page count as a sufficient measure of acceptance prospects.
+
+## Independent final-source editorial read
+
+A separate hostile read of revised checkpoint43 source (after the Winfree comparison and expanded abstract) finds the economic framing substantially improved but identifies three concrete issues to resolve before a narrow editorial PASS:
+
+1. Section 3 contains only one subsection. The verified 2025 hierarchy rule calls for at least two subheadings when subdividing a level. Add a meaningful first subsection for the linear benchmark or demote the lone curvature heading.
+2. The main e=1/100 interacting example gives e and exact results but omits the full primitive vector. Reproducibility in external code does not make this paragraph self-contained. Supply the verified primitive vector or reorganize around the fully specified second interacting benchmark; no new result is required.
+3. The AI disclosure's “previously specified theory-review scope” is an internal-process reference that is undefined for a referee. State precisely what the available author attestation covers, while preserving the honest limitation on documented independent human rederivation. Do not strengthen the attestation.
+
+No new exaggeration of strategic interaction, nonlinear generality or policy optimality was identified. The three policy-evaluation distinctions are appropriately conditional. The Winfree paragraph makes a positive content comparison without claiming that the inaccessible paper lacks a matching theorem. The conditional/global distinction around P1 and P3 remains visible. Formal-certification sentences still cost some reading space, but their explicit scope is appropriate given the risk of overstating what was verified.
+
+Subject to resolving the three points, **narrow editorial readiness can PASS**, while **journal suitability/novelty remains CONDITIONAL**, because known parent mechanisms, assumed welfare weights and inaccessible close-comparator full texts remain material editorial risks. No claim of acceptance probability or full submission eligibility follows.
