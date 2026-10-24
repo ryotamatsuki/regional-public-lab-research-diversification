@@ -119,3 +119,11 @@ These are **exposition/claim-scope corrections only**, not alterations to player
 **Stage11 GO on bounded economic-theory scientific audit**: may proceed to formal **Stage 12 venue choice and APC/non-OA/Diamond publication-fee and format gate** after confirming the revised PDF run and making journal-specific AI declaration/authorship source compliance checks as applicable. No journal is selected, no acceptance inferred, and author signature is not reconstructed beyond prior self-attestation.
 
 Do not reopen Stage 4A, Stage 6 or Stage 7.5A without a real new theorem absorption, mathematical counterexample within theorem domain, or a proposed change to theoretical primitives. Don't add invented new empirical numbers or a coordination grant theorem solely to force higher journal prestige. Keep PR #2 Draft, no merge into main and no submission.
+
+## 8. Final PDF artifact inspection
+
+Final Stage 10 PDF obtained from successful run 40120134071, artifact 12570359418. Container inspection: **11 A4 pages**, 249442 bytes, PDF 1.7. Text extraction found intended public R&D citations and full bibliography. **All 11 pages** rendered and inspected together for obvious text/math overflow, missing references, page errors; none detected. Overview-scale visual review is not a line-by-line final proofread.
+
+Final revised manuscript Git blob SHA is `76598a904e931d34587e10deadb5598d0598ec1b`. Original Stage 8 frozen mathematics and Stage 9 pinned sources remain unchanged.
+
+**Canonical Stage 11 status:** **GO for bounded compact agricultural applied-theory path**; material editorial novelty/significance and institutional weighting risks explicitly preserved. Stage 12 venue/fee/format gate next; NOT submission GO.
