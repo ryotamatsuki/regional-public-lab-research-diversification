@@ -102,7 +102,18 @@ At a symmetric interior equilibrium of the planting subgame, the difference betw
 When $\xi>0$ and $a^\star\in(0,1)$, the wedge is positive for $a<a^\star$ and negative for $a>a^\star$. An interior threshold is essential for a sign change within the feasible adoption domain. The formula is an interior, linear-demand statement; it does not assert that the global research equilibrium is interior for every parameter value.
 \end{proposition}
 \begin{proof}
-The national envelope derivative is $dW/dx_i=a_i-Rx_i$ because the adoption allocation is conditionally efficient. For the local government, producer receipts and its half-share of consumer surplus respond to the induced adoption of both regions. Differentiate \eqref{eq:local} using \eqref{eq:adoptionmatrix}; at symmetry, the response matrix has eigenvalues $M$ and $L$. Collecting the difference from the national envelope yields
+To make the economic-to-algebra bridge explicit, competitive prices, producer income and consumer surplus on the \emph{interior follower branch} can be reduced to
+\begin{align}
+p_{iO}&=A-1-b+h a_i+j a_j,\nonumber\\
+p_{iN}&=A+\Delta+x_i-t-c-h a_i-(n-c)a_j,\nonumber\\
+\Pi_i&=A-1-b+h a_i+j a_j+\frac{\kappa}{2}a_i^2,\nonumber\\
+CS&=1+b-(h+j)(a_1+a_2)
++h(a_1^2+a_2^2)+e a_1a_2.
+\label{eq:incidencebridge}
+\end{align}
+The producer-income simplification invokes the interior grower FOC; none of these interior-reduced expressions is used to assess off-equilibrium planting corners in Proposition 3.
+
+The inverse adoption matrix in \eqref{eq:adoptionmatrix} gives $\partial a_i/\partial x_i=d/(d^2-e^2)$ and $\partial a_j/\partial x_i=-e/(d^2-e^2)$. The national welfare envelope derivative is $dW/dx_i=a_i-Rx_i$, because adoption maximizes national welfare conditional on $x$. Differentiate \eqref{eq:local} with \eqref{eq:incidencebridge} and these adoption responses. At symmetry, the matrix eigenvalues are $M$ and $L$. Collecting the local-minus-national marginal effect yields
 \[
  \frac{h-j-(2h-e)a}{2L}
  =\frac{2h-e}{2L}\left(\frac{h-j}{2h-e}-a\right).
