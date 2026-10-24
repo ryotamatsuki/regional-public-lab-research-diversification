@@ -1,0 +1,359 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref,natbib}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+\title{Regional Public Breeding and Variety Replacement: Decentralized Research Incentives and National Welfare}
+\author{Anonymous manuscript}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Regional governments may fund the development of improved crop varieties while growers independently decide whether to replace established cultivars. This paper studies a two-stage game in which territorial public laboratories choose quality-improving research efforts and competitive farmers subsequently allocate fixed land between old and new varieties. We derive the adoption response and characterize the discrepancy between decentralized public research and national welfare. The research wedge changes sign with equilibrium variety adoption, even when the growers' conditional allocation is efficient. In an explicit parameter family, each regional government has a strictly positive, globally optimal research response while the unique national optimum entails no research. The resulting decentralized equilibrium lowers national welfare relative to no research. We establish this result across all planting regimes, identify its exact parameter boundary, and delineate the demand-curvature and institutional restrictions under which the mechanism generalizes. The analysis is theoretical; it does not estimate actual regional breeding returns.
+\end{abstract}
+
+\noindent\textbf{Keywords:} public agricultural research; variety replacement; regional government competition; endogenous adoption; national welfare.\\
+\textbf{JEL:} H41, H77, O32, Q16.
+
+\section{Introduction}
+Publicly funded crop breeding can benefit a region's producers while changing the returns earned by farmers elsewhere. In Japan, prefectural agricultural research stations develop varieties adapted to regional conditions, complementing research undertaken at the national level \citep{oecd2019japan}. Because agricultural product markets cross administrative boundaries, the research decision of one jurisdiction can affect other jurisdictions even when farmers make efficient planting choices. The economic question is whether regional authorities fund the resulting quality improvements at levels that maximize national welfare.
+
+We study a two-stage game in which two territorial public laboratories independently finance improvements to new crop varieties. Competitive growers subsequently allocate fixed land between old and new varieties. Conditional on public research, growers' allocations maximize welfare under the model's convex conversion costs. Nevertheless, research incentives diverge: a regional authority evaluates the price and consumer-surplus consequences of variety replacement differently from a national planner. In the linear-demand economy, the sign of that marginal divergence depends on the equilibrium share planted to new varieties. More strongly, an explicit parameter interval admits a unique positive regional research Nash equilibrium while the unique national optimum is zero research. This result is global: the proof considers zero, partial, and complete variety adoption and excludes all unilateral research deviations.
+
+The mechanism draws on established economics rather than replacing it. \citet{alston2001beggar} show that commodity groups may choose excessive noncooperative promotion; \citet{balagtas2007dairy} analyze related-product markets with shared agricultural inputs; and \citet{lence2007collective} study new geographically differentiated products and producers' organizational decisions. Public-university plant breeding and growers' adoption of a new apple variety have also been examined through licensing and commercialization \citep{akhundjanov2020apple}. What we analyze instead is \emph{ex ante, territorially financed quality research} followed by \emph{competitive reallocation of existing land}, assessed against welfare that includes all producers and consumers. The contribution is a fully characterized application of familiar incidence and strategic-investment forces to this particular institutional game, not a claim to have discovered overinvestment or resource reallocation as general economic principles.
+
+The results are deliberately conditional. The regional objective assigns each authority one-half of national consumer surplus; research quality is deterministic; and intellectual-property licensing, heterogeneous farms, and dynamic orchard replacement are outside the baseline. The model therefore provides a diagnostic of decentralized breeding incentives, not a quantitative recommendation for an actual research budget.
+
+\section{Economic environment}
+\subsection{Timing, goods, and public objectives}
+There are two regions, $i\in\{1,2\}$, each with one unit of agricultural land. All players know the market primitives, and growers observe the research choices before deciding how to plant. The old and new varieties in region $i$ are denoted $O_i$ and $N_i$. In stage 1, the regional public laboratory chooses $x_i\geq 0$, a quality-enhancing research effort for $N_i$. In stage 2, price-taking growers choose the share $a_i\in[0,1]$ of land planted to $N_i$, so quantities are $q_{O_i}=1-a_i$ and $q_{N_i}=a_i$. Consumer markets then clear. Governments correctly anticipate the competitive stage-2 outcome.
+
+For $q=(q_{O_1},q_{N_1},q_{O_2},q_{N_2})^\top$, national gross utility is
+\begin{equation}
+ V(q;x)=\alpha(x)^\top q-\tfrac12q^\top Bq,\quad
+ \alpha(x)=(A,A+\Delta+x_1,A,A+\Delta+x_2)^\top,
+ \label{eq:utility}
+\end{equation}
+where
+\begin{equation}
+ B=\begin{pmatrix}
+ 1&t&b&c\\ t&1&c&n\\ b&c&1&t\\ c&n&t&1
+ \end{pmatrix},\qquad p=\nabla_q V=\alpha(x)-Bq.
+ \label{eq:demand}
+\end{equation}
+Assume $B$ is positive definite in the relevant parameter domain and all realized prices are economically admissible. Regional growers bear real conversion cost $K_i(a_i)=k_0a_i+\kappa a_i^2/2$ and the regional government bears $C_i(x_i)=Rx_i^2/2$, with $R,\kappa>0$. Let $\Pi_i$ be regional producer receipts net of $K_i$, and let $CS=V-p^\top q$ be aggregate consumer surplus. Region $i$ maximizes
+\begin{equation}
+ G_i=\Pi_i+\tfrac12 CS-C_i(x_i),
+ \label{eq:local}
+\end{equation}
+whereas national welfare is
+\begin{equation}
+ W=\Pi_1+\Pi_2+CS-C_1(x_1)-C_2(x_2)=G_1+G_2.
+ \label{eq:welfare}
+\end{equation}
+The equal division of consumer surplus is a transparent accounting assumption, not an empirical description of regional incidence.
+
+\subsection{Competitive adoption}
+Define
+\begin{equation}
+ h=1-t,\quad j=b-c,\quad e=b+n-2c,\quad
+ d=\kappa+2h,\quad M=d+e,\quad L=d-e,\quad
+ z=\Delta+h+j-k_0.
+ \label{eq:notation}
+\end{equation}
+The new-versus-old producer price advantage net of marginal conversion cost is
+\begin{equation}
+ p_{N_i}-p_{O_i}-K_i'(a_i)=z+x_i-d a_i-e a_j,\quad j\ne i.
+ \label{eq:adoptionfoc}
+\end{equation}
+The stage-2 equilibrium obeys the complementary conditions: this residual is nonpositive at $a_i=0$, zero for $0<a_i<1$, and nonnegative at $a_i=1$. For an interior allocation,
+\begin{equation}
+ \begin{pmatrix}d&e\\e&d\end{pmatrix}
+ \begin{pmatrix}a_1\\a_2\end{pmatrix}
+ =\begin{pmatrix}z+x_1\\z+x_2\end{pmatrix}.
+ \label{eq:adoptionmatrix}
+\end{equation}
+The positive-definiteness conditions $M,L>0$ imply uniqueness of the conditional adoption equilibrium.
+
+\begin{lemma}[Conditional efficiency of competitive adoption]
+Fix research efforts $(x_1,x_2)$. If the quadratic surplus objective is strictly concave in the planting shares and growers face the same real conversion costs as the planner, the competitive stage-2 allocation globally maximizes national welfare over $(a_1,a_2)\in[0,1]^2$ conditional on $x$.
+\end{lemma}
+\begin{proof}
+Differentiating $V(q(a);x)-\sum_iK_i(a_i)$ with respect to $a_i$ gives $p_{N_i}-p_{O_i}-K_i'(a_i)$. Thus the planner's constrained first-order conditions coincide with the competitive growers' KKT conditions, including both planting corners. Strict concavity makes these conditions globally sufficient. The quadratic form and KKT implication are independently formalized in \texttt{Core.lean}.
+\end{proof}
+The lemma does not establish efficient stage-1 research. It instead isolates the externality in governments' incentives to shift the subsequent market allocation.
+
+\section{Decentralized research incentives}
+For a symmetric interior allocation, $a_1=a_2=a=(z+x)/M$. Define
+\begin{equation}
+ \xi=\frac{2h-e}{2L},\qquad a^\star=\frac{h-j}{2h-e},
+ \label{eq:threshold}
+\end{equation}
+assuming the denominators are nonzero and the positive-sign restrictions stated below hold.
+
+\begin{proposition}[Regional--national research wedge]
+At a symmetric interior equilibrium of the planting subgame, the difference between the regional government's marginal objective and the national planner's marginal welfare with respect to $x_i$ is
+\begin{equation}
+ \frac{dG_i}{dx_i}-\frac{dW}{dx_i}=\xi(a^\star-a).
+ \label{eq:wedge}
+\end{equation}
+When $\xi>0$ and $a^\star\in(0,1)$, the wedge is positive for $a<a^\star$ and negative for $a>a^\star$. An interior threshold is essential for a sign change within the feasible adoption domain. The formula is an interior, linear-demand statement; it does not assert that the global research equilibrium is interior for every parameter value.
+\end{proposition}
+\begin{proof}
+To make the economic-to-algebra bridge explicit, competitive prices, producer income and consumer surplus on the \emph{interior follower branch} can be reduced to
+\begin{align}
+p_{iO}&=A-1-b+h a_i+j a_j,\nonumber\\
+p_{iN}&=A+\Delta+x_i-t-c-h a_i-(n-c)a_j,\nonumber\\
+\Pi_i&=A-1-b+h a_i+j a_j+\frac{\kappa}{2}a_i^2,\nonumber\\
+CS&=1+b-(h+j)(a_1+a_2)
++h(a_1^2+a_2^2)+e a_1a_2.
+\label{eq:incidencebridge}
+\end{align}
+The producer-income simplification invokes the interior grower FOC; none of these interior-reduced expressions is used to assess off-equilibrium planting corners in Proposition 3.
+
+The inverse adoption matrix in \eqref{eq:adoptionmatrix} gives $\partial a_i/\partial x_i=d/(d^2-e^2)$ and $\partial a_j/\partial x_i=-e/(d^2-e^2)$. The national welfare envelope derivative is $dW/dx_i=a_i-Rx_i$, because adoption maximizes national welfare conditional on $x$. Differentiate \eqref{eq:local} with \eqref{eq:incidencebridge} and these adoption responses. At symmetry, the matrix eigenvalues are $M$ and $L$. Collecting the local-minus-national marginal effect yields
+\[
+ \frac{h-j-(2h-e)a}{2L}
+ =\frac{2h-e}{2L}\left(\frac{h-j}{2h-e}-a\right).
+\]
+This is \eqref{eq:wedge}. Equation \eqref{eq:incidencebridge} displays the market-price and surplus accounting underlying this result; the routine factorization is independently reproducible from the supplementary verification files.
+\end{proof}
+
+Assume $RM>1$, $RM-1+\xi>0$, and the following candidates are feasible interior solutions and are globally optimal in their respective stage-1 problems. The symmetric national planner and decentralized research candidates are
+\begin{equation}
+ x^P=\frac{z}{RM-1},\qquad
+ x^D=\frac{(1-\xi)z+\xi M a^\star}{RM-1+\xi}.
+ \label{eq:efforts}
+\end{equation}
+The expression for $x^P$ is applicable only where its interior solution is feasible; in particular, it must not be used to claim a negative optimal effort when $z<0$.
+
+\begin{corollary}[Research and adoption gaps]
+Under the preceding interior and globality conditions,
+\begin{equation}
+ x^D-x^P=\frac{\xi M}{RM-1+\xi}(a^\star-a^P),
+ \qquad a^D-a^P=\frac{x^D-x^P}{M}.
+ \label{eq:corollary}
+\end{equation}
+\end{corollary}
+\begin{proof}
+Subtract the two research first-order conditions in \eqref{eq:efforts} and use $a^P=(z+x^P)/M=Rx^P$. The second equality follows directly from the symmetric adoption equation. The comparison uses only the stated interior first-order conditions and the symmetric planting equation.
+\end{proof}
+
+When both benchmarks are indeed global interior solutions on the same symmetric adoption branch, the national-welfare cost has the additional closed form
+\begin{equation}
+W(x^P,x^P)-W(x^D,x^D)
+=\left(R-\frac{1}{M}\right)(x^D-x^P)^2\geq0,
+\label{eq:interiorwelfarecost}
+\end{equation}
+because $W(x,x)$ is a concave quadratic with vertex $x^P$ under $RM>1$. The claim is a \emph{conditional equilibrium comparison}, not an extension to the corner planner in Proposition 3. The squared welfare gap follows by completing the quadratic around the symmetric planner optimum.
+
+\subsection{Demand curvature and the scope of the sign result}
+The nonlinear result concerns a separate, explicitly restricted class with $N\geq2$ identical regions, unit land per region, and a national quasilinear gross-utility function
+\begin{equation}
+V(q;x)=\sum_{i=1}^{N}\sum_{s\in\{O,N\}}\alpha_{is}(x_i)q_{is}
+-\sum_{i=1}^{N}\sum_{s\in\{O,N\}}\phi(q_{is})
+-\frac{\beta}{2}Q^2-\frac{r}{2}\sum_iQ_i^2
+-\frac{g}{2}(Q_O^2+Q_N^2).
+\label{eq:nonlinearutility}
+\end{equation}
+Here $Q_i=q_{iO}+q_{iN}=1$, $Q=\sum_iQ_i=N$, $Q_s=\sum_iq_{is}$, $\beta,r,g\geq0$, and $\phi$ is twice continuously differentiable with $\phi''>0$. Only $\alpha_{iN}$ receives the own-region quality increment $f(x_i)$, with $f'>0$; old and new varieties must share \emph{the same} $\phi$. Assume $K$ is convex and twice differentiable, all planting choices are interior and symmetric, and each regional authority receives $CS/N$. These restrictions are part of the proposition, not innocuous normalization.
+
+Write $H_\phi(q)=q\phi''(q)$ and $L_\phi=K''(a)+\phi''(1-a)+\phi''(a)>0$. The planting Jacobian is $L_\phi I_N+2g\mathbf1\mathbf1^\top$; its own-minus-average response to one region's research shock is $f'(x)(N-1)/(NL_\phi)$. The precise local--national research wedge is
+\begin{equation}
+G_{i,x_i}-W_{x_i}
+=\frac{f'(x)(N-1)}{NL_\phi}
+\bigl[H_\phi(1-a)-H_\phi(a)\bigr].
+\label{eq:nonlinearwedge}
+\end{equation}
+Under $f'(x)>0$ and $L_\phi>0$, the sign therefore equals the sign of
+\begin{equation}
+ H_\phi(1-a)-H_\phi(a),
+ \label{eq:curvature}
+\end{equation}
+provided the remaining prefactors are positive.
+
+\begin{proposition}[Restricted nonlinear-demand incidence]
+For the symmetric interior adoption equilibrium of the restricted anonymous separable-demand class, and assuming an invertible adoption Jacobian and positive response multipliers, the curvature contribution to the local--national research wedge changes sign according to \eqref{eq:curvature}. In particular, adoption share $a=1/2$ is curvature-neutral when old and new own-demand curvature functions coincide.
+\end{proposition}
+\begin{proof}
+Differentiate the competitive farmer planting equations implied by \eqref{eq:nonlinearutility}. Their Jacobian in the adoption shares is $L_\phi I_N+2g\mathbf1\mathbf1^\top$, whose eigenvalue on the zero-sum planting subspace is $L_\phi$. Subtracting any nonshocked-region response from the shocked-region response therefore cancels the common $g$ component. Averaging across regions gives the exact own-minus-average response $f'(x)(N-1)/(NL_\phi)$. Differentiating each region's producer receipts and its $1/N$ consumer-surplus share, while applying the national welfare envelope theorem, leaves precisely the price-incidence term $H_\phi(1-a)-H_\phi(a)$ multiplied by that response. This yields \eqref{eq:nonlinearwedge} and \eqref{eq:curvature}. Appendix \ref{app:nonlinearproof} gives the primitive-to-Jacobian and price-incidence steps. The associated formal verification checks the conditional Jacobian algebra, not the entire economic derivation.
+\end{proof}
+Asymmetric old/new curvature can produce a nonzero wedge even at half adoption. Thus this proposition is not a universal theorem for arbitrary nonlinear demand.
+
+\section{When regional breeding research lowers national welfare}
+The interior wedge alone does not establish globally excessive research. This section supplies an exact economy in which all adoption corners and large unilateral research deviations are controlled.
+
+Set
+\begin{equation}
+ t=\tfrac12,\quad b=c=n=\tfrac15,\quad
+ k_0=\kappa=1,\quad R=2,\quad A=10,\quad
+ \Delta=\tfrac12+z.
+ \label{eq:family}
+\end{equation}
+Then $e=j=0$, and the competitive planting share in each region is
+\begin{equation}
+ a_i(x_i)=\min\left\{1,\max\left\{0,\frac{z+x_i}{2}\right\}\right\}.
+ \label{eq:clamp}
+\end{equation}
+In this family, the regions' first-stage best responses are independent of the other region's effort. This is a legitimate special case, but it does not demonstrate strict strategic substitutability between public research efforts.
+
+Let $z_c=(-4+\sqrt{13})/12$.
+
+\begin{proposition}[Globally harmful decentralized public breeding]
+For every $z\in(z_c,0]$ in \eqref{eq:family}, the unique regional research Nash equilibrium is symmetric with
+\begin{equation}
+ x^D=\frac{1+3z}{13}>0,\qquad
+ a^D=\frac{1+16z}{26}>0.
+ \label{eq:p3nash}
+\end{equation}
+The unique national optimum has $x_1=x_2=a_1=a_2=0$. The welfare difference is strictly negative:
+\begin{equation}
+ W^D-W^P=\frac{(10z-1)(22z+3)}{338}<0.
+ \label{eq:p3loss}
+\end{equation}
+At $z=z_c$ the regional best-response set becomes $\{0,\sqrt{13}/52\}$, yielding four pure research Nash profiles; hence the lower inequality is strict.
+\end{proposition}
+
+\begin{proof}
+We derive the regional payoff from \emph{unreduced} utility and prices, not from an interior follower condition extrapolated to corners. Holding the rival region's research and planting choices fixed, subtract region $i$'s own zero-research and zero-adoption payoff from $G_i$. The resulting unilateral payoff gain (whose rival-dependent constant has canceled) is
+\begin{equation}
+ \mathcal F_i(x_i,a_i)
+ =(z+x_i+\tfrac14)a_i-\tfrac54a_i^2-x_i^2.
+ \label{eq:offpathpayoff}
+\end{equation}
+Substituting \eqref{eq:clamp} gives three regimes:
+\begin{equation}
+ F_i(x_i)=
+ \begin{cases}
+ -x_i^2,&0\leq x_i\leq-z,\\[2pt]
+ (z+x_i)/8+3(z+x_i)^2/16-x_i^2,&-z<x_i<2-z,\\[2pt]
+ z+x_i-1-x_i^2,&x_i\geq2-z.
+ \end{cases}
+ \label{eq:threebranches}
+\end{equation}
+The middle branch is strictly concave, with unique stationary maximizer $x^D=(1+3z)/13$ and payoff
+\[
+ F_i(x^D)=\frac{48z^2+32z+1}{208}>0
+ \quad\text{for }z>z_c.
+\]
+The zero-adoption branch never exceeds zero. The complete-adoption branch is decreasing over $x_i\geq2-z$ because its derivative is $1-2x_i<0$. Its boundary value is strictly below the middle-branch maximizer. Hence \eqref{eq:p3nash} is the unique \emph{global} regional best response, and the two independent responses form the unique research Nash equilibrium.
+
+For national welfare, without imposing either planting equilibrium or symmetry, the difference from the zero allocation is
+\begin{align}
+ W-W_0
+ &=z(a_1+a_2)+x_1a_1+x_2a_2
+   -(a_1^2+a_2^2)-(x_1^2+x_2^2)\nonumber\\
+ &=z(a_1+a_2)-\frac34(a_1^2+a_2^2)
+   -(x_1-a_1/2)^2-(x_2-a_2/2)^2
+ \leq0.
+ \label{eq:plannerbound}
+\end{align}
+For $z\leq0$ and $a_i\geq0$, equality requires $a_i=x_i=0$ in both regions. This proves unique national optimality over a feasible set \emph{larger} than the competitive follower allocations. Substituting \eqref{eq:p3nash} into \eqref{eq:plannerbound} yields \eqref{eq:p3loss}. At the excluded endpoint, $F_i(0)=F_i(\sqrt{13}/52)=0$, and no other nonnegative effort is optimal. Appendix \ref{app:globalP3} details the global branch comparisons and cutoff; the supplementary formal project checks the specified exact-parameter proof core and the market-to-payoff reduction.
+\end{proof}
+
+The distinction between unilateral and joint comparisons is essential. The payoff gain $F_i(x^D)>0$ is measured relative to region $i$ alone switching to no research with the rival's action fixed. It is not the change in the region's payoff when both regions move to no research. Because $W=G_1+G_2$ and the equilibrium is symmetric,
+\begin{equation}
+G_i(x^D,x^D)-G_i(0,0)=\frac{(10z-1)(22z+3)}{676}<0.
+\label{eq:mutuallocal}
+\end{equation}
+At $z=0$ the unilateral incentive gain is $F_i(x^D)=1/208>0$, whereas the payoff loss from mutual positive research relative to mutual zero research is $3/676$ per region. Thus both governments prefer mutual restraint although each alone chooses positive research. The $e=j=0$ best responses are independent, but their payoffs remain interdependent through the shared consumer-surplus term.
+
+The result is stronger than a local overinvestment derivative: each region finds positive research privately optimal, while the national planner strictly prefers no research. Nevertheless, it is an \emph{existence theorem} for an explicit admissible family, not a statement that all regional breeding systems overinvest.
+
+\section{Robustness, limitations, and institutional interpretation}
+\subsection{Meaningful alternative specifications}
+Re-solving three specified alternative economies shows that the harmful-research phenomenon survives a convex quartic public research cost in a specified re-solved alternative, while the half-adoption neutrality in the nonlinear demand proposition fails under asymmetric old/new own-demand curvature. A separate quartic conversion-cost exercise retains the sign of the regional--national wedge at its tested interior allocation. These exercises support conditional portability; they do not imply general robustness across all cost and demand classes.
+
+\subsection{Nonzero cross-region interaction}
+The analytic family in Section 4 has $e=0$. A distinct rational parameter example with $e=1/100$ yields positive symmetric public research $x^D=9751/130096$ and adoption $a^D=1051/32524$, with the national optimum again at zero and a negative welfare difference $-1933000423/211562115200$. Its local cross-research derivative is $-50/39999<0$. This example addresses the absence of strategic cross-effects in the analytically transparent $e=0$ family but does not establish uniqueness of all asymmetric equilibria. The global unilateral best response was checked by exact arithmetic across the nine adoption KKT regimes, whereas the Lean module \texttt{ExactExamples.lean} certifies the exact candidate and planner-welfare identities, \emph{not} a full Lean proof of nine-regime Nash globality or uniqueness of all asymmetric equilibria.
+
+A distinct, earlier benchmark uses $A=10$, $t=1/2$, $b=n=3/5$, $c=9/20$, $k_0=\kappa=1$, $R=2$, and $\Delta=17/50$ (so $e=3/10$). Exact piecewise unilateral-deviation verification gives the symmetric Nash research effort $x^D=389/6470$ and planting share $a^D=141/6470$; the national optimum is again zero, with welfare loss $2569157/418609000$. The example has nonzero competitive coupling and is not the analytic $e=0$ family of Proposition 3. Here too, Lean checks rational candidate and planner identities but not the complete piecewise Nash certificate.
+
+\subsection{Interpretation and external validity}
+A regional public breeder may rationally finance a quality improvement because the induced private variety replacement redistributes agricultural product-market returns. Regional research institutions develop locally adapted varieties, while public-university innovations may also be commercialized through licensing \citep{oecd2019japan,akhundjanov2020apple}. Unlike those institutional arrangements, the baseline model contains neither licensing decisions nor proprietary research rents. The national welfare effect incorporates the induced changes in consumer valuation and real conversion and research costs; market payments between producers and consumers cancel in the national account. The analysis does not imply that actual public breeding budgets should be eliminated: it abstracts from disease resistance, climate adaptation, spillovers to future varieties, uncertain discoveries, farmer heterogeneity, and institutional intergovernmental transfers. The model is a diagnostic benchmark for distinguishing adoption efficiency from research efficiency.
+
+\section{Discussion}
+The regional--national divergence does not require a market failure in the growers' conditional planting choices. It emerges when public laboratories anticipate an efficient competitive adoption response but assess its price and surplus incidence territorially. This separation clarifies why evidence that farmers efficiently adopt superior varieties cannot by itself establish that decentralized public research spending is efficient.
+
+A natural policy question is whether interregional transfers or coordination could internalize the displaced surplus. Such mechanisms are not solved in the frozen model and are not claimed as results of this paper. Any policy prescription would additionally require empirical estimates of the cross-regional substitution parameters, the opportunity cost of public research and the relevant incidence of consumer surplus.
+
+\section{Conclusion}
+This paper separates publicly chosen breeding quality from competitively chosen variety replacement. Competitive adoption can maximize national welfare conditional on research while decentralized regional laboratories have different ex ante incentives. In a tractable parameter family, positive research is the unique global decentralized equilibrium even though the unique national optimum is zero research. The proof covers planting corners and large deviations and identifies an exact boundary at which research equilibria become multiple. The conclusions are deliberately bounded by the model's demand, fiscal and equilibrium assumptions.
+
+\appendix
+\section{Derivation and proof crosswalk}
+Equations \eqref{eq:utility}--\eqref{eq:adoptionmatrix} supply the primitive-to-follower bridge. Equations \eqref{eq:wedge}--\eqref{eq:corollary} are interior statements. Equations \eqref{eq:offpathpayoff}--\eqref{eq:plannerbound} supply the full global proof, including all adoption regimes. Formal artifacts are in the pinned Lean project \texttt{checkpoints/2026-10-24/18\_lean\_formal\_proofs/lean}; the last checked build and allowed axioms are documented in the Stage 8 freeze. The full paper-facing economic model, and in particular the generic nonlinear-demand-to-Jacobian bridge, is not claimed to be kernel-certified in its entirety.
+
+
+\section{Nonlinear demand: proof from market primitives}
+\label{app:nonlinearproof}
+The restricted class in \eqref{eq:nonlinearutility} yields the following prices:
+\begin{equation}
+ p_{is}=\alpha_{is}(x_i)-\phi'(q_{is})-\beta Q-rQ_i-gQ_s.
+ \label{eq:appprice}
+\end{equation}
+Because $Q_i=q_{iO}+q_{iN}=1$ and $Q=\sum_i Q_i=N$ for all feasible planting allocations, the $\beta$ and $r$ terms do not enter the planting derivative. A competitive farmer in region $i$ therefore solves the planting condition
+\begin{equation}
+D_i=\alpha_{iN}-\alpha_{iO}
+ -\phi'(a_i)+\phi'(1-a_i)
+ -g(Q_N-Q_O)-K'(a_i)=0.
+\label{eq:appD}
+\end{equation}
+At a symmetric interior solution $a_i=a$, its negative Jacobian has diagonal $L_\phi+2g$ and off-diagonal $2g$, where $L_\phi=K''(a)+\phi''(1-a)+\phi''(a)>0$. Hence a unilateral research shock $dx_i$ gives
+\begin{equation}
+ \big(L_\phi I_N+2g\mathbf1\mathbf1^\top\big)\mathbf u
+ =f'(x_i)\mathbf e_i,\qquad
+ u_j=\frac{\partial a_j}{\partial x_i}.
+ \label{eq:appJ}
+\end{equation}
+Multiplying by the projection $I_N-\mathbf1\mathbf1^\top/N$ eliminates the rank-one term, yielding
+\begin{equation}
+u_i-\frac1N\sum_j u_j
+=\frac{N-1}{NL_\phi}f'(x_i).
+\label{eq:appcontrast}
+\end{equation}
+This conditional linear-algebra step, rather than the entire economic derivation, is checked in the general-$N$ Lean module \texttt{Prop2N.lean}.
+
+For the price-incidence step, the competitive budget identities give
+\[
+\Pi_i=p_{iO}(1-a_i)+p_{iN}a_i-K(a_i),\quad
+CS=V-\sum_{j,s}p_{js}q_{js},\quad
+W=\sum_j\Pi_j+CS-\sum_j C(x_j).
+\]
+The conditional welfare envelope is $dW/dx_i=a_if'(x_i)-C'(x_i)$. The direct effect of quality on $\Pi_i$ equals $a_if'(x_i)$, while the direct quality effect on $CS$ is zero by the consumer-surplus identity. Along the follower equilibrium, the farmer's price difference cancels the conversion-cost derivative in $d\Pi_i/dx_i$. Consequently only induced price changes remain in the regional-minus-national incentive:
+\begin{equation}
+\frac{dG_i}{dx_i}-\frac{dW}{dx_i}
+=(1-a)\,dp_{iO}^{\rm ind}+a\,dp_{iN}^{\rm ind}
+-\frac1N\sum_j\big[(1-a)\,dp_{jO}^{\rm ind}
++a\,dp_{jN}^{\rm ind}\big].
+\label{eq:appincidence}
+\end{equation}
+Here $dp^{\rm ind}$ excludes the direct quality shock and is the total derivative of prices along induced changes in planting. Using \eqref{eq:appprice} and $dQ_O/dx_i=-\sum_k u_k$, $dQ_N/dx_i=\sum_k u_k$, the $j$th region's weighted induced price change equals
+\[
+(1-a)\,dp_{jO}^{\rm ind}+a\,dp_{jN}^{\rm ind}
+=\big[(1-a)\phi''(1-a)-a\phi''(a)\big]u_j
+ +g(1-2a)\sum_k u_k.
+\]
+The common $g$ term cancels between the focal region and the cross-regional mean. Substitution of \eqref{eq:appcontrast} into \eqref{eq:appincidence} gives exactly \eqref{eq:nonlinearwedge}. Common old/new curvature and symmetric interior planting are therefore substantive hypotheses; the asymmetric-curvature counterexample yielding wedge $-1/16$ at $a=1/2$ is outside this proposition. This appendix states the primitive-to-wedge bridge; it does not assert full Lean certification of that bridge.
+
+\section{Global deviations and the boundary in the harmful-research economy}
+\label{app:globalP3}
+The local research payoff must be evaluated using the unreduced off-equilibrium formula \eqref{eq:offpathpayoff}, even when the induced planting share is zero or one. In the partial-adoption regime its maximizer is $x^D=(1+3z)/13$, and completion of the square gives
+\begin{equation}
+ F_i(x^D)-F_i(x)=\frac{13}{16}(x-x^D)^2,\qquad
+ F_i(x^D)=\frac{48z^2+32z+1}{208}.
+ \label{eq:appBR}
+\end{equation}
+When $z_c<z\leq0$, this maximum is positive. On the no-adoption branch, the payoff is $-x_i^2\leq0$; on the complete-adoption branch it is $z+x_i-1-x_i^2$, decreasing for $x_i\geq2-z$ because $1-2x_i<0$. Its maximum is attained at the shared partial-adoption boundary, which by \eqref{eq:appBR} is strictly inferior to $x^D$. These comparisons rule out every unilateral nonnegative research deviation, not just local perturbations.
+
+At $z=z_c=(-4+\sqrt{13})/12$, the interior maximum equals zero and the two global best responses are $0$ and $\sqrt{13}/52$. Since $e=j=0$ in this parameter family, each region's research best response is independent of the other's research; the product of these correspondences contains four pure Nash research profiles at this excluded endpoint. The planner proof \eqref{eq:plannerbound} establishes a unique global zero research-and-adoption optimum even allowing asymmetric and off-equilibrium choices. The separate interacting examples have $e>0$ and rely on exact-rational active-set computations, not the decoupled proof in this Appendix.
+
+
+\section{Further scope of the numerical checks}
+For the interacting rational example, the existing exact-arithmetic program enumerates the nine follower KKT status combinations and tests unilateral research deviations across feasible branches. This establishes a checked candidate equilibrium under that audit, not a Lean proof of all asymmetric Nash equilibria. No new numerical results are introduced here.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
