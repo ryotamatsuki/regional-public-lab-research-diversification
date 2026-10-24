@@ -13,7 +13,7 @@ assert zc > -s.Rational(1,16)
 # Unilateral payoff difference from zero effort, opponent arbitrary:
 a_i=(z+x)/2
 F=s.expand(a_i/4+s.Rational(3,4)*a_i**2-x*x)
-assert s.factor(s.diff(F,x))==(1+3*z-13*x)/8
+assert s.simplify(s.diff(F,x)-(1+3*z-13*x)/8)==0
 assert s.diff(F,x,2)==-s.Rational(13,8)
 gain=s.factor(F.subs(x,xD))
 assert s.factor(gain-(48*z*z+32*z+1)/208)==0
