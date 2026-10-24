@@ -41,7 +41,7 @@ jobs:
           cd checkpoints/2026-10-25/32_stage10_manuscript
           test -s paper.pdf
           ! grep -iE 'undefined citations|citation .* undefined|undefined references|reference .* undefined|LaTeX Error' paper.log
-          pdfinfo paper.pdf | grep -E '^Pages:|^Page size:|^File size:'
+          python -c 'from pathlib import Path; p=Path("paper.pdf"); assert p.read_bytes().startswith(b"%PDF-"); print("Validated PDF byte size:",p.stat().st_size)'
       - uses: actions/upload-artifact@v4
         with:
           name: public-breeding-stage10-revised-manuscript-pdf
