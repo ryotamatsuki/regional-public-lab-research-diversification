@@ -1,0 +1,25 @@
+name: Public Breeding Stage 11 Independent Core QA
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-24/21_stage11_adversarial_preflight/**'
+      - '.github/workflows/public-breeding-stage11.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: breeding-stage11-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  primitive-proof-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install sympy==1.13.3
+      - name: Independently re-derive P1 and P3 from four-good utility
+        run: python checkpoints/2026-10-24/21_stage11_adversarial_preflight/check_core_independent.py
