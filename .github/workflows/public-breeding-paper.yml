@@ -21,6 +21,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify manuscript source completeness and unique labels
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          source=Path("checkpoints/2026-10-24/20_stage9_10_manuscript/paper.tex").read_text()
+          assert source.count(r"\end{document}") == 1, "multiple TeX documents"
+          assert source.rstrip().endswith(r"\end{document}"), "material after end of document"
+          assert source.count(r"\appendix") == 1, "duplicated appendix"
+          labels=re.findall(r"\\label\{([^}]+)\}",source)
+          assert len(labels)==len(set(labels)), "duplicated equation/theorem label"
+          assert r"\label{eq:mutuallocal}" in source, "missing unilateral-vs-mutual payoff bridge"
+          print("PASS: one manuscript, complete appendix, unique labels, explicit payoff bridge")
+          PY
       - name: Compile LaTeX and resolve bibliography
         uses: xu-cheng/latex-action@v3
         with:
