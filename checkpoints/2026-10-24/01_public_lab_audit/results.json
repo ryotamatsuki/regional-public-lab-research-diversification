@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "alpha": {
+    "A": {
+      "exact": "1897/50000",
+      "decimal": 0.03794
+    },
+    "B": {
+      "exact": "509329/15488000",
+      "decimal": 0.0328853951446281
+    }
+  },
+  "beta": {
+    "A": {
+      "exact": "-1303/50000",
+      "decimal": -0.02606
+    },
+    "B": {
+      "exact": "-15691/619520",
+      "decimal": -0.025327673037190083
+    }
+  },
+  "V": {
+    "A": {
+      "exact": "233/5000",
+      "decimal": 0.0466
+    },
+    "B": {
+      "exact": "311827/7744000",
+      "decimal": 0.04026691632231405
+    }
+  },
+  "local_overlap": {
+    "AA": {
+      "exact": "747739/34225000",
+      "decimal": 0.021847742878013148
+    },
+    "AB": {
+      "exact": "116448377/12390400000",
+      "decimal": 0.009398274228434917
+    },
+    "BA": {
+      "exact": "118594697/12390400000",
+      "decimal": 0.0095714986602531
+    },
+    "BB": {
+      "exact": "42906827/2120307200",
+      "decimal": 0.02023613700882589
+    }
+  },
+  "national_overlap": {
+    "AA": {
+      "exact": "166291/3422500",
+      "decimal": 0.048587582176771366
+    },
+    "AB": {
+      "exact": "24759289/1239040000",
+      "decimal": 0.01998263897856405
+    },
+    "BA": {
+      "exact": "24759289/1239040000",
+      "decimal": 0.01998263897856405
+    },
+    "BB": {
+      "exact": "9576899/212030720",
+      "decimal": 0.045167506859383394
+    }
+  },
+  "fee": {
+    "exact": "1/20",
+    "decimal": 0.05
+  },
+  "capacity_cost": {
+    "exact": "61/10000",
+    "decimal": 0.0061
+  },
+  "low_probability": {
+    "exact": "3/20",
+    "decimal": 0.15
+  },
+  "high_probability": {
+    "exact": "3/10",
+    "decimal": 0.3
+  },
+  "threshold": {
+    "exact": "62628576/264764279",
+    "decimal": 0.23654465865465182
+  },
+  "best_possible_fee_threshold": {
+    "exact": "20876192/117165693",
+    "decimal": 0.17817666132013574
+  },
+  "social_direction_threshold": {
+    "exact": "373664/1570475",
+    "decimal": 0.23793056240946212
+  },
+  "low_max_B_obedience": {
+    "exact": "-594240849/4956160000000",
+    "decimal": -0.00011989944816147985
+  },
+  "low_margins": [
+    {
+      "exact": "1374836049/4956160000000",
+      "decimal": 0.00027739944816147983
+    },
+    {
+      "exact": "5918913567/4956160000000",
+      "decimal": 0.0011942539318746772
+    }
+  ],
+  "high_lab_margins": [
+    {
+      "exact": "1374836049/2478080000000",
+      "decimal": 0.0005547988963229597
+    },
+    {
+      "exact": "5918913567/2478080000000",
+      "decimal": 0.0023885078637493544
+    }
+  ],
+  "low_against_high_margins": [
+    {
+      "exact": "-504021231/2478080000000",
+      "decimal": -0.0002033918319828254
+    },
+    {
+      "exact": "4040056287/2478080000000",
+      "decimal": 0.0016303171354435692
+    }
+  ],
+  "welfare_no_upgrade": {
+    "exact": "25863/2000000",
+    "decimal": 0.0129315
+  },
+  "welfare_one_upgrade": {
+    "exact": "3226663039/247808000000",
+    "decimal": 0.013020818694311724
+  },
+  "welfare_two_upgrades_upper_bound": {
+    "exact": "1494485119/123904000000",
+    "decimal": 0.012061637388623451
+  },
+  "direct_capacity_gain_net": {
+    "exact": "-317/2000000",
+    "decimal": -0.0001585
+  },
+  "total_policy_gain_net": {
+    "exact": "22133887/247808000000",
+    "decimal": 8.931869431172521e-05
+  },
+  "direction_change_gain": {
+    "exact": "12282291/49561600000",
+    "decimal": 0.0002478186943117252
+  },
+  "correlated_robustness": {
+    "rho_same": {
+      "exact": "1/500",
+      "decimal": 0.002
+    },
+    "rho_different": {
+      "exact": "1/1000",
+      "decimal": 0.001
+    },
+    "direct_net": {
+      "exact": "-156403/1000000000",
+      "decimal": -0.000156403
+    },
+    "total_net": {
+      "exact": "4911728879/49561600000000",
+      "decimal": 9.910351721897598e-05
+    }
+  },
+  "scope": "Exact arithmetic and analytic inequalities; not a literature novelty certificate or an unrestricted mechanism optimum."
+}
