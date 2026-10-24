@@ -1,0 +1,368 @@
+{
+  "exact_general_identity_checks": 54,
+  "exact_outside_consumer_checks": 18,
+  "linear_equilibria": [
+    {
+      "delta": 0.8,
+      "z": 0.45,
+      "x_local": 0.1561051004636785,
+      "x_local_exact": "101/647",
+      "x_national": 0.125,
+      "adoption_local": 0.2635239567233385,
+      "adoption_national": 0.25,
+      "W_local": 18.510985609482834,
+      "W_national": 18.5125,
+      "W_zero_effort_candidates_available": 18.48804347826087,
+      "unilateral_exit_loss": 0.01969447968154719,
+      "unilateral_exit_loss_exact": "3223516/163676119",
+      "global_best_response_exact": "101/647",
+      "candidate_count": 7,
+      "min_eigenvalue": 0.35000000000000026,
+      "largest_off_diagonal_inverse": -0.1278460101989514
+    },
+    {
+      "delta": 1.7,
+      "z": 1.35,
+      "x_local": 0.34389489953632146,
+      "x_local_exact": "445/1294",
+      "x_national": 0.375,
+      "adoption_local": 0.7364760432766615,
+      "adoption_national": 0.75,
+      "W_local": 19.410985609482836,
+      "W_national": 19.4125,
+      "W_zero_effort_candidates_available": 19.192391304347826,
+      "unilateral_exit_loss": 0.09557884861627249,
+      "unilateral_exit_loss_exact": "15643975/163676119",
+      "global_best_response_exact": "445/1294",
+      "candidate_count": 6,
+      "min_eigenvalue": 0.35000000000000026,
+      "largest_off_diagonal_inverse": -0.1278460101989514
+    },
+    {
+      "delta": 0.34,
+      "z": -0.01,
+      "x_local": 0.06012364760432767,
+      "x_local_exact": "389/6470",
+      "x_national": 0.0,
+      "adoption_local": 0.02179289026275116,
+      "adoption_national": 0.0,
+      "W_local": 18.39386263314931,
+      "W_national": 18.4,
+      "W_zero_effort_candidates_available": 18.4,
+      "unilateral_exit_loss": 0.0011601119869615799,
+      "unilateral_exit_loss_exact": "77701331/66977440000",
+      "global_best_response_exact": "389/6470",
+      "candidate_count": 10,
+      "min_eigenvalue": 0.35000000000000026,
+      "largest_off_diagonal_inverse": -0.1278460101989514,
+      "entry_effort_against_zero_exact": "67/1300",
+      "entry_gain_against_zero_exact": "677/520000"
+    }
+  ],
+  "nonlinear_demand_checks": [
+    {
+      "N": 2,
+      "gamma": -1.0,
+      "adoption": 0.25,
+      "wedge": -0.04395880432052249,
+      "predicted": -0.04395880432052248,
+      "finite_difference": -0.043958804951671475,
+      "max_direct_demand_cross_price_slope": -0.007818887808020756
+    },
+    {
+      "N": 2,
+      "gamma": -1.0,
+      "adoption": 0.75,
+      "wedge": 0.04223992276128419,
+      "predicted": 0.04223992276128409,
+      "finite_difference": 0.042239922137810026,
+      "max_direct_demand_cross_price_slope": -0.007818887808020756
+    },
+    {
+      "N": 2,
+      "gamma": 0.0,
+      "adoption": 0.25,
+      "wedge": 0.0,
+      "predicted": 0.0,
+      "finite_difference": -1.0658141036401503e-09,
+      "max_direct_demand_cross_price_slope": -0.08276579632668671
+    },
+    {
+      "N": 2,
+      "gamma": 0.0,
+      "adoption": 0.75,
+      "wedge": 0.0,
+      "predicted": 0.0,
+      "finite_difference": -3.5527136788005004e-10,
+      "max_direct_demand_cross_price_slope": -0.08276579632668676
+    },
+    {
+      "N": 2,
+      "gamma": 0.5,
+      "adoption": 0.25,
+      "wedge": 0.0197335354263779,
+      "predicted": 0.01973353542637786,
+      "finite_difference": 0.01973353533912814,
+      "max_direct_demand_cross_price_slope": -0.24648872147507764
+    },
+    {
+      "N": 2,
+      "gamma": 0.5,
+      "adoption": 0.75,
+      "wedge": -0.017415710795763983,
+      "predicted": -0.01741571079576397,
+      "finite_difference": -0.017415710829027375,
+      "max_direct_demand_cross_price_slope": -0.2464887214750774
+    },
+    {
+      "N": 2,
+      "gamma": 1.0,
+      "adoption": 0.25,
+      "wedge": 0.03284534534534536,
+      "predicted": 0.03284534534534534,
+      "finite_difference": 0.032845344932752596,
+      "max_direct_demand_cross_price_slope": -0.5979420063927099
+    },
+    {
+      "N": 2,
+      "gamma": 1.0,
+      "adoption": 0.75,
+      "wedge": -0.0282622739018088,
+      "predicted": -0.02826227390180878,
+      "finite_difference": -0.028262273943369106,
+      "max_direct_demand_cross_price_slope": -0.5979420063927099
+    },
+    {
+      "N": 2,
+      "gamma": 2.0,
+      "adoption": 0.25,
+      "wedge": 0.040509259259259245,
+      "predicted": 0.04050925925925925,
+      "finite_difference": 0.040509258880661037,
+      "max_direct_demand_cross_price_slope": -0.5474406302143612
+    },
+    {
+      "N": 2,
+      "gamma": 2.0,
+      "adoption": 0.75,
+      "wedge": -0.03375771604938271,
+      "predicted": -0.03375771604938271,
+      "finite_difference": -0.03375771662206262,
+      "max_direct_demand_cross_price_slope": -0.5474406302143613
+    },
+    {
+      "N": 3,
+      "gamma": -1.0,
+      "adoption": 0.25,
+      "wedge": -0.05861173909403,
+      "predicted": -0.05861173909402998,
+      "finite_difference": -0.05861173946186681,
+      "max_direct_demand_cross_price_slope": -0.005654354398999874
+    },
+    {
+      "N": 3,
+      "gamma": -1.0,
+      "adoption": 0.75,
+      "wedge": 0.05631989701504547,
+      "predicted": 0.05631989701504546,
+      "finite_difference": 0.05631989523635638,
+      "max_direct_demand_cross_price_slope": -0.005654354398999872
+    },
+    {
+      "N": 3,
+      "gamma": 0.0,
+      "adoption": 0.25,
+      "wedge": 2.7755575615628914e-17,
+      "predicted": 0.0,
+      "finite_difference": 0.0,
+      "max_direct_demand_cross_price_slope": -0.05889098359110058
+    },
+    {
+      "N": 3,
+      "gamma": 0.0,
+      "adoption": 0.75,
+      "wedge": 0.0,
+      "predicted": 0.0,
+      "finite_difference": 0.0,
+      "max_direct_demand_cross_price_slope": -0.05889098359110065
+    },
+    {
+      "N": 3,
+      "gamma": 0.5,
+      "adoption": 0.25,
+      "wedge": 0.02631138056850385,
+      "predicted": 0.026311380568503812,
+      "finite_difference": 0.026311381162713584,
+      "max_direct_demand_cross_price_slope": -0.17361615649771733
+    },
+    {
+      "N": 3,
+      "gamma": 0.5,
+      "adoption": 0.75,
+      "wedge": -0.023220947727685293,
+      "predicted": -0.023220947727685293,
+      "finite_difference": -0.02322094871942681,
+      "max_direct_demand_cross_price_slope": -0.17361615649771714
+    },
+    {
+      "N": 3,
+      "gamma": 1.0,
+      "adoption": 0.25,
+      "wedge": 0.043793793793793806,
+      "predicted": 0.0437937937937938,
+      "finite_difference": 0.043793792769974964,
+      "max_direct_demand_cross_price_slope": -0.39512596903414293
+    },
+    {
+      "N": 3,
+      "gamma": 1.0,
+      "adoption": 0.75,
+      "wedge": -0.03768303186907834,
+      "predicted": -0.037683031869078384,
+      "finite_difference": -0.037683032161339725,
+      "max_direct_demand_cross_price_slope": -0.39512596903414293
+    },
+    {
+      "N": 3,
+      "gamma": 2.0,
+      "adoption": 0.25,
+      "wedge": 0.054012345679012336,
+      "predicted": 0.05401234567901234,
+      "finite_difference": 0.05401234517421471,
+      "max_direct_demand_cross_price_slope": -0.40889538332149644
+    },
+    {
+      "N": 3,
+      "gamma": 2.0,
+      "adoption": 0.75,
+      "wedge": -0.04501028806584362,
+      "predicted": -0.045010288065843625,
+      "finite_difference": -0.04501028811887408,
+      "max_direct_demand_cross_price_slope": -0.40889538332149744
+    },
+    {
+      "N": 5,
+      "gamma": -1.0,
+      "adoption": 0.25,
+      "wedge": -0.07033408691283599,
+      "predicted": -0.07033408691283599,
+      "finite_difference": -0.07033408806478292,
+      "max_direct_demand_cross_price_slope": -0.003738406688789127
+    },
+    {
+      "N": 5,
+      "gamma": -1.0,
+      "adoption": 0.75,
+      "wedge": 0.06758387641805463,
+      "predicted": 0.06758387641805456,
+      "finite_difference": 0.06758387627314733,
+      "max_direct_demand_cross_price_slope": -0.003738406688789119
+    },
+    {
+      "N": 5,
+      "gamma": 0.0,
+      "adoption": 0.25,
+      "wedge": 0.0,
+      "predicted": 0.0,
+      "finite_difference": -1.4210854715202002e-09,
+      "max_direct_demand_cross_price_slope": -0.03842087715915745
+    },
+    {
+      "N": 5,
+      "gamma": 0.0,
+      "adoption": 0.75,
+      "wedge": 0.0,
+      "predicted": 0.0,
+      "finite_difference": -1.4210854715202002e-09,
+      "max_direct_demand_cross_price_slope": -0.03842087715915745
+    },
+    {
+      "N": 5,
+      "gamma": 0.5,
+      "adoption": 0.25,
+      "wedge": 0.03157365668220463,
+      "predicted": 0.031573656682204576,
+      "finite_difference": 0.03157365711103921,
+      "max_direct_demand_cross_price_slope": -0.1120424411239627
+    },
+    {
+      "N": 5,
+      "gamma": 0.5,
+      "adoption": 0.75,
+      "wedge": -0.027865137273222262,
+      "predicted": -0.027865137273222356,
+      "finite_difference": -0.027865137042226703,
+      "max_direct_demand_cross_price_slope": -0.11204244112396311
+    },
+    {
+      "N": 5,
+      "gamma": 1.0,
+      "adoption": 0.25,
+      "wedge": 0.05255255255255256,
+      "predicted": 0.052552552552552555,
+      "finite_difference": 0.05255255359770671,
+      "max_direct_demand_cross_price_slope": -0.2280709002498875
+    },
+    {
+      "N": 5,
+      "gamma": 1.0,
+      "adoption": 0.75,
+      "wedge": -0.04521963824289399,
+      "predicted": -0.04521963824289406,
+      "finite_difference": -0.045219637456739285,
+      "max_direct_demand_cross_price_slope": -0.2280709002498875
+    },
+    {
+      "N": 5,
+      "gamma": 2.0,
+      "adoption": 0.25,
+      "wedge": 0.0648148148148148,
+      "predicted": 0.06481481481481481,
+      "finite_difference": 0.06481481307218928,
+      "max_direct_demand_cross_price_slope": -0.28981820290426585
+    },
+    {
+      "N": 5,
+      "gamma": 2.0,
+      "adoption": 0.75,
+      "wedge": -0.05401234567901231,
+      "predicted": -0.05401234567901235,
+      "finite_difference": -0.05401234517421471,
+      "max_direct_demand_cross_price_slope": -0.2898182029042655
+    }
+  ],
+  "matching_grant_examples": [
+    {
+      "delta": 0.8,
+      "matching_rate": 0.0,
+      "effort": 0.1561051004636785,
+      "national_welfare": 18.510985609482834
+    },
+    {
+      "delta": 0.8,
+      "matching_rate": 0.1,
+      "effort": 0.16614574765586446,
+      "national_welfare": 18.50985012992149
+    },
+    {
+      "delta": 1.7,
+      "matching_rate": 0.0,
+      "effort": 0.34389489953632146,
+      "national_welfare": 19.410985609482836
+    },
+    {
+      "delta": 1.7,
+      "matching_rate": 0.1,
+      "effort": 0.3660141470636618,
+      "national_welfare": 19.412373615656183
+    }
+  ],
+  "scope": [
+    "Arbitrary N and convex adoption cost: analytical symmetric interior identities.",
+    "Global Nash checks: exact two-region quadratic examples only.",
+    "Nonlinear demand checks: local interior derivatives with competitive adoption.",
+    "Quality effort is endogenous; research direction and licensing policy are fixed.",
+    "Positive-baseline examples condition on available candidate varieties; zero effort need not mean no program.",
+    "Not a calibration, estimation, formal proof assistant verification, or publication guarantee."
+  ]
+}
