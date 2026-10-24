@@ -1,0 +1,87 @@
+PASS JAFIO: frozen statements/displays/inline math; 5 proof math blocks; 32 labels; 15 cited records; 197 abstract words
+RUN checkpoints/2026-10-25/31_stage9_reproducibility/verify_all.py
+PASS: 25 frozen Git blob object IDs match
+PASS: manuscript structure, 32 unique labels, 6 cited BibTeX keys
+---- checkpoints/2026-10-24/21_stage11_adversarial_preflight/check_core_independent.py ----
+PASS: four-good competitive KKT from prices, P1 incidence wedge, off-equilibrium full-adoption regional payoff, P3 global proof identities, all B eigenvalues positive, welfare loss, and exact endpoint threshold.
+IMPORTANT: global best response and all asymmetric Nash remain separate proof obligations.
+---- checkpoints/2026-10-24/21_stage11_adversarial_preflight/check_nonlinear_primitive.py ----
+PASS: nonlinear 3-region gross utility -> six inverse prices ->
+      competitive adoption Jacobian -> total G minus W research wedge = 2/9.
+Scope: exact example only; not a generic proof or all-assumptions Lean certificate.
+---- checkpoints/2026-10-24/17_stage4A_75A_certification/verify_portability_compact.py ----
+T1 PASS: positive unique local Nash, planner zero, negative national welfare
+T2 PASS: old/new asymmetry destroys half-share neutrality -1/16
+T3 PASS: nonlinear grower conversion preserves sign and yields exact 7/151
+P3+ PASS: critical boundary and social-welfare polynomial
+---- checkpoints/2026-10-24/17_stage4A_75A_certification/verify_p3_boundary_multiplicity.py ----
+PASS lower boundary: BR set = [0, 'sqrt(13)/52']
+Exactly four pure research Nash profiles at the excluded z=zc endpoint.
+---- checkpoints/2026-10-24/14_full_paper_reopen_p3_analytic_open_set/verify_analytic_wasteful_rd.py ----
+PASS: globally dominant strictly positive regional effort xD = 3*z/13 + 1/13
+For every z in ( -1/3 + sqrt(13)/12 , 0], social planner uniquely selects x=0.
+W Nash minus W0 = (10*z - 1)*(22*z + 3)/338 ; strictly negative across entire interval.
+---- checkpoints/2026-10-24/14_full_paper_reopen_p3_analytic_open_set/verify_positive_e_global_nash.py ----
+PASS: 9 global BR candidates, 7 regimes; exact xD 9751/130096 aD 1051/32524
+Cross R&D partial -50/39999 W_D-W0 -1933000423/211562115200
+Next closest candidate 1/50 strict local payoff margin 346042207950657/141037884098080000
+No claim of unique Nash among asymmetric profiles or generalized full-parameter sign.
+PASS: 6 existing independent/pre-registered symbolic regressions
+STAGE9 PYTHON/PROVENANCE VERIFICATION PASS (Lean and PDF separately assessed)
+RUN checkpoints/2026-10-25/35_stage11_hostile_referee/independent_referee_reconstruction.py
+PASS four-good follower gradient / conditional planner
+PASS opponent farmer KKT
+PASS P1 signed wedge ON FOC
+PASS P1 off-follower extension correctly rejected
+PASS P3 UNREDUCED local objective including adoption corners
+PASS P3 interior continuation payoff
+PASS P3 no-adoption continuation
+PASS P3 complete-adoption continuation
+PASS P3 interior unique stationary effort
+PASS P3 interior square gap
+PASS P3 planner unrestricted FULL square completion
+PASS P3 strict welfare gap identity
+PASS P3 cutoff tie: zero/positive global BR
+PASS P3 cutoff positive action
+PASS exact off-path KKT & global-effort candidate deviations across three regimes
+PASS P2 unrestricted midpoint-neutrality falsified: wedge = -1/16
+PASS Stage 11 independent test: no model changes, scoped claims only
+RUN checkpoints/2026-10-24/12_geo_product_parent_theorem/verify_candidate_interval.py
+{
+  "all_symbolic_checks_passed": true,
+  "candidate_adoption_interior_interval": [
+    "203/680",
+    "7/20"
+  ],
+  "national_planner_zero_for_Delta_at_most": "7/20",
+  "candidate_welfare_below_no_research_throughout_interval": true,
+  "candidate_welfare_minus_no_research": "(9177200*Delta**2 - 6198640*Delta + 943887)/16744360",
+  "Delta_0.34_best_response_requires_separate_active_set_certificate": true,
+  "exact_delta_0.34_welfare_loss": "-2569157/418609000",
+  "IMPORTANT": "This script does NOT claim global Nash throughout the interval; source-theorem nonabsorption remains UNRESOLVED."
+}
+RUN checkpoints/2026-10-24/12_geo_product_parent_theorem/verify_global_BR_at_delta_034.py
+{
+  "verified": true,
+  "opponent_research": "389/6470",
+  "strict_unique_global_best_response": "389/6470",
+  "candidate_count": 10,
+  "distinct_regime_count": 8,
+  "second_best_candidate": {
+    "x": "0",
+    "payoff_gap": "77701331/66977440000"
+  },
+  "beyond_x_5": "own conversion fixed at 1 and welfare derivative = 1-2*x < 0",
+  "scope": "Delta=17/50 only. This is no claim of full-interval Nash or originality."
+}
+RUN checkpoints/2026-10-25/32_stage10_manuscript/verify_manuscript.py
+PASS: Stage 10 frozen lemma/proposition/corollary statements identical
+PASS: 30 math display blocks, one P2 notation correction only
+PASS: 32 unique labels, 14 resolved citation keys
+RUN checkpoints/2026-10-25/38_stage13_full_paper_integration/verify_integration.py
+PASS Stage 13 integrated article: all theorem/corollary statements and mathematical displays identical to Stage 10
+PASS Stage 13 academic structure: references before appendices, AI declaration, 3 JEL, no redundant proof appendix
+PASS Stage 13: 129 abstract words, 32 unique labels, 14 cited references, zero exhibits
+PASS archived Stage 9/11 exact regressions and Stage 10/13 frozen source checks
+PASS PDF signature and resolved references/citations
+PASS JAFIO regression (Lean build, source verification, policy and human accountability separately assessed)
