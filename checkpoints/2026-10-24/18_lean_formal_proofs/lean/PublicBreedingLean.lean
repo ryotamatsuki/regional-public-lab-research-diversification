@@ -2,5 +2,6 @@ import PublicBreedingLean.Core
 import PublicBreedingLean.Prop3Global
 import PublicBreedingLean.ExactExamples
 import PublicBreedingLean.Boundary
-
 import PublicBreedingLean.PrimitivesBridge
+import PublicBreedingLean.Uniqueness
+import PublicBreedingLean.Prop2N
