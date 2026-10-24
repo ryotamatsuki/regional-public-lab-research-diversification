@@ -51,6 +51,9 @@ bibkeys=re.findall(r"(?m)^@\w+\s*\{\s*([^,\s}]+)",bib)
 assert len(bibkeys)==len(set(bibkeys))
 cites={v.strip() for inner in re.findall(r"\\cite(?:p|t|author|year)?(?:\[[^\]]*\]){0,2}\{([^}]+)\}",b) for v in inner.split(",")}
 assert cites.issubset(set(bibkeys)),sorted(cites-set(bibkeys))
+assert len(bibkeys)==14 and len(cites)==14, (len(bibkeys),len(cites))
+assert set(bibkeys)==cites, f"Uncited references: {sorted(set(bibkeys)-cites)}"
+
 for term in ("eq:plannerbound","eq:threebranches","eq:mutuallocal","app:globalP3","app:nonlinearproof"):
     assert term in labels
 assert r"\bibliography{references}" in b
