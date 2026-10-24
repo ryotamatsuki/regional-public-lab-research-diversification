@@ -1,0 +1,44 @@
+name: Public Breeding Manuscript PDF QA
+
+on:
+  push:
+    branches:
+      - research/2026-10-24-ijio-response-audit
+    paths:
+      - 'checkpoints/2026-10-24/20_stage9_10_manuscript/**'
+      - '.github/workflows/public-breeding-paper.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-breeding-paper-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  manuscript-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile LaTeX and resolve bibliography
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: paper.tex
+          working_directory: checkpoints/2026-10-24/20_stage9_10_manuscript
+          work_in_root_file_dir: true
+          latexmk_use_xelatex: false
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Check unresolved LaTeX citations and references
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd checkpoints/2026-10-24/20_stage9_10_manuscript
+          test -s paper.pdf
+          ! grep -iE 'undefined citations|citation .* undefined|undefined references|reference .* undefined' paper.log
+          echo "PDF pages: $(pdfinfo paper.pdf | grep '^Pages:')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-breeding-stage10-draft-pdf
+          path: checkpoints/2026-10-24/20_stage9_10_manuscript/paper.pdf
+          retention-days: 30
