@@ -30,7 +30,7 @@ SYMBOLIC_TESTS = (
 def git_blob_hash(content: bytes) -> str:
     # Git SHA-1 is SHA1("blob <length>\\0" + bytes); hashes are Git object IDs,
     # not an assertion of cryptographic collision resistance for new secrets.
-    header = b"blob " + str(len(content)).encode("ascii") + b"\\0"
+    header = b"blob " + str(len(content)).encode("ascii") + b"\x00"
     return hashlib.sha1(header + content).hexdigest()
 
 
