@@ -282,6 +282,71 @@ This paper separates publicly chosen breeding quality from competitively chosen 
 \section{Derivation and proof crosswalk}
 Equations \eqref{eq:utility}--\eqref{eq:adoptionmatrix} supply the primitive-to-follower bridge. Equations \eqref{eq:wedge}--\eqref{eq:corollary} are interior statements. Equations \eqref{eq:offpathpayoff}--\eqref{eq:plannerbound} supply the full global proof, including all adoption regimes. Formal artifacts are in the pinned Lean project \texttt{checkpoints/2026-10-24/18\_lean\_formal\_proofs/lean}; the last checked build and allowed axioms are documented in the Stage 8 freeze. The full paper-facing economic model, and in particular the generic nonlinear-demand-to-Jacobian bridge, is not claimed to be kernel-certified in its entirety.
 
+
+\section{Nonlinear demand: proof from market primitives}
+\label{app:nonlinearproof}
+The restricted class in \eqref{eq:nonlinearutility} yields the following prices:
+\begin{equation}
+ p_{is}=\alpha_{is}(x_i)-\phi'(q_{is})-\beta Q-rQ_i-gQ_s.
+ \label{eq:appprice}
+\end{equation}
+Because $Q_i=q_{iO}+q_{iN}=1$ and $Q=\sum_i Q_i=N$ for all feasible planting allocations, the $\beta$ and $r$ terms do not enter the planting derivative. A competitive farmer in region $i$ therefore solves the planting condition
+\begin{equation}
+D_i=\alpha_{iN}-\alpha_{iO}
+ -\phi'(a_i)+\phi'(1-a_i)
+ -g(Q_N-Q_O)-K'(a_i)=0.
+\label{eq:appD}
+\end{equation}
+At a symmetric interior solution $a_i=a$, its negative Jacobian has diagonal $L_\phi+2g$ and off-diagonal $2g$, where $L_\phi=K''(a)+\phi''(1-a)+\phi''(a)>0$. Hence a unilateral research shock $dx_i$ gives
+\begin{equation}
+ \big(L_\phi I_N+2g\mathbf1\mathbf1^\top\big)\mathbf u
+ =f'(x_i)\mathbf e_i,\qquad
+ u_j=\frac{\partial a_j}{\partial x_i}.
+ \label{eq:appJ}
+\end{equation}
+Multiplying by the projection $I_N-\mathbf1\mathbf1^\top/N$ eliminates the rank-one term, yielding
+\begin{equation}
+u_i-\frac1N\sum_j u_j
+=\frac{N-1}{NL_\phi}f'(x_i).
+\label{eq:appcontrast}
+\end{equation}
+This conditional linear-algebra step, rather than the entire economic derivation, is checked in the general-$N$ Lean module \texttt{Prop2N.lean}.
+
+For the price-incidence step, the competitive budget identities give
+\[
+\Pi_i=p_{iO}(1-a_i)+p_{iN}a_i-K(a_i),\quad
+CS=V-\sum_{j,s}p_{js}q_{js},\quad
+W=\sum_j\Pi_j+CS-\sum_j C(x_j).
+\]
+The conditional welfare envelope is $dW/dx_i=a_if'(x_i)-C'(x_i)$. The direct effect of quality on $\Pi_i$ equals $a_if'(x_i)$, while the direct quality effect on $CS$ is zero by the consumer-surplus identity. Along the follower equilibrium, the farmer's price difference cancels the conversion-cost derivative in $d\Pi_i/dx_i$. Consequently only induced price changes remain in the regional-minus-national incentive:
+\begin{equation}
+\frac{dG_i}{dx_i}-\frac{dW}{dx_i}
+=(1-a)\,dp_{iO}^{\rm ind}+a\,dp_{iN}^{\rm ind}
+-\frac1N\sum_j\big[(1-a)\,dp_{jO}^{\rm ind}
++a\,dp_{jN}^{\rm ind}\big].
+\label{eq:appincidence}
+\end{equation}
+Here $dp^{\rm ind}$ excludes the direct quality shock and is the total derivative of prices along induced changes in planting. Using \eqref{eq:appprice} and $dQ_O/dx_i=-\sum_k u_k$, $dQ_N/dx_i=\sum_k u_k$, the $j$th region's weighted induced price change equals
+\[
+(1-a)\,dp_{jO}^{\rm ind}+a\,dp_{jN}^{\rm ind}
+=\big[(1-a)\phi''(1-a)-a\phi''(a)\big]u_j
+ +g(1-2a)\sum_k u_k.
+\]
+The common $g$ term cancels between the focal region and the cross-regional mean. Substitution of \eqref{eq:appcontrast} into \eqref{eq:appincidence} gives exactly \eqref{eq:nonlinearwedge}. Common old/new curvature and symmetric interior planting are therefore substantive hypotheses; the asymmetric-curvature counterexample yielding wedge $-1/16$ at $a=1/2$ is outside this proposition. This appendix states the primitive-to-wedge bridge; it does not assert full Lean certification of that bridge.
+
+\section{Global deviations and the boundary in the harmful-research economy}
+\label{app:globalP3}
+The local research payoff must be evaluated using the unreduced off-equilibrium formula \eqref{eq:offpathpayoff}, even when the induced planting share is zero or one. In the partial-adoption regime its maximizer is $x^D=(1+3z)/13$, and completion of the square gives
+\begin{equation}
+ F_i(x^D)-F_i(x)=\frac{13}{16}(x-x^D)^2,\qquad
+ F_i(x^D)=\frac{48z^2+32z+1}{208}.
+ \label{eq:appBR}
+\end{equation}
+When $z_c<z\leq0$, this maximum is positive. On the no-adoption branch, the payoff is $-x_i^2\leq0$; on the complete-adoption branch it is $z+x_i-1-x_i^2$, decreasing for $x_i\geq2-z$ because $1-2x_i<0$. Its maximum is attained at the shared partial-adoption boundary, which by \eqref{eq:appBR} is strictly inferior to $x^D$. These comparisons rule out every unilateral nonnegative research deviation, not just local perturbations.
+
+At $z=z_c=(-4+\sqrt{13})/12$, the interior maximum equals zero and the two global best responses are $0$ and $\sqrt{13}/52$. Since $e=j=0$ in this parameter family, each region's research best response is independent of the other's research; the product of these correspondences contains four pure Nash research profiles at this excluded endpoint. The planner proof \eqref{eq:plannerbound} establishes a unique global zero research-and-adoption optimum even allowing asymmetric and off-equilibrium choices. The separate interacting examples have $e>0$ and rely on exact-rational active-set computations, not the decoupled proof in this Appendix.
+
+
 \section{Further scope of the numerical checks}
 For the interacting rational example, the existing exact-arithmetic program enumerates the nine follower KKT status combinations and tests unilateral research deviations across feasible branches. This establishes a checked candidate equilibrium under that audit, not a Lean proof of all asymmetric Nash equilibria. No new numerical results are introduced here.
 
