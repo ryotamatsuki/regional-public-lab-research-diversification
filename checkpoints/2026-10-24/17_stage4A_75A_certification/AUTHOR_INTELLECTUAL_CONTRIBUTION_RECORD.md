@@ -25,3 +25,17 @@ Stage4A certificates, preregistered diagnostics and rerun results; original Stag
 - Will the author approve the current exact theorem scope for canonical Stage8 after formal verification and Stage7.5A pass? **PENDING**.
 
 Nothing in this file purports to record the author's approval, financial backing, identity attestation, or independently performed verification. User may provide a substantive signoff later; changing it requires explicit action.
+
+---
+
+## Author's completion attestation — 2026-10-25 JST
+
+**Direct statement supplied by the author in this conversation:** 「著者確認が完了で、次のステージ行って」 (2026-10-25 JST).
+
+**Status following the direct statement:** AUTHOR REVIEW COMPLETION **SELF-ATTESTED BY AUTHOR**. This is treated as the author's affirmative completion of the specific review requested at the end of canonical Stage 7.5A (Checkpoint 28) for the unchanged theory, and authorizes work on Stage 8. It does not establish that an external peer referee reviewed the paper or specify how long or by which independent method the author checked it.
+
+**Identified subject of the self-attestation:** The pending verification record above and the explicit six-point Stage 7.5A author review scope in `checkpoints/2026-10-25/28_canonical_stage7_5A_proof_portability/REPORT.md`: conditional grower efficiency and P1 scope; P2 equal-curvature limit and negative counterexample; P3+ global deviation branches, strict endpoint and boundary multiplicity; e=j=0 independence vs separate e>0 interaction and unilateral-vs-mutual payoff distinctions; modest institutional application novelty and stylized consumer-surplus weighting; distinction among Lean-covered, manuscript-proved and external Python-covered claims.
+
+**Evidence boundary:** The author stated completion, **not** an itemized description of personal rederivation, private proof notes, specific signed theorem text, or an account of checking methods. Such methods are **NOT DOCUMENTED** and must not be invented. We record the user's own affirmative signoff for the previously specified review scope, not independent verification of how it was performed. Any later substantive disagreement must reopen the affected gate, not be retroactively imputed to this statement.
+
+**Canonical gate effect:** Satisfies the outstanding author-review attestation for the unchanged bounded paper claim under the canonical workflow, interpreted consistently with its prior author-facing verification scope. It does not independently upgrade mathematical, general novelty, journal acceptance or public-policy claims. The original 2026-10-24 PENDING statements above are preserved as historical status, not the current verdict.
