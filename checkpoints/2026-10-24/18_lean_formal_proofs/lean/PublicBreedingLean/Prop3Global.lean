@@ -30,7 +30,7 @@ def plant (z x : ℝ) : ℝ :=
 This definition must be independently matched to V, p, CS, and K. -/
 def regionalGain (z x : ℝ) : ℝ :=
   let a := plant z x
-  a/4 + 3*a^2/4 - x^2
+  (z+x+1/4)*a - 5*a^2/4 - x^2
 
 /-- The formula on the interior planting branch ONLY. -/
 def middleGain (z x : ℝ) : ℝ :=
@@ -156,13 +156,12 @@ theorem local_global_best_response
     nlinarith [sq_nonneg x]
   · have hlo : -z < x := lt_of_not_ge hlow
     by_cases hhigh : 2-z ≤ x
-    · have hg : regionalGain z x = 1-x^2 := by
+    · have hg : regionalGain z x = z+x-1-x^2 := by
         simp [regionalGain, plant_upper z x hlo hhigh]
         ring
-      have hnonneg : 0 ≤ 2-z := by linarith
-      have hsum : 0 ≤ x + (2-z) := by linarith
-      have hs : 0 ≤ x^2-(2-z)^2 := by
-        nlinarith [mul_nonneg (sub_nonneg.mpr hhigh) hsum]
+      have hsum : 0 ≤ x + (2-z) - 1 := by linarith
+      have hs : 0 ≤ (x-(2-z)) * (x+(2-z)-1) :=
+        mul_nonneg (sub_nonneg.mpr hhigh) hsum
       have hedge : middleGain z (2-z) = 1-(2-z)^2 := by
         unfold middleGain
         ring
