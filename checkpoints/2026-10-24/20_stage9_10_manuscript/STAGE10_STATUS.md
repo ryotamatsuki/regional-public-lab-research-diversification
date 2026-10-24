@@ -23,3 +23,13 @@ Canonical verdict: CONDITIONAL GO FOR DRAFT PRODUCTION; Stage 10 completion is N
 
 ## Next authorized action
 Run LaTeX build and independent full-manuscript mathematical/proof consistency audit, repair manuscript errors only (not frozen theory). Recheck Stage 7.5A and Stage 8 hard-gate prerequisites before declaring Stage 10 GO. Stage 11 adversarial manuscript audit only after Stage 10 QA.
+
+## Stage 10 QA update (2026-10-24, after manuscript hardening)
+
+- **LaTeX build PASS** for manuscript SHA `c71443f91506e592047058bc223998b6fe0430ff`: GitHub Actions [run 40086502295](https://github.com/ryotamatsuki/regional-public-lab-research-diversification/actions/runs/40086502295) compiled a 9-page PDF and passed final citation/reference checks. Companion existing PDF workflow run 40086502306 also succeeded.
+- Publisher/academic records checked: Alston--Freebairn--James 2001, Balagtas--Kim 2007, Lence et al. 2007, Dixit--Norman 1978, Cardon--Pope 2003, Kinnucan--Miao 2000, Anzhou Zhang 2022. The unverified author placeholder was replaced.
+- Independent four-good reconstruction reproduced farmer FOC, regional-vs-national wedge under symmetric interior adoption, global P3+ off-path local payoff including complete-adoption branch, exact welfare difference and positive-definite demand matrix eigenvalues.
+- Added nonlinear P2 restricted primitive gross utility and own-minus-average adoption Jacobian, qualified reachable P1 adoption thresholds and interior-only welfare-square-completion, restored original e=3/10 rational example, and made P1 producer/CS derivation visible to reviewers.
+- Initial PDF build and source consistency PASS does **not** discharge the workflow's Stage 8/7.5A author-signoff and novelty requirements. Appendix remains abbreviated, so a complete Stage 10 manuscript-quality GO is not issued. Stage 11 is being performed as an adversarial **preflight** rather than an unqualified canonical progression.
+
+**Current status: PDF BUILD PASS; STAGE 10 CANONICAL GO NOT ESTABLISHED.**
